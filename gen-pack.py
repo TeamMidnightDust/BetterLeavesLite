@@ -7,10 +7,15 @@ import argparse
 import json
 import os
 import zipfile
+import shutil
 from PIL import Image
+from distutils.dir_util import copy_tree
 
 def autoGen(notint_overrides):
     print("Generating assets...")
+    if (os.path.exists("./assets")): shutil.rmtree("./assets")
+    copy_tree("./base/assets/", "./assets/")
+
     for root, dirs, files in os.walk("./input"):
         for infile in files:
             if infile.endswith(".png") and (len(root.split("/")) > 3):
@@ -118,6 +123,14 @@ def zipdir(path, ziph):
                        os.path.relpath(os.path.join(root, file), 
                                        os.path.join(path, '..')))
 
+def makeZip(version):
+    with zipfile.ZipFile('Better-Leaves-Lite-'+version+".zip", 'w', zipfile.ZIP_DEFLATED) as zipf:
+        zipdir('assets/', zipf)
+        zipf.write('pack.mcmeta')
+        zipf.write('pack.png')
+        zipf.write('LICENSE')
+        zipf.write('README.md')
+
 
 
 # This is the main entry point, executed when the script is run
@@ -138,10 +151,5 @@ if __name__ == '__main__':
     f.close()
 
     autoGen(data['noTint']);
-
-    with zipfile.ZipFile('Better-Leaves-Lite-'+args.version+".zip", 'w', zipfile.ZIP_DEFLATED) as zipf:
-        zipdir('assets/', zipf)
-        zipf.write('pack.mcmeta')
-        zipf.write('pack.png')
-        zipf.write('LICENSE')
-        zipf.write('README.md')
+    makeZip(args.version);
+    

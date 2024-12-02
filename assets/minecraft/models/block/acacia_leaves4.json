@@ -1,0 +1,6 @@
+{
+    "parent": "block/leaves4",
+    "textures": {
+        "all": "minecraft:block/acacia_leaves"
+    }
+}
