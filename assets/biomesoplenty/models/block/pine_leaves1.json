@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_overlay1",
+    "textures": {
+        "all": "biomesoplenty:block/pine_leaves",
+        "overlay": "biomesoplenty:block/pine_leaves_overlay"
+    }
+}

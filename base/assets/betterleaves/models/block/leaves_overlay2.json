@@ -1,0 +1,52 @@
+{
+	"credit": "Motschen's Better Leaves Lite",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "#all"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "north", "tintindex": 0},
+				"east": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "east", "tintindex": 0},
+				"south": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "south", "tintindex": 0},
+				"west": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "west", "tintindex": 0},
+				"up": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "up", "tintindex": 0},
+				"down": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "down", "tintindex": 0}
+			}
+		},
+		{
+			"from": [-0.01, -0.01, -0.01],
+			"to": [16.01, 16.01, 16.01],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "north"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "east"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "south"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "west"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "up"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#overlay", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-5.5, -6, 15],
+			"to": [26.5, 22, 15],
+			"rotation": {"angle": 45, "axis": "y", "origin": [2, 0, 15]},
+			"faces": {
+				"north": {"uv": [0, 1, 16, 15], "texture": "#all", "tintindex": 0},
+				"south": {"uv": [0, 1, 16, 15], "texture": "#all", "tintindex": 0}
+			}
+		},
+		{
+			"from": [-7.98959, -6, 8.01041],
+			"to": [24.01041, 22, 8.01041],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8.01041, 8, 8.01041]},
+			"faces": {
+				"north": {"uv": [0, 1, 16, 15], "texture": "#all", "tintindex": 0},
+				"south": {"uv": [0, 1, 16, 15], "texture": "#all", "tintindex": 0}
+			}
+		}
+	]
+}

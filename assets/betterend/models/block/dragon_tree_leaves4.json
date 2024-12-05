@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves4",
+    "textures": {
+        "all": "betterend:block/dragon_tree_leaves"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaf_carpet",
+    "textures": {
+        "wool": "paradise_lost:block/lavender_wisteria_leaves"
+    }
+}

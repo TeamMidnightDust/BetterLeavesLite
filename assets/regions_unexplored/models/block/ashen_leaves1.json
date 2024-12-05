@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves1",
+    "textures": {
+        "all": "regions_unexplored:block/ashen_leaves"
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting1"
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting1",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting1",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting1",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting2"
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting2",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting2",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting2",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting3"
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting3",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting3",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting3",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting4"
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting4",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting4",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_fruiting4",
+                "y": 270
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering1"
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering1",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering1",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering1",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering2"
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering2",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering2",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering2",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering3"
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering3",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering3",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering3",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering4"
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering4",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering4",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/orange_leaves_flowering4",
+                "y": 270
+            }
+        ]
+    }
+}

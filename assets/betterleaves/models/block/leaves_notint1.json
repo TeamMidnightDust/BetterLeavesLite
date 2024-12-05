@@ -1,0 +1,40 @@
+{
+	"credit": "Motschen's Better Leaves Lite",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "#all"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "north"},
+				"east": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "east"},
+				"south": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "west"},
+				"up": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "up"},
+				"down": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "down"}
+			}
+		},
+		{
+			"from": [-7.98959, -6, 7.98959],
+			"to": [24.01041, 22, 7.98959],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8.01041, 8, 7.98959]},
+			"faces": {
+				"north": {"uv": [0, 1, 16, 15], "texture": "#all"},
+				"south": {"uv": [0, 1, 16, 15], "texture": "#all"}
+			}
+		},
+		{
+			"from": [-6.5, -6, 3],
+			"to": [25.5, 22, 3],
+			"rotation": {"angle": -45, "axis": "y", "origin": [1, 0, 3]},
+			"faces": {
+				"north": {"uv": [0, 1, 16, 15], "texture": "#all"},
+				"south": {"uv": [0, 1, 16, 15], "texture": "#all"}
+			}
+		}
+	]
+}

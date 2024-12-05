@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored1"
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored1",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored1",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored1",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored2"
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored2",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored2",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored2",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored3"
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored3",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored3",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored3",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored4"
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored4",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored4",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/aurel_leaves_mirrored4",
+                "y": 270
+            }
+        ]
+    }
+}

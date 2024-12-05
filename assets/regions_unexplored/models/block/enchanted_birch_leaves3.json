@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "regions_unexplored:block/enchanted_birch_leaves"
+    }
+}

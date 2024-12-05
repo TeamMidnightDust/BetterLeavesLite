@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves1"
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves1",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves1",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves1",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves2"
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves2",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves2",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves2",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves3"
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves3",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves3",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves3",
+                "y": 270
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves4"
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves4",
+                "y": 90
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves4",
+                "y": 180
+            },
+            {
+                "model": "paradise_lost:block/lavender_wisteria_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

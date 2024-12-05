@@ -1,5 +1,5 @@
 {
-    "parent": "block/leaves_notint2",
+    "parent": "betterleaves:block/leaves_notint2",
     "textures": {
         "all": "minecraft:block/azalea_leaves"
     }

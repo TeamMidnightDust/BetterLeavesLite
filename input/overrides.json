@@ -1,6 +1,25 @@
 {
     "noTint": [
         "minecraft:azalea_leaves",
-        "minecraft:flowering_azalea_leaves"
-    ]
+        "minecraft:flowering_azalea_leaves",
+        "ad_astra:glacian_leaves"
+    ],
+    "leavesWithCarpet": {
+        "terrestria:sakura_leaves": "terrestria:sakura_leaf_pile",
+        "paradise_lost:lavender_wisteria_leaves": "paradise_lost:lavender_wisteria_leaf_pile",
+        "paradise_lost:aurel_leaves": "paradise_lost:aurel_leaf_pile",
+        "paradise_lost:rose_wisteria_leaves": "paradise_lost:rose_wisteria_leaf_pile",
+        "paradise_lost:frost_wisteria_leaves": "paradise_lost:frost_wisteria_leaf_pile"
+    },
+    "blockTextures": {
+        "biomesoplenty:rainbow_birch_leaves": "minecraft:block/birch_leaves"
+    },
+    "overlayTextures": {
+        "biomesoplenty:pine_leaves": "biomesoplenty:block/pine_leaves_overlay",
+        "biomesoplenty:flowering_oak_leaves": "biomesoplenty:block/flowering_oak_leaves_overlay"
+    },
+    "blockIds": {
+        "terrestria:japanese_maple_leaves_dark": "terrestria:dark_japanese_maple_leaves",
+        "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves"
+    }
 }

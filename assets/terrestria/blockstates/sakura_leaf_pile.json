@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "terrestria:block/sakura_leaf_pile"
+            },
+            {
+                "model": "terrestria:block/sakura_leaf_pile",
+                "y": 90
+            },
+            {
+                "model": "terrestria:block/sakura_leaf_pile",
+                "y": 180
+            },
+            {
+                "model": "terrestria:block/sakura_leaf_pile",
+                "y": 270
+            }
+        ]
+    }
+}

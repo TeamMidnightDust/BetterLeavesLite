@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "terrestria:block/rainbow_eucalyptus_leaves"
+    }
+}

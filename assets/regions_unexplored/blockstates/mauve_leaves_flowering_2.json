@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_21"
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_21",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_21",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_21",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_22"
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_22",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_22",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_22",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_23"
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_23",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_23",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_23",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_24"
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_24",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_24",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/mauve_leaves_flowering_24",
+                "y": 270
+            }
+        ]
+    }
+}

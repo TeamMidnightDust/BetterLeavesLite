@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "betternether:block/ink_bush_leaves1"
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves1",
+                "y": 90
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves1",
+                "y": 180
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves1",
+                "y": 270
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves2"
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves2",
+                "y": 90
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves2",
+                "y": 180
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves2",
+                "y": 270
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves3"
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves3",
+                "y": 90
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves3",
+                "y": 180
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves3",
+                "y": 270
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves4"
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves4",
+                "y": 90
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves4",
+                "y": 180
+            },
+            {
+                "model": "betternether:block/ink_bush_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

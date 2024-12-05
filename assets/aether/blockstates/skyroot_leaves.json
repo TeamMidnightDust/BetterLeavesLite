@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "aether:block/skyroot_leaves1"
+            },
+            {
+                "model": "aether:block/skyroot_leaves1",
+                "y": 90
+            },
+            {
+                "model": "aether:block/skyroot_leaves1",
+                "y": 180
+            },
+            {
+                "model": "aether:block/skyroot_leaves1",
+                "y": 270
+            },
+            {
+                "model": "aether:block/skyroot_leaves2"
+            },
+            {
+                "model": "aether:block/skyroot_leaves2",
+                "y": 90
+            },
+            {
+                "model": "aether:block/skyroot_leaves2",
+                "y": 180
+            },
+            {
+                "model": "aether:block/skyroot_leaves2",
+                "y": 270
+            },
+            {
+                "model": "aether:block/skyroot_leaves3"
+            },
+            {
+                "model": "aether:block/skyroot_leaves3",
+                "y": 90
+            },
+            {
+                "model": "aether:block/skyroot_leaves3",
+                "y": 180
+            },
+            {
+                "model": "aether:block/skyroot_leaves3",
+                "y": 270
+            },
+            {
+                "model": "aether:block/skyroot_leaves4"
+            },
+            {
+                "model": "aether:block/skyroot_leaves4",
+                "y": 90
+            },
+            {
+                "model": "aether:block/skyroot_leaves4",
+                "y": 180
+            },
+            {
+                "model": "aether:block/skyroot_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

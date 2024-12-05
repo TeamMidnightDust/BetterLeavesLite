@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "terrestria:block/sakura_leaves1"
+            },
+            {
+                "model": "terrestria:block/sakura_leaves1",
+                "y": 90
+            },
+            {
+                "model": "terrestria:block/sakura_leaves1",
+                "y": 180
+            },
+            {
+                "model": "terrestria:block/sakura_leaves1",
+                "y": 270
+            },
+            {
+                "model": "terrestria:block/sakura_leaves2"
+            },
+            {
+                "model": "terrestria:block/sakura_leaves2",
+                "y": 90
+            },
+            {
+                "model": "terrestria:block/sakura_leaves2",
+                "y": 180
+            },
+            {
+                "model": "terrestria:block/sakura_leaves2",
+                "y": 270
+            },
+            {
+                "model": "terrestria:block/sakura_leaves3"
+            },
+            {
+                "model": "terrestria:block/sakura_leaves3",
+                "y": 90
+            },
+            {
+                "model": "terrestria:block/sakura_leaves3",
+                "y": 180
+            },
+            {
+                "model": "terrestria:block/sakura_leaves3",
+                "y": 270
+            },
+            {
+                "model": "terrestria:block/sakura_leaves4"
+            },
+            {
+                "model": "terrestria:block/sakura_leaves4",
+                "y": 90
+            },
+            {
+                "model": "terrestria:block/sakura_leaves4",
+                "y": 180
+            },
+            {
+                "model": "terrestria:block/sakura_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

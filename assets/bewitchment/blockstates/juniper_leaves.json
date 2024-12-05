@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "bewitchment:block/juniper_leaves1"
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves1",
+                "y": 90
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves1",
+                "y": 180
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves1",
+                "y": 270
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves2"
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves2",
+                "y": 90
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves2",
+                "y": 180
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves2",
+                "y": 270
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves3"
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves3",
+                "y": 90
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves3",
+                "y": 180
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves3",
+                "y": 270
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves4"
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves4",
+                "y": 90
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves4",
+                "y": 180
+            },
+            {
+                "model": "bewitchment:block/juniper_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

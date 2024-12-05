@@ -1,5 +1,5 @@
 {
-    "parent": "block/leaves2",
+    "parent": "betterleaves:block/leaves2",
     "textures": {
         "all": "minecraft:block/dark_oak_leaves"
     }

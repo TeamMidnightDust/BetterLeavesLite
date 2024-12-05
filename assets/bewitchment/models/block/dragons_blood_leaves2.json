@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "bewitchment:block/dragons_blood_leaves"
+    }
+}

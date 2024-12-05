@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "traverse:block/yellow_autumnal_leaves1"
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves1",
+                "y": 90
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves1",
+                "y": 180
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves1",
+                "y": 270
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves2"
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves2",
+                "y": 90
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves2",
+                "y": 180
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves2",
+                "y": 270
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves3"
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves3",
+                "y": 90
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves3",
+                "y": 180
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves3",
+                "y": 270
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves4"
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves4",
+                "y": 90
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves4",
+                "y": 180
+            },
+            {
+                "model": "traverse:block/yellow_autumnal_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}
