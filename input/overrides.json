@@ -2,7 +2,8 @@
     "noTint": [
         "minecraft:azalea_leaves",
         "minecraft:flowering_azalea_leaves",
-        "ad_astra:glacian_leaves"
+        "ad_astra:glacian_leaves",
+        "palegarden:pale_oak_leaves"
     ],
     "leavesWithCarpet": {
         "terrestria:sakura_leaves": "terrestria:sakura_leaf_pile",

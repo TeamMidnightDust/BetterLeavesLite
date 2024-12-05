@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves_notint2",
+    "textures": {
+        "all": "palegarden:block/pale_oak_leaves"
+    }
+}
