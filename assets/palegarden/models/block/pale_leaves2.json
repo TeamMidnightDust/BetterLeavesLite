@@ -1,5 +1,5 @@
 {
-    "parent": "betterleaves:block/leaves_notint4",
+    "parent": "betterleaves:block/leaves2",
     "textures": {
         "all": "palegarden:block/pale_oak_leaves"
     }

@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "palegarden:block/pale_leaves1"
+            },
+            {
+                "model": "palegarden:block/pale_leaves1",
+                "y": 90
+            },
+            {
+                "model": "palegarden:block/pale_leaves1",
+                "y": 180
+            },
+            {
+                "model": "palegarden:block/pale_leaves1",
+                "y": 270
+            },
+            {
+                "model": "palegarden:block/pale_leaves2"
+            },
+            {
+                "model": "palegarden:block/pale_leaves2",
+                "y": 90
+            },
+            {
+                "model": "palegarden:block/pale_leaves2",
+                "y": 180
+            },
+            {
+                "model": "palegarden:block/pale_leaves2",
+                "y": 270
+            },
+            {
+                "model": "palegarden:block/pale_leaves3"
+            },
+            {
+                "model": "palegarden:block/pale_leaves3",
+                "y": 90
+            },
+            {
+                "model": "palegarden:block/pale_leaves3",
+                "y": 180
+            },
+            {
+                "model": "palegarden:block/pale_leaves3",
+                "y": 270
+            },
+            {
+                "model": "palegarden:block/pale_leaves4"
+            },
+            {
+                "model": "palegarden:block/pale_leaves4",
+                "y": 90
+            },
+            {
+                "model": "palegarden:block/pale_leaves4",
+                "y": 180
+            },
+            {
+                "model": "palegarden:block/pale_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

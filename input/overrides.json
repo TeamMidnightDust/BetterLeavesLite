@@ -21,7 +21,8 @@
     },
     "blockIds": {
         "terrestria:japanese_maple_leaves_dark": "terrestria:dark_japanese_maple_leaves",
-        "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves"
+        "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves",
+        "palegarden:pale_oak_leaves": "palegarden:pale_leaves"
     },
     "dynamicTreesNamespaces": {
         "minecraft": "dynamictrees",
