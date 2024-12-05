@@ -23,6 +23,9 @@
         "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves"
     },
     "dynamicTreesNamespaces": {
-        "minecraft": "dynamictrees"
+        "minecraft": "dynamictrees",
+        "biomesoplenty": "dtbop",
+        "aether": "dtaether",
+        "natures_spirit": "dtnatures_spirit"
     }
 }

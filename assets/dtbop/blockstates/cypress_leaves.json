@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "biomesoplenty:block/cypress_leaves1"
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves1",
+                "y": 90
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves1",
+                "y": 180
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves1",
+                "y": 270
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves2"
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves2",
+                "y": 90
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves2",
+                "y": 180
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves2",
+                "y": 270
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves3"
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves3",
+                "y": 90
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves3",
+                "y": 180
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves3",
+                "y": 270
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves4"
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves4",
+                "y": 90
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves4",
+                "y": 180
+            },
+            {
+                "model": "biomesoplenty:block/cypress_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

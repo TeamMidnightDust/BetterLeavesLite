@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt1"
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt1",
+                "y": 90
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt1",
+                "y": 180
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt1",
+                "y": 270
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt2"
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt2",
+                "y": 90
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt2",
+                "y": 180
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt2",
+                "y": 270
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt3"
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt3",
+                "y": 90
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt3",
+                "y": 180
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt3",
+                "y": 270
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt4"
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt4",
+                "y": 90
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt4",
+                "y": 180
+            },
+            {
+                "model": "biomesoplenty:block/magic_leaves_alt4",
+                "y": 270
+            }
+        ]
+    }
+}
