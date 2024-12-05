@@ -17,6 +17,7 @@ def autoGen(jsonData):
     overlay_textures = jsonData["overlayTextures"]
     block_id_overrides = jsonData["blockIds"]
     leaves_with_carpet = jsonData["leavesWithCarpet"]
+    dynamictrees_namespaces = jsonData["dynamicTreesNamespaces"]
     print("Generating assets...")
     if (os.path.exists("./assets")): shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
@@ -92,8 +93,12 @@ def autoGen(jsonData):
                     overlay_texture_id = overlay_textures[block_id]
                     print ("-> Has overlay texture: "+overlay_texture_id) 
 
+                dynamictrees_namespace = None
+                if (namespace) in dynamictrees_namespaces:
+                    dynamictrees_namespace = dynamictrees_namespaces[namespace]
+
                 # Generate blockstates & models
-                generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture_id)
+                generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture_id, dynamictrees_namespace)
                 generateItemModel(block_id, has_texture_override)
 
                 if (block_id) in leaves_with_carpet:
@@ -101,7 +106,7 @@ def autoGen(jsonData):
                     generateCarpetAssets(carpet_id, hasNoTint, texture_id)
                     print (f"-> Also generating leaf carpet: {carpet_id}")
 
-def generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture_id):
+def generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture_id, dynamictrees_namespace):
     mod_namespace = block_id.split(":")[0]
     block_name = block_id.split(":")[1]
 
@@ -123,6 +128,17 @@ def generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture
     # Write blockstate file
     with open(block_state_file, "w") as f:
         json.dump(block_state_data, f, indent=4)
+    
+    # Do the same for the dynamic trees namespace
+    if dynamictrees_namespace != None:
+        dyntrees_block_state_file = f"assets/{dynamictrees_namespace}/blockstates/{block_name}.json"
+        # Create blockstates folder if it doesn't exist already
+        if not os.path.exists("assets/{}/blockstates/".format(dynamictrees_namespace)):
+            os.makedirs("assets/{}/blockstates/".format(dynamictrees_namespace))
+
+        # Write blockstate file
+        with open(dyntrees_block_state_file, "w") as f:
+            json.dump(block_state_data, f, indent=4)
 
 
     # Create models folder if it doesn't exist already
