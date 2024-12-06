@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "cobblemon:block/micle_leaves1"
+            },
+            {
+                "model": "cobblemon:block/micle_leaves1",
+                "y": 90
+            },
+            {
+                "model": "cobblemon:block/micle_leaves1",
+                "y": 180
+            },
+            {
+                "model": "cobblemon:block/micle_leaves1",
+                "y": 270
+            },
+            {
+                "model": "cobblemon:block/micle_leaves2"
+            },
+            {
+                "model": "cobblemon:block/micle_leaves2",
+                "y": 90
+            },
+            {
+                "model": "cobblemon:block/micle_leaves2",
+                "y": 180
+            },
+            {
+                "model": "cobblemon:block/micle_leaves2",
+                "y": 270
+            },
+            {
+                "model": "cobblemon:block/micle_leaves3"
+            },
+            {
+                "model": "cobblemon:block/micle_leaves3",
+                "y": 90
+            },
+            {
+                "model": "cobblemon:block/micle_leaves3",
+                "y": 180
+            },
+            {
+                "model": "cobblemon:block/micle_leaves3",
+                "y": 270
+            },
+            {
+                "model": "cobblemon:block/micle_leaves4"
+            },
+            {
+                "model": "cobblemon:block/micle_leaves4",
+                "y": 90
+            },
+            {
+                "model": "cobblemon:block/micle_leaves4",
+                "y": 180
+            },
+            {
+                "model": "cobblemon:block/micle_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}
