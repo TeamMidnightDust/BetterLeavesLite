@@ -29,8 +29,9 @@ def autoGen(jsonData):
     if (os.path.exists("./assets")): shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
     filecount = 0
+    unpackTexturepacks()
 
-    for root, dirs, files in os.walk("./input"):
+    for root, dirs, files in os.walk("./input/assets"):
         for infile in files:
             if infile.endswith(".png") and (len(root.split("/")) > 3):
                 namespace = root.split("/")[3]
@@ -105,11 +106,39 @@ def autoGen(jsonData):
                 filecount += 1
     # End of autoGen
     print()
+    cleanupTexturepacks()
     printCyan("Processed {} leaf blocks".format(filecount))
+
+def unpackTexturepacks():
+    for root, dirs, files in os.walk("./input/texturepacks"):
+        for infile in files:
+            if infile.endswith(".zip"):
+                print("Unpacking texturepack: "+infile)
+                zf = zipfile.ZipFile(os.path.join(root, infile), 'r')
+                zf.extractall(os.path.join(root, infile.replace(".zip", "_temp")))
+                zf.close()
+
+def cleanupTexturepacks():
+    for root, dirs, files in os.walk("./input/texturepacks"):
+        for folder in dirs:
+            if folder.endswith("_temp"):
+                shutil.rmtree(os.path.join(root, folder))
+
+def scanPacksForTexture(baseRoot, baseInfile):
+    for root, dirs, files in os.walk("./input/texturepacks"):
+        for infile in files:
+            if "assets" in root and "assets" in baseRoot:
+                #print(root.split("assets")[1] + " -> " + infile + " | " + baseRoot.split("assets")[1] + " -> " + baseInfile)
+                if infile.endswith(".png") and (len(root.split("/")) > 3) and (baseInfile == infile) and (root.split("assets")[1] == baseRoot.split("assets")[1]):
+                    printCyan(" Using texture from: " + root.split("assets")[0].replace("./input/texturepacks/", ""))
+                    return root;
+    return baseRoot
 
 def generateTexture(root, infile):
     outfolder = root.replace("assets", "").replace("input", "assets")
     os.makedirs(outfolder, exist_ok=True)
+
+    root = scanPacksForTexture(root, infile)
 
     outfile = os.path.splitext(os.path.join(outfolder, infile))[0] + ".png"
     if infile != outfile:
@@ -127,7 +156,7 @@ def generateTexture(root, infile):
                     out.paste(vanilla, (int(width / 2 + width * x), int(height / 2 + height * y)))
 
             # As the last step, we apply our custom mask to round the edges and smoothen things out
-            mask = Image.open('input/mask.png').convert('L').resize(out.size)
+            mask = Image.open('input/mask.png').convert('L').resize(out.size, resample=Image.NEAREST)
             out = Image.composite(out, transparent, mask)
 
             # Finally, we save the texture to the assets folder
