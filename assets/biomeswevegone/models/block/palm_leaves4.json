@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves4",
+    "textures": {
+        "all": "biomeswevegone:block/palm/leaves"
+    }
+}

@@ -8,9 +8,16 @@ import json
 import os
 import zipfile
 import shutil
+import time
 from PIL import Image
 from distutils.dir_util import copy_tree
 
+# Utility functions
+def printGreen(out): print("\033[92m{}\033[00m".format(out))
+def printCyan(out): print("\033[96m{}\033[00m" .format(out))
+def printOverride(out): print(" -> {}".format(out))
+
+# This is where the magic happens
 def autoGen(jsonData):
     notint_overrides = jsonData["noTint"]
     block_texture_overrides = jsonData["blockTextures"]
@@ -21,92 +28,115 @@ def autoGen(jsonData):
     print("Generating assets...")
     if (os.path.exists("./assets")): shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
+    filecount = 0
 
     for root, dirs, files in os.walk("./input"):
         for infile in files:
             if infile.endswith(".png") and (len(root.split("/")) > 3):
                 namespace = root.split("/")[3]
-                block_name = infile.replace(".png", "")
-                if (namespace+":block/"+block_name) in overlay_textures.values(): continue # We don't want to generate assets for overlay textures
+                texture_name = infile.replace(".png", "")
+                block_name = texture_name
 
-                print(namespace+":"+block_name)
+                # Handle leaf textures in subfolders
                 texture_prefix = ""
                 if (len(root.split("/")) > 6):
                     texture_prefix = root.split("/")[6]+"/"
-                    print("-> Prefix: "+ texture_prefix);
+                    if (block_name == "leaves"): # For mods that use a structure like "texture/woodtype/leaves.png"
+                        block_name = texture_prefix.replace("/", "_")+block_name
+                        printGreen(namespace+":"+block_name)
+                        printOverride("Auto-redirected from "+namespace+":"+texture_name)
+                    else: # For mods that use a structure like "texture/natural/some_leaves.png"
+                        printGreen(namespace+":"+block_name)
+                        printOverride("Prefix: "+ texture_prefix);
+                else: printGreen(namespace+":"+block_name)
 
-                # Generate textures
-                outfolder = root.replace("assets", "").replace("input", "assets")
-                os.makedirs(outfolder, exist_ok=True)
-                outfile = os.path.splitext(os.path.join(outfolder, infile))[0] + ".png"
-                if infile != outfile:
-                    try:
-                        # First, let's open the regular texture
-                        vanilla = Image.open(os.path.join(root, infile))
-                        width, height = vanilla.size
-                        # Second, let's generate a transparent texture that's twice the size
-                        transparent = Image.new("RGBA", [int(2 * s) for s in vanilla.size], (255, 255, 255, 0))
-                        out = transparent.copy()
+                # We don't want to generate assets for overlay textures
+                if (namespace+":block/"+texture_prefix+texture_name) in overlay_textures.values(): 
+                    printOverride("Skipping overlay texture")
+                    continue 
 
-                        # Now we paste the regular texture in a 3x3 grid, centered in the middle
-                        for x in range(-1, 2):
-                            for y in range(-1, 2):
-                                out.paste(vanilla, (int(width / 2 + width * x), int(height / 2 + height * y)))
-
-                        # As the last step, we apply our custom mask to round the edges and smoothen things out
-                        mask = Image.open('input/mask.png').convert('L').resize(out.size)
-                        out = Image.composite(out, transparent, mask)
-
-                        # Finally, we save the texture to the assets folder
-                        out.save(outfile, vanilla.format)
-                    except IOError:
-                        print("Error while generating texture for '%s'" % infile)
+                # Generate texture
+                generateTexture(root, infile)
 
                 # Set block id and apply overrides
                 block_id = namespace+":"+block_name
                 if block_id in block_id_overrides:
                     block_id = block_id_overrides[block_id]
+                    printOverride("ID Override: "+block_id)
 
                 # Set texture id and apply overrides
-                texture_id = namespace+":block/"+block_name
-
+                texture_id = namespace+":block/"+texture_prefix+texture_name
                 has_texture_override = (block_id) in block_texture_overrides
                 if has_texture_override:
                     texture_id = block_texture_overrides[block_id]
-                    print ("-> Texture Override: "+texture_id)
-                else: 
-                    if (texture_prefix != ""):
-                        texture_id = namespace+":block/"+texture_prefix+block_name
+                    printOverride("Texture Override: "+texture_id)
 
                 base_model = "leaves"
-                
                 # Check if the block appears in the notint overrides
                 hasNoTint = block_id in notint_overrides
                 if hasNoTint:
                     base_model = "leaves_notint"
-                    print ("-> No tint")
+                    printOverride("No tint")
 
                 # Check if the block has an additional overlay texture
                 overlay_texture_id = ""
                 if block_id in overlay_textures:
                     base_model = "leaves_overlay"
                     overlay_texture_id = overlay_textures[block_id]
-                    print ("-> Has overlay texture: "+overlay_texture_id) 
+                    printOverride("Has overlay texture: "+overlay_texture_id) 
 
+                # Check if the block has a dynamic trees addon namespace
                 dynamictrees_namespace = None
                 if (namespace) in dynamictrees_namespaces:
                     dynamictrees_namespace = dynamictrees_namespaces[namespace]
 
                 # Generate blockstates & models
-                generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture_id, dynamictrees_namespace)
+                generateBlockstate(block_id, dynamictrees_namespace)
+                generateBlockModels(block_id, base_model, texture_id, overlay_texture_id)
                 generateItemModel(block_id, has_texture_override)
 
+                # Certain mods contain leaf carpets.
+                # Because we change the leaf texture, we need to fix the carpet models.
                 if (block_id) in leaves_with_carpet:
                     carpet_id = leaves_with_carpet[block_id]
                     generateCarpetAssets(carpet_id, hasNoTint, texture_id)
-                    print (f"-> Also generating leaf carpet: {carpet_id}")
+                    printOverride(f"Generating leaf carpet: {carpet_id}")
 
-def generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture_id, dynamictrees_namespace):
+                filecount += 1
+    # End of autoGen
+    print()
+    printCyan("Processed {} leaf blocks".format(filecount))
+
+def generateTexture(root, infile):
+    outfolder = root.replace("assets", "").replace("input", "assets")
+    os.makedirs(outfolder, exist_ok=True)
+
+    outfile = os.path.splitext(os.path.join(outfolder, infile))[0] + ".png"
+    if infile != outfile:
+        try:
+            # First, let's open the regular texture
+            vanilla = Image.open(os.path.join(root, infile))
+            width, height = vanilla.size
+            # Second, let's generate a transparent texture that's twice the size
+            transparent = Image.new("RGBA", [int(2 * s) for s in vanilla.size], (255, 255, 255, 0))
+            out = transparent.copy()
+
+            # Now we paste the regular texture in a 3x3 grid, centered in the middle
+            for x in range(-1, 2):
+                for y in range(-1, 2):
+                    out.paste(vanilla, (int(width / 2 + width * x), int(height / 2 + height * y)))
+
+            # As the last step, we apply our custom mask to round the edges and smoothen things out
+            mask = Image.open('input/mask.png').convert('L').resize(out.size)
+            out = Image.composite(out, transparent, mask)
+
+            # Finally, we save the texture to the assets folder
+            out.save(outfile, vanilla.format)
+        except IOError:
+            print("Error while generating texture for '%s'" % infile)
+
+
+def generateBlockstate(block_id, dynamictrees_namespace):
     mod_namespace = block_id.split(":")[0]
     block_name = block_id.split(":")[1]
 
@@ -122,8 +152,7 @@ def generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture
         block_state_data["variants"][""] += { "model": f"{mod_namespace}:block/{block_name}{i}" }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 90 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 180 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 270 },
 
     # Create blockstates folder if it doesn't exist already
-    if not os.path.exists("assets/{}/blockstates/".format(mod_namespace)):
-        os.makedirs("assets/{}/blockstates/".format(mod_namespace))
+    os.makedirs("assets/{}/blockstates/".format(mod_namespace), exist_ok=True)
 
     # Write blockstate file
     with open(block_state_file, "w") as f:
@@ -132,18 +161,18 @@ def generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture
     # Do the same for the dynamic trees namespace
     if dynamictrees_namespace != None:
         dyntrees_block_state_file = f"assets/{dynamictrees_namespace}/blockstates/{block_name}.json"
-        # Create blockstates folder if it doesn't exist already
-        if not os.path.exists("assets/{}/blockstates/".format(dynamictrees_namespace)):
-            os.makedirs("assets/{}/blockstates/".format(dynamictrees_namespace))
+        os.makedirs("assets/{}/blockstates/".format(dynamictrees_namespace), exist_ok=True)
 
         # Write blockstate file
         with open(dyntrees_block_state_file, "w") as f:
             json.dump(block_state_data, f, indent=4)
+    
 
-
+def generateBlockModels(block_id, base_model, texture_id, overlay_texture_id):
+    mod_namespace = block_id.split(":")[0]
+    block_name = block_id.split(":")[1]
     # Create models folder if it doesn't exist already
-    if not os.path.exists("assets/{}/models/block/".format(mod_namespace)):
-        os.makedirs("assets/{}/models/block/".format(mod_namespace))
+    os.makedirs("assets/{}/models/block/".format(mod_namespace), exist_ok=True)
 
     # Create the four individual leaf models
     for i in range(1, 5):
@@ -155,8 +184,11 @@ def generateBlockstateAndModel(block_id, base_model, texture_id, overlay_texture
                 "all": f"{texture_id}"
             }
         }
+        # Add overlay texture on request
         if (overlay_texture_id != ""):
             block_model_data["textures"]["overlay"] = overlay_texture_id
+
+        # Write block model file
         with open(block_model_file, "w") as f:
             json.dump(block_model_data, f, indent=4)
 
@@ -165,8 +197,7 @@ def generateItemModel(block_id, override_block_texture=False):
     block_name = block_id.split(":")[1]
 
     # Create models folder if it doesn't exist already
-    if not os.path.exists("assets/{}/models/item/".format(mod_namespace)):
-        os.makedirs("assets/{}/models/item/".format(mod_namespace))
+    os.makedirs("assets/{}/models/item/".format(mod_namespace), exist_ok=True)
 
     item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"
 
@@ -215,6 +246,7 @@ def generateCarpetAssets(carpet_id, notint, texture_id):
             "wool": f"{texture_id}"
         }
     }
+    # Save the carpet block model file
     with open(block_model_file, "w") as f:
         json.dump(block_model_data, f, indent=4)
 
@@ -227,6 +259,7 @@ def zipdir(path, ziph):
                        os.path.relpath(os.path.join(root, file), 
                                        os.path.join(path, '..')))
 
+# Creates a compressed zip file
 def makeZip(version):
     with zipfile.ZipFile('Better-Leaves-Lite-'+version+".zip", 'w', zipfile.ZIP_DEFLATED) as zipf:
         zipdir('assets/', zipf)
@@ -236,9 +269,9 @@ def makeZip(version):
         zipf.write('README.md')
 
 
-
 # This is the main entry point, executed when the script is run
 if __name__ == '__main__':
+    start_time = time.perf_counter()
     parser = argparse.ArgumentParser(
                     description='This script can automatically generate files for the Better Leaves Lite resourcepack.',
                     epilog='Feel free to ask for help at http://discord.midnightdust.eu/')
@@ -246,7 +279,10 @@ if __name__ == '__main__':
     parser.add_argument('version', type=str)
     args = parser.parse_args()
 
-    print(args)
+    print(f"Arguments: {args}")
+    print()
+    print("Motschen's Better Leaves Lite")
+    print("https://github.com/TeamMidnightDust/BetterLeavesLite")
     print()
 
     # Loads overrides from the json file
@@ -255,5 +291,9 @@ if __name__ == '__main__':
     f.close()
 
     autoGen(data);
+    print()
+    print("Zipping it up...")
     makeZip(args.version);
+    print("Done!")
+    print("--- Finished in %s seconds ---" % (round((time.perf_counter() - start_time)*1000)/1000))
     

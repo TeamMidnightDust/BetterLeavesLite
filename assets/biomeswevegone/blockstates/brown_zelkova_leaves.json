@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves1"
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves1",
+                "y": 90
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves1",
+                "y": 180
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves1",
+                "y": 270
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves2"
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves2",
+                "y": 90
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves2",
+                "y": 180
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves2",
+                "y": 270
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves3"
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves3",
+                "y": 90
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves3",
+                "y": 180
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves3",
+                "y": 270
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves4"
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves4",
+                "y": 90
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves4",
+                "y": 180
+            },
+            {
+                "model": "biomeswevegone:block/brown_zelkova_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}
