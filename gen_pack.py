@@ -30,6 +30,8 @@ def autoGen(jsonData):
     copy_tree("./base/assets/", "./assets/")
     filecount = 0
     unpackTexturepacks()
+    unpackMods()
+    scanModsForTextures()
 
     for root, dirs, files in os.walk("./input/assets"):
         for infile in files:
@@ -56,8 +58,11 @@ def autoGen(jsonData):
                     printOverride("Skipping overlay texture")
                     continue 
 
+                texture = Image.open(os.path.join(root, infile))
+                is_animated = texture.size[0] != texture.size[1]
+
                 # Generate texture
-                generateTexture(root, infile)
+                if not is_animated: generateTexture(root, infile)
 
                 # Set block id and apply overrides
                 block_id = namespace+":"+block_name
@@ -75,7 +80,10 @@ def autoGen(jsonData):
                 base_model = "leaves"
                 # Check if the block appears in the notint overrides
                 hasNoTint = block_id in notint_overrides
-                if hasNoTint:
+                if is_animated: 
+                    base_model = "leaves_legacy"
+                    printOverride("Animated – using legacy model")
+                elif hasNoTint:
                     base_model = "leaves_notint"
                     printOverride("No tint")
 
@@ -107,7 +115,34 @@ def autoGen(jsonData):
     # End of autoGen
     print()
     cleanupTexturepacks()
+    cleanupMods()
     printCyan("Processed {} leaf blocks".format(filecount))
+
+def unpackMods():
+    for root, dirs, files in os.walk("./input/mods"):
+        for infile in files:
+            if infile.endswith(".jar"):
+                print("Unpacking mod: "+infile)
+                zf = zipfile.ZipFile(os.path.join(root, infile), 'r')
+                zf.extractall(os.path.join(root, infile.replace(".jar", "_temp")))
+                zf.close()
+
+def cleanupMods():
+    if (os.path.exists("./input/mods")): shutil.rmtree("./input/mods")
+    os.makedirs("./input/mods")
+
+def scanModsForTextures():
+    for root, dirs, files in os.walk("./input/mods"):
+        for infile in files:
+            if len(root.split("assets")) > 1:
+                assetpath = root.split("assets")[1][1:]
+                modid = assetpath.split("textures")[0].replace("/", "")
+                if "textures/block" in root and infile.endswith(".png") and "leaves" in infile:
+                    print(f"Found texture {assetpath+"/"+infile} in mod {modid}")
+                    inputfolder = os.path.join("./input/assets/", assetpath)
+                    os.makedirs(inputfolder, exist_ok=True)
+                    shutil.copyfile(os.path.join(root, infile), os.path.join(inputfolder, infile))
+
 
 def unpackTexturepacks():
     for root, dirs, files in os.walk("./input/texturepacks"):
