@@ -138,7 +138,7 @@ def scanModsForTextures():
                 assetpath = root.split("assets")[1][1:]
                 modid = assetpath.split("textures")[0].replace("/", "")
                 if "textures/block" in root and infile.endswith(".png") and "leaves" in infile:
-                    print(f"Found texture {assetpath+"/"+infile} in mod {modid}")
+                    print(f"Found texture {assetpath}/{infile} in mod {modid}")
                     inputfolder = os.path.join("./input/assets/", assetpath)
                     os.makedirs(inputfolder, exist_ok=True)
                     shutil.copyfile(os.path.join(root, infile), os.path.join(inputfolder, infile))
