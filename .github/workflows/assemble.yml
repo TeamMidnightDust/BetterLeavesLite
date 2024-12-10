@@ -20,7 +20,7 @@ jobs:
           pip install pillow
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Execute Python Script
-        run: python gen-pack.py ${{ env.DATE }}-${{ github.repository_owner }}
+        run: python gen_pack.py ${{ env.DATE }}-${{ github.repository_owner }}
       - name: Upload artifacts to GitHub
         uses: actions/upload-artifact@v4
         with:
