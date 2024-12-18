@@ -18,7 +18,7 @@ def printCyan(out): print("\033[96m{}\033[00m" .format(out))
 def printOverride(out): print(" -> {}".format(out))
 
 # This is where the magic happens
-def autoGen(jsonData):
+def autoGen(jsonData, args):
     notint_overrides = jsonData["noTint"]
     block_texture_overrides = jsonData["blockTextures"]
     overlay_textures = jsonData["overlayTextures"]
@@ -59,10 +59,14 @@ def autoGen(jsonData):
                     continue 
 
                 texture = Image.open(os.path.join(root, infile))
-                is_animated = texture.size[0] != texture.size[1]
+                use_legacy_model = texture.size[0] != texture.size[1]
+                if use_legacy_model: printOverride("Animated – using legacy model")
+                if args.legacy: 
+                    use_legacy_model = True
+                    printOverride("Using legacy model as requested")
 
                 # Generate texture
-                if not is_animated: generateTexture(root, infile)
+                if not use_legacy_model: generateTexture(root, infile)
 
                 # Set block id and apply overrides
                 block_id = namespace+":"+block_name
@@ -80,9 +84,8 @@ def autoGen(jsonData):
                 base_model = "leaves"
                 # Check if the block appears in the notint overrides
                 hasNoTint = block_id in notint_overrides
-                if is_animated: 
+                if use_legacy_model: 
                     base_model = "leaves_legacy"
-                    printOverride("Animated – using legacy model")
                 elif hasNoTint:
                     base_model = "leaves_notint"
                     printOverride("No tint")
@@ -340,6 +343,7 @@ if __name__ == '__main__':
                     epilog='Feel free to ask for help at http://discord.midnightdust.eu/')
 
     parser.add_argument('version', type=str)
+    parser.add_argument('--legacy', '-l', action='store_true')
     args = parser.parse_args()
 
     print(f"Arguments: {args}")
@@ -353,7 +357,7 @@ if __name__ == '__main__':
     data = json.load(f)
     f.close()
 
-    autoGen(data);
+    autoGen(data, args);
     print()
     print("Zipping it up...")
     makeZip(args.version);
