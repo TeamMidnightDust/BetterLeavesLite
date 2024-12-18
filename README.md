@@ -19,13 +19,11 @@ As with everything good, there are a couple caviats, but don't worry, as I've de
 
 The first is the fact that – compared to the regular pack – there is no compatibility with texturepacks that feature custom leaf textures.
 You can however easily build your own version of the pack with custom textures by using the script included in this repo (see more below).
-This should also work with higher-res textures, though your mileage may wary.
+This should also work with higher-res textures, though your mileage may wary.  
+You can even customize the template mask by editing input/mask.png in an image editor of your choice.
 
-The second downside is that mod-support always has to be explicitly added, while the regular version has basic support for all mods using the vanilla leaf model as a base.
-Though I aim to solve this over time by just adding that explicit support, also resulting in better quality than the basic support would bring.
+The second downside is that certain mods or resourcepacks might use the leaf texture to render something else, resulting in rendering issues.  
+Make sure to report such cases to me, though not every bug of this nature can get fixed.
 
 ## Building versions for your texturepack (or mod)
-To build your own version, simply download this repository and replace the textures in the input/assets folder with those of your texturepack.
-Then, make sure you've installed Python (available for every OS).
-After that, simply open a terminal in the main directory and run `python3 gen-pack.py <YOUR VERSION NAME>`
-Tada! You should now have a zip file ready for use. Have fun :)
+Head over to the new [wiki](https://www.midnightdust.eu/wiki/betterleaveslite/) :)
