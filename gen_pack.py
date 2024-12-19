@@ -17,6 +17,33 @@ def printGreen(out): print("\033[92m{}\033[00m".format(out))
 def printCyan(out): print("\033[96m{}\033[00m" .format(out))
 def printOverride(out): print(" -> {}".format(out))
 
+class LeafBlock:
+    def __init__(self, namespace, block_name, texture_name):
+        self.namespace = namespace
+        self.block_name = block_name
+        self.texture_name = texture_name
+    base_model = "leaves"
+    has_carpet = False
+    has_no_tint = False
+    use_legacy_model = False
+    texture_prefix = ""
+    overlay_texture_id = ""
+    block_id_override = None
+    texture_id_override = None
+    dynamictrees_namespace = None
+    def getId(self):
+        if (self.block_id_override != None): return self.block_id_override
+        return self.namespace+":"+self.block_name
+    def getTextureId(self):
+        if (self.texture_id_override != None): return self.texture_id_override
+        return self.namespace+":block/"+self.texture_prefix+self.texture_name
+class CarpetBlock:
+    def __init__(self, carpet_id, leaf):
+        self.carpet_id = carpet_id
+        self.leaf = leaf
+        if (leaf.has_no_tint): self.base_model = "leaf_carpet_notint"
+    base_model = "leaf_carpet"
+
 # This is where the magic happens
 def autoGen(jsonData, args):
     notint_overrides = jsonData["noTint"]
@@ -36,83 +63,78 @@ def autoGen(jsonData, args):
     for root, dirs, files in os.walk("./input/assets"):
         for infile in files:
             if infile.endswith(".png") and (len(root.split("/")) > 3):
-                namespace = root.split("/")[3]
                 texture_name = infile.replace(".png", "")
-                block_name = texture_name
+
+                leaf = LeafBlock(root.split("/")[3], texture_name, texture_name)
 
                 # Handle leaf textures in subfolders
-                texture_prefix = ""
                 if (len(root.split("/")) > 6):
-                    texture_prefix = root.split("/")[6]+"/"
-                    if (block_name == "leaves"): # For mods that use a structure like "texture/woodtype/leaves.png"
-                        block_name = texture_prefix.replace("/", "_")+block_name
-                        printGreen(namespace+":"+block_name)
-                        printOverride("Auto-redirected from "+namespace+":"+texture_name)
+                    leaf.texture_prefix = root.split("/")[6]+"/"
+                    if (leaf.block_name == "leaves"): # For mods that use a structure like "texture/woodtype/leaves.png"
+                        leaf.block_name = leaf.texture_prefix.replace("/", "_")+leaf.block_name
+                        printGreen(leaf.getId())
+                        printOverride("Auto-redirected from "+leaf.getId())
                     else: # For mods that use a structure like "texture/natural/some_leaves.png"
-                        printGreen(namespace+":"+block_name)
-                        printOverride("Prefix: "+ texture_prefix);
-                else: printGreen(namespace+":"+block_name)
+                        printGreen(leaf.getId())
+                        printOverride("Prefix: "+ leaf.texture_prefix);
+                else: printGreen(leaf.getId())
 
                 # We don't want to generate assets for overlay textures
-                if (namespace+":block/"+texture_prefix+texture_name) in overlay_textures.values(): 
+                if (leaf.getTextureId()) in overlay_textures.values(): 
                     printOverride("Skipping overlay texture")
                     continue 
 
                 texture = Image.open(os.path.join(root, infile))
-                use_legacy_model = texture.size[0] != texture.size[1]
-                if use_legacy_model: printOverride("Animated – using legacy model")
+                leaf.use_legacy_model = texture.size[0] != texture.size[1]
+                if leaf.use_legacy_model: printOverride("Animated – using legacy model")
                 if args.legacy: 
-                    use_legacy_model = True
+                    leaf.use_legacy_model = True
                     printOverride("Using legacy model as requested")
 
                 # Generate texture
-                if not use_legacy_model: generateTexture(root, infile)
+                if not leaf.use_legacy_model: generateTexture(root, infile)
 
                 # Set block id and apply overrides
-                block_id = namespace+":"+block_name
-                if block_id in block_id_overrides:
-                    block_id = block_id_overrides[block_id]
-                    printOverride("ID Override: "+block_id)
+                if leaf.getId() in block_id_overrides:
+                    leaf.block_id_override = block_id_overrides[leaf.getId()]
+                    printOverride("ID Override: "+leaf.getId())
 
                 # Set texture id and apply overrides
-                texture_id = namespace+":block/"+texture_prefix+texture_name
-                has_texture_override = (block_id) in block_texture_overrides
+                has_texture_override = (leaf.getId()) in block_texture_overrides
                 if has_texture_override:
-                    texture_id = block_texture_overrides[block_id]
-                    printOverride("Texture Override: "+texture_id)
+                    leaf.texture_id_override = block_texture_overrides[leaf.getId()]
+                    printOverride("Texture Override: "+leaf.getTextureId())
 
-                base_model = "leaves"
                 # Check if the block appears in the notint overrides
-                hasNoTint = block_id in notint_overrides
-                if use_legacy_model: 
-                    base_model = "leaves_legacy"
-                elif hasNoTint:
-                    base_model = "leaves_notint"
+                leaf.has_no_tint = leaf.getId() in notint_overrides
+                if leaf.use_legacy_model: 
+                    leaf.base_model = "leaves_legacy"
+                elif leaf.has_no_tint:
+                    leaf.base_model = "leaves_notint"
                     printOverride("No tint")
 
                 # Check if the block has an additional overlay texture
-                overlay_texture_id = ""
-                if block_id in overlay_textures:
-                    base_model = "leaves_overlay"
-                    overlay_texture_id = overlay_textures[block_id]
-                    printOverride("Has overlay texture: "+overlay_texture_id) 
+                if leaf.getId() in overlay_textures:
+                    leaf.base_model = "leaves_overlay"
+                    leaf.overlay_texture_id = overlay_textures[leaf.getId()]
+                    printOverride("Has overlay texture: "+leaf.overlay_texture_id) 
 
                 # Check if the block has a dynamic trees addon namespace
-                dynamictrees_namespace = None
-                if (namespace) in dynamictrees_namespaces:
-                    dynamictrees_namespace = dynamictrees_namespaces[namespace]
+                
+                if (leaf.namespace) in dynamictrees_namespaces:
+                    leaf.dynamictrees_namespace = dynamictrees_namespaces[leaf.namespace]
 
                 # Generate blockstates & models
-                generateBlockstate(block_id, dynamictrees_namespace)
-                generateBlockModels(block_id, base_model, texture_id, overlay_texture_id)
-                generateItemModel(block_id, has_texture_override)
+                generateBlockstate(leaf)
+                generateBlockModels(leaf)
+                generateItemModel(leaf, has_texture_override)
 
                 # Certain mods contain leaf carpets.
                 # Because we change the leaf texture, we need to fix the carpet models.
-                if (block_id) in leaves_with_carpet:
-                    carpet_id = leaves_with_carpet[block_id]
-                    generateCarpetAssets(carpet_id, hasNoTint, texture_id)
-                    printOverride(f"Generating leaf carpet: {carpet_id}")
+                if (leaf.getId()) in leaves_with_carpet:
+                    carpet = CarpetBlock(leaves_with_carpet[leaf.getId()], leaf)
+                    generateCarpetAssets(carpet)
+                    printOverride(f"Generating leaf carpet: {carpet.carpet_id}")
 
                 filecount += 1
     # End of autoGen
@@ -202,9 +224,9 @@ def generateTexture(root, infile):
             print("Error while generating texture for '%s'" % infile)
 
 
-def generateBlockstate(block_id, dynamictrees_namespace):
-    mod_namespace = block_id.split(":")[0]
-    block_name = block_id.split(":")[1]
+def generateBlockstate(leaf):
+    mod_namespace = leaf.getId().split(":")[0]
+    block_name = leaf.getId().split(":")[1]
 
     # Create structure for blockstate file
     block_state_file = f"assets/{mod_namespace}/blockstates/{block_name}.json"
@@ -225,18 +247,18 @@ def generateBlockstate(block_id, dynamictrees_namespace):
         json.dump(block_state_data, f, indent=4)
     
     # Do the same for the dynamic trees namespace
-    if dynamictrees_namespace != None:
-        dyntrees_block_state_file = f"assets/{dynamictrees_namespace}/blockstates/{block_name}.json"
-        os.makedirs("assets/{}/blockstates/".format(dynamictrees_namespace), exist_ok=True)
+    if leaf.dynamictrees_namespace != None:
+        dyntrees_block_state_file = f"assets/{leaf.dynamictrees_namespace}/blockstates/{block_name}.json"
+        os.makedirs("assets/{}/blockstates/".format(leaf.dynamictrees_namespace), exist_ok=True)
 
         # Write blockstate file
         with open(dyntrees_block_state_file, "w") as f:
             json.dump(block_state_data, f, indent=4)
     
 
-def generateBlockModels(block_id, base_model, texture_id, overlay_texture_id):
-    mod_namespace = block_id.split(":")[0]
-    block_name = block_id.split(":")[1]
+def generateBlockModels(leaf):
+    mod_namespace = leaf.getId().split(":")[0]
+    block_name = leaf.getId().split(":")[1]
     # Create models folder if it doesn't exist already
     os.makedirs("assets/{}/models/block/".format(mod_namespace), exist_ok=True)
 
@@ -245,22 +267,22 @@ def generateBlockModels(block_id, base_model, texture_id, overlay_texture_id):
         # Create structure for block model file
         block_model_file = f"assets/{mod_namespace}/models/block/{block_name}{i}.json"
         block_model_data = {
-            "parent": f"betterleaves:block/{base_model}{i}",
+            "parent": f"betterleaves:block/{leaf.base_model}{i}",
             "textures": {
-                "all": f"{texture_id}"
+                "all": f"{leaf.getTextureId()}"
             }
         }
         # Add overlay texture on request
-        if (overlay_texture_id != ""):
-            block_model_data["textures"]["overlay"] = overlay_texture_id
+        if (leaf.overlay_texture_id != ""):
+            block_model_data["textures"]["overlay"] = leaf.overlay_texture_id
 
         # Write block model file
         with open(block_model_file, "w") as f:
             json.dump(block_model_data, f, indent=4)
 
-def generateItemModel(block_id, override_block_texture=False):
-    mod_namespace = block_id.split(":")[0]
-    block_name = block_id.split(":")[1]
+def generateItemModel(leaf, override_block_texture=False):
+    mod_namespace = leaf.getId().split(":")[0]
+    block_name = leaf.getId().split(":")[1]
 
     # Create models folder if it doesn't exist already
     os.makedirs("assets/{}/models/item/".format(mod_namespace), exist_ok=True)
@@ -282,9 +304,9 @@ def generateItemModel(block_id, override_block_texture=False):
     with open(item_model_file, "w") as f:
         json.dump(item_model_data, f, indent=4)
 
-def generateCarpetAssets(carpet_id, notint, texture_id):
-    mod_namespace = carpet_id.split(":")[0]
-    block_name = carpet_id.split(":")[1]
+def generateCarpetAssets(carpet):
+    mod_namespace = carpet.carpet_id.split(":")[0]
+    block_name = carpet.carpet_id.split(":")[1]
 
     # Create structure for blockstate file
     block_state_file = f"assets/{mod_namespace}/blockstates/{block_name}.json"
@@ -300,16 +322,12 @@ def generateCarpetAssets(carpet_id, notint, texture_id):
     with open(block_state_file, "w") as f:
         json.dump(block_state_data, f, indent=4)
 
-    base_model = "leaf_carpet"
-    if (notint):
-        base_model = "leaf_carpet_notint"
-
     # Create structure for block model file
     block_model_file = f"assets/{mod_namespace}/models/block/{block_name}.json"
     block_model_data = {
-        "parent": f"betterleaves:block/{base_model}",
+        "parent": f"betterleaves:block/{carpet.base_model}",
         "textures": {
-            "wool": f"{texture_id}"
+            "wool": f"{carpet.leaf.getTextureId()}"
         }
     }
     # Save the carpet block model file
