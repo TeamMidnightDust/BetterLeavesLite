@@ -25,6 +25,7 @@ class LeafBlock:
     base_model = "leaves"
     has_carpet = False
     has_no_tint = False
+    should_generate_item_model = False
     use_legacy_model = False
     texture_prefix = ""
     overlay_texture_id = ""
@@ -52,6 +53,7 @@ def autoGen(jsonData, args):
     block_id_overrides = jsonData["blockIds"]
     leaves_with_carpet = jsonData["leavesWithCarpet"]
     dynamictrees_namespaces = jsonData["dynamicTreesNamespaces"]
+    generate_itemmodels_overrides = jsonData["generateItemModels"]
     print("Generating assets...")
     if (os.path.exists("./assets")): shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
@@ -123,6 +125,11 @@ def autoGen(jsonData, args):
                 
                 if (leaf.namespace) in dynamictrees_namespaces:
                     leaf.dynamictrees_namespace = dynamictrees_namespaces[leaf.namespace]
+
+                # Check if the block should generate an item model
+                if leaf.getId() in generate_itemmodels_overrides:
+                    leaf.should_generate_item_model = True
+                    printOverride("Also generating item model")
 
                 # Generate blockstates & models
                 generateBlockstate(leaf)
@@ -310,7 +317,7 @@ def generateItemModel(leaf, override_block_texture=False):
     with open(block_item_model_file, "w") as f:
         json.dump(item_model_data, f, indent=4)
     
-    if override_block_texture:
+    if leaf.should_generate_item_model:
         # Create models folder if it doesn't exist already
         os.makedirs("assets/{}/models/item/".format(mod_namespace), exist_ok=True)
         item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"

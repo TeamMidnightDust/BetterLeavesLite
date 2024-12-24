@@ -30,5 +30,15 @@
         "biomesoplenty": "dtbop",
         "aether": "dtaether",
         "natures_spirit": "dtnatures_spirit"
-    }
+    },
+    "generateItemModels": [
+        "biomesoplenty:rainbow_birch_leaves",
+        "betternether:rubeus_leaves",
+        "betternether:ink_bush_leaves",
+        "betterend:tenanea_leaves",
+        "betterend:lacugrove_leaves",
+        "betterend:dragon_tree_leaves",
+        "betterend:pythadendron_leaves",
+        "betterend:shadow_berry_leaves"
+    ]
 }
