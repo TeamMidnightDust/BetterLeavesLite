@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves",
+    "textures": {
+        "all": "biomeswevegone:block/holly/berry_leaves"
+    }
+}

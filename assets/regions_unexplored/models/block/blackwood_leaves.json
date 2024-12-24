@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves",
+    "textures": {
+        "all": "regions_unexplored:block/blackwood_leaves"
+    }
+}

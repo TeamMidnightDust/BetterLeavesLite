@@ -1,0 +1,22 @@
+{
+	"credit": "Motschen's Better Leaves Lite",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "#all"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "north"},
+				"east": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "east"},
+				"south": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "south"},
+				"west": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "west"},
+				"up": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "up"},
+				"down": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "down"}
+			}
+		}
+	]
+}

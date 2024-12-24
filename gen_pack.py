@@ -285,24 +285,37 @@ def generateItemModel(leaf, override_block_texture=False):
     block_name = leaf.getId().split(":")[1]
 
     # Create models folder if it doesn't exist already
-    os.makedirs("assets/{}/models/item/".format(mod_namespace), exist_ok=True)
+    os.makedirs("assets/{}/models/block/".format(mod_namespace), exist_ok=True)
 
-    item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"
+    block_item_model_file = f"assets/{mod_namespace}/models/block/{block_name}.json"
 
     if override_block_texture: # Used for items that have a different texture than the block model
         item_model_data = {
-            "parent": f"{mod_namespace}:block/{block_name}1",
+            "parent": f"betterleaves:block/{leaf.base_model}",
             "textures": {
                 "all": f"{mod_namespace}:block/{block_name}"
             }
         }
     else: # By default, the regular block model is used
         item_model_data = {
-            "parent": f"{mod_namespace}:block/{block_name}1"
+            "parent": f"betterleaves:block/{leaf.base_model}",
+            "textures": {
+                "all": f"{leaf.getTextureId()}"
+            }
         }
+    # Add overlay texture on request
+    if (leaf.overlay_texture_id != ""):
+        item_model_data["textures"]["overlay"] = leaf.overlay_texture_id
     
-    with open(item_model_file, "w") as f:
+    with open(block_item_model_file, "w") as f:
         json.dump(item_model_data, f, indent=4)
+    
+    if override_block_texture:
+        # Create models folder if it doesn't exist already
+        os.makedirs("assets/{}/models/item/".format(mod_namespace), exist_ok=True)
+        item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"
+        with open(item_model_file, "w") as f:
+            json.dump(item_model_data, f, indent=4)
 
 def generateCarpetAssets(carpet):
     mod_namespace = carpet.carpet_id.split(":")[0]
