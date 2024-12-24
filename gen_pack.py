@@ -25,6 +25,7 @@ class LeafBlock:
     base_model = "leaves"
     has_carpet = False
     has_no_tint = False
+    has_texture_override = False
     should_generate_item_model = False
     use_legacy_model = False
     texture_prefix = ""
@@ -102,8 +103,8 @@ def autoGen(jsonData, args):
                     printOverride("ID Override: "+leaf.getId())
 
                 # Set texture id and apply overrides
-                has_texture_override = (leaf.getId()) in block_texture_overrides
-                if has_texture_override:
+                leaf.has_texture_override = leaf.getId() in block_texture_overrides
+                if leaf.has_texture_override:
                     leaf.texture_id_override = block_texture_overrides[leaf.getId()]
                     printOverride("Texture Override: "+leaf.getTextureId())
 
@@ -134,7 +135,7 @@ def autoGen(jsonData, args):
                 # Generate blockstates & models
                 generateBlockstate(leaf)
                 generateBlockModels(leaf)
-                generateItemModel(leaf, has_texture_override)
+                generateItemModel(leaf)
 
                 # Certain mods contain leaf carpets.
                 # Because we change the leaf texture, we need to fix the carpet models.
@@ -287,7 +288,7 @@ def generateBlockModels(leaf):
         with open(block_model_file, "w") as f:
             json.dump(block_model_data, f, indent=4)
 
-def generateItemModel(leaf, override_block_texture=False):
+def generateItemModel(leaf):
     mod_namespace = leaf.getId().split(":")[0]
     block_name = leaf.getId().split(":")[1]
 
@@ -296,14 +297,14 @@ def generateItemModel(leaf, override_block_texture=False):
 
     block_item_model_file = f"assets/{mod_namespace}/models/block/{block_name}.json"
 
-    if override_block_texture: # Used for items that have a different texture than the block model
+    if leaf.has_texture_override: # Used for items that have a different texture than the block model
         item_model_data = {
             "parent": f"betterleaves:block/{leaf.base_model}",
             "textures": {
                 "all": f"{mod_namespace}:block/{block_name}"
             }
         }
-    else: # By default, the regular block model is used
+    else: # By default, the regular block texture is used
         item_model_data = {
             "parent": f"betterleaves:block/{leaf.base_model}",
             "textures": {
@@ -320,6 +321,7 @@ def generateItemModel(leaf, override_block_texture=False):
     if leaf.should_generate_item_model:
         # Create models folder if it doesn't exist already
         os.makedirs("assets/{}/models/item/".format(mod_namespace), exist_ok=True)
+        
         item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"
         with open(item_model_file, "w") as f:
             json.dump(item_model_data, f, indent=4)
