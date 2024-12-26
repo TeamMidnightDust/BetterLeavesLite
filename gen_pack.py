@@ -356,6 +356,14 @@ def generateCarpetAssets(carpet):
     with open(block_model_file, "w") as f:
         json.dump(block_model_data, f, indent=4)
 
+def writeMetadata(args):
+    edition = args.edition
+    if isinstance(edition, list): edition = " ".join(args.edition)
+    with open("./input/pack.mcmeta") as infile, open("pack.mcmeta", "w") as outfile:
+        for line in infile:
+            line = line.replace("${version}", args.version).replace("${edition}", edition)
+            outfile.write(line)
+
 # See https://stackoverflow.com/a/1855118
 def zipdir(path, ziph):
     # ziph is zipfile handle
@@ -366,8 +374,8 @@ def zipdir(path, ziph):
                                        os.path.join(path, '..')))
 
 # Creates a compressed zip file
-def makeZip(version):
-    with zipfile.ZipFile('Better-Leaves-Lite-'+version+".zip", 'w', zipfile.ZIP_DEFLATED) as zipf:
+def makeZip(filename):
+    with zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
         zipdir('assets/', zipf)
         zipf.write('pack.mcmeta')
         zipf.write('pack.png')
@@ -383,7 +391,8 @@ if __name__ == '__main__':
                     epilog='Feel free to ask for help at http://discord.midnightdust.eu/')
 
     parser.add_argument('version', type=str)
-    parser.add_argument('--legacy', '-l', action='store_true')
+    parser.add_argument('edition', nargs="*", type=str, default="§cCustom Edition", help="Define your edition name")
+    parser.add_argument('--legacy', '-l', action='store_true', help="Use legacy models (from 8.1) for all leaves")
     args = parser.parse_args()
 
     print(f"Arguments: {args}")
@@ -398,9 +407,10 @@ if __name__ == '__main__':
     f.close()
 
     autoGen(data, args);
+    writeMetadata(args)
     print()
     print("Zipping it up...")
-    makeZip(args.version);
+    makeZip(f"Better-Leaves-{args.version}.zip");
     print("Done!")
     print("--- Finished in %s seconds ---" % (round((time.perf_counter() - start_time)*1000)/1000))
     
