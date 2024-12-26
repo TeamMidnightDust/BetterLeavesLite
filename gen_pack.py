@@ -361,7 +361,7 @@ def writeMetadata(args):
     if isinstance(edition, list): edition = " ".join(args.edition)
     with open("./input/pack.mcmeta") as infile, open("pack.mcmeta", "w") as outfile:
         for line in infile:
-            line = line.replace("${version}", args.version).replace("${edition}", edition)
+            line = line.replace("${version}", args.version).replace("${edition}", edition).replace("${year}", str(time.localtime().tm_year))
             outfile.write(line)
 
 # See https://stackoverflow.com/a/1855118

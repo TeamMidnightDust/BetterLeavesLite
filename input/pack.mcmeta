@@ -2,6 +2,6 @@
   "pack": {
     "pack_format": 15,
     "supported_formats": [15, 99],
-    "description": "§2Version ${version} §a${edition}\n§e©Motschen 2024 | MIT Licence"
+    "description": "§2Version ${version} §a${edition}\n§e©Motschen ${year} | MIT Licence"
   }
 }
