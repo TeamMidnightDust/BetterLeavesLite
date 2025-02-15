@@ -59,6 +59,7 @@ def autoGen(jsonData, args):
     if (os.path.exists("./assets")): shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
     filecount = 0
+    if (args.programmer): unpackTexturepacks("./input/programmer_art")
     unpackTexturepacks()
     unpackMods()
     scanModsForTextures()
@@ -95,7 +96,7 @@ def autoGen(jsonData, args):
                     printOverride("Using legacy model as requested")
 
                 # Generate texture
-                if not leaf.use_legacy_model: generateTexture(root, infile)
+                if not leaf.use_legacy_model: generateTexture(root, infile, args.programmer)
 
                 # Set block id and apply overrides
                 if leaf.getId() in block_id_overrides:
@@ -147,6 +148,7 @@ def autoGen(jsonData, args):
                 filecount += 1
     # End of autoGen
     print()
+    if (args.programmer): cleanupTexturepacks("./input/programmer_art")
     cleanupTexturepacks()
     cleanupMods()
     printCyan("Processed {} leaf blocks".format(filecount))
@@ -177,8 +179,8 @@ def scanModsForTextures():
                     shutil.copyfile(os.path.join(root, infile), os.path.join(inputfolder, infile))
 
 
-def unpackTexturepacks():
-    for root, dirs, files in os.walk("./input/texturepacks"):
+def unpackTexturepacks(rootFolder="./input/texturepacks"):
+    for root, dirs, files in os.walk(rootFolder):
         for infile in files:
             if infile.endswith(".zip"):
                 print("Unpacking texturepack: "+infile)
@@ -186,26 +188,27 @@ def unpackTexturepacks():
                 zf.extractall(os.path.join(root, infile.replace(".zip", "_temp")))
                 zf.close()
 
-def cleanupTexturepacks():
-    for root, dirs, files in os.walk("./input/texturepacks"):
+def cleanupTexturepacks(rootFolder="./input/texturepacks"):
+    for root, dirs, files in os.walk(rootFolder):
         for folder in dirs:
             if folder.endswith("_temp"):
                 shutil.rmtree(os.path.join(root, folder))
 
-def scanPacksForTexture(baseRoot, baseInfile):
-    for root, dirs, files in os.walk("./input/texturepacks"):
+def scanPacksForTexture(baseRoot, baseInfile, rootFolder="./input/texturepacks"):
+    for root, dirs, files in os.walk(rootFolder):
         for infile in files:
             if "assets" in root and "assets" in baseRoot:
                 if infile.endswith(".png") and (len(root.split("/")) > 3) and (baseInfile == infile) and (root.split("assets")[1] == baseRoot.split("assets")[1]):
-                    printCyan(" Using texture from: " + root.split("assets")[0].replace("./input/texturepacks/", ""))
+                    printCyan(" Using texture from: " + root.split("assets")[0].replace(rootFolder, ""))
                     return root;
     return baseRoot
 
-def generateTexture(root, infile):
+def generateTexture(root, infile, useProgrammerArt=False):
     outfolder = root.replace("assets", "").replace("input", "assets")
     os.makedirs(outfolder, exist_ok=True)
 
     root = scanPacksForTexture(root, infile)
+    if useProgrammerArt: root = scanPacksForTexture(root, infile, "./input/programmer_art")
 
     outfile = os.path.splitext(os.path.join(outfolder, infile))[0] + ".png"
     if infile != outfile:
@@ -393,6 +396,7 @@ if __name__ == '__main__':
     parser.add_argument('version', type=str)
     parser.add_argument('edition', nargs="*", type=str, default="§cCustom Edition", help="Define your edition name")
     parser.add_argument('--legacy', '-l', action='store_true', help="Use legacy models (from 8.1) for all leaves")
+    parser.add_argument('--programmer', '-p', action='store_true', help="Use programmer art textures")
     args = parser.parse_args()
 
     print(f"Arguments: {args}")
@@ -410,7 +414,7 @@ if __name__ == '__main__':
     writeMetadata(args)
     print()
     print("Zipping it up...")
-    makeZip(f"Better-Leaves-{args.version}.zip");
+    makeZip(f"Better-Leaves-{args.version}.zip" if not args.programmer else f"Better-Leaves-(Programmer-Art)-{args.version}.zip");
     print("Done!")
     print("--- Finished in %s seconds ---" % (round((time.perf_counter() - start_time)*1000)/1000))
     

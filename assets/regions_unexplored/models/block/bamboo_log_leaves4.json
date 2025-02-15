@@ -1,6 +1,0 @@
-{
-    "parent": "betterleaves:block/leaves4",
-    "textures": {
-        "all": "regions_unexplored:block/bamboo_log_leaves"
-    }
-}

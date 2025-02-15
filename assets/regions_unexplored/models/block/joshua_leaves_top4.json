@@ -1,6 +1,0 @@
-{
-    "parent": "betterleaves:block/leaves_legacy4",
-    "textures": {
-        "all": "regions_unexplored:block/joshua_leaves_top"
-    }
-}
