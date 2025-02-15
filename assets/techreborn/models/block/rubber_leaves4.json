@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves4",
+    "textures": {
+        "all": "techreborn:block/misc/rubber_leaves"
+    }
+}

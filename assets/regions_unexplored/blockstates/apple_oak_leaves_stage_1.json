@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_11"
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_11",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_11",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_11",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_12"
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_12",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_12",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_12",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_13"
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_13",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_13",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_13",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_14"
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_14",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_14",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/apple_oak_leaves_stage_14",
+                "y": 270
+            }
+        ]
+    }
+}

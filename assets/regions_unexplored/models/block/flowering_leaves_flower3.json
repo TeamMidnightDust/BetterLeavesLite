@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "regions_unexplored:block/flowering_leaves_flower"
+    }
+}

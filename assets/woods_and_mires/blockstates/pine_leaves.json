@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "woods_and_mires:block/pine_leaves1"
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves1",
+                "y": 90
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves1",
+                "y": 180
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves1",
+                "y": 270
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves2"
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves2",
+                "y": 90
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves2",
+                "y": 180
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves2",
+                "y": 270
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves3"
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves3",
+                "y": 90
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves3",
+                "y": 180
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves3",
+                "y": 270
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves4"
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves4",
+                "y": 90
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves4",
+                "y": 180
+            },
+            {
+                "model": "woods_and_mires:block/pine_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

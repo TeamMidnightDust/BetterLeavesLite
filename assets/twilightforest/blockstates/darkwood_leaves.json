@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "twilightforest:block/darkwood_leaves1"
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves1",
+                "y": 90
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves1",
+                "y": 180
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves1",
+                "y": 270
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves2"
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves2",
+                "y": 90
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves2",
+                "y": 180
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves2",
+                "y": 270
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves3"
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves3",
+                "y": 90
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves3",
+                "y": 180
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves3",
+                "y": 270
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves4"
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves4",
+                "y": 90
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves4",
+                "y": 180
+            },
+            {
+                "model": "twilightforest:block/darkwood_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "deeperdarker:block/echo_leaves1"
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves1",
+                "y": 90
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves1",
+                "y": 180
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves1",
+                "y": 270
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves2"
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves2",
+                "y": 90
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves2",
+                "y": 180
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves2",
+                "y": 270
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves3"
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves3",
+                "y": 90
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves3",
+                "y": 180
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves3",
+                "y": 270
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves4"
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves4",
+                "y": 90
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves4",
+                "y": 180
+            },
+            {
+                "model": "deeperdarker:block/echo_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

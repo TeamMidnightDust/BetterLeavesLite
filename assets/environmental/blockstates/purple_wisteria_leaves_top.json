@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top1"
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top1",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top1",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top1",
+                "y": 270
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top2"
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top2",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top2",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top2",
+                "y": 270
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top3"
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top3",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top3",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top3",
+                "y": 270
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top4"
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top4",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top4",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/purple_wisteria_leaves_top4",
+                "y": 270
+            }
+        ]
+    }
+}

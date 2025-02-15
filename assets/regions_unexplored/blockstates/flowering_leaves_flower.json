@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower1"
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower1",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower1",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower1",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower2"
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower2",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower2",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower2",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower3"
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower3",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower3",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower3",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower4"
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower4",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower4",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/flowering_leaves_flower4",
+                "y": 270
+            }
+        ]
+    }
+}
