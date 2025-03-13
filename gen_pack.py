@@ -141,9 +141,12 @@ def autoGen(jsonData, args):
                 # Certain mods contain leaf carpets.
                 # Because we change the leaf texture, we need to fix the carpet models.
                 if (leaf.getId()) in leaves_with_carpet:
-                    carpet = CarpetBlock(leaves_with_carpet[leaf.getId()], leaf)
-                    generateCarpetAssets(carpet)
-                    printOverride(f"Generating leaf carpet: {carpet.carpet_id}")
+                    carpet_ids = leaves_with_carpet[leaf.getId()]
+                    if not isinstance(carpet_ids, list): carpet_ids = [carpet_ids] # In case only one carpet is provided (as a string), turn it into a list
+                    for carpet_id in carpet_ids:
+                        carpet = CarpetBlock(carpet_id, leaf)
+                        generateCarpetAssets(carpet)
+                        printOverride(f"Generating leaf carpet: {carpet.carpet_id}")
 
                 filecount += 1
     # End of autoGen
@@ -332,6 +335,8 @@ def generateItemModel(leaf):
 def generateCarpetAssets(carpet):
     mod_namespace = carpet.carpet_id.split(":")[0]
     block_name = carpet.carpet_id.split(":")[1]
+    # Create blockstate folder if it doesn't exist already
+    os.makedirs("assets/{}/blockstates/".format(mod_namespace), exist_ok=True)
 
     # Create structure for blockstate file
     block_state_file = f"assets/{mod_namespace}/blockstates/{block_name}.json"
@@ -346,6 +351,9 @@ def generateCarpetAssets(carpet):
     # Write blockstate file
     with open(block_state_file, "w") as f:
         json.dump(block_state_data, f, indent=4)
+
+    # Create models folder if it doesn't exist already
+    os.makedirs("assets/{}/models/block/".format(mod_namespace), exist_ok=True)
 
     # Create structure for block model file
     block_model_file = f"assets/{mod_namespace}/models/block/{block_name}.json"
