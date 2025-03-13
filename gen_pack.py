@@ -12,10 +12,13 @@ import time
 from PIL import Image
 from distutils.dir_util import copy_tree
 
+minify = False
+
 # Utility functions
 def printGreen(out): print("\033[92m{}\033[00m".format(out))
 def printCyan(out): print("\033[96m{}\033[00m" .format(out))
 def printOverride(out): print(" -> {}".format(out))
+def dumpJson(data, f): json.dump(data, f, separators=(',', ':')) if minify else json.dump(data, f, indent=4)
 
 class LeafBlock:
     def __init__(self, namespace, block_name, texture_name):
@@ -259,7 +262,7 @@ def generateBlockstate(leaf, block_state_copies):
 
     # Write blockstate file
     with open(block_state_file, "w") as f:
-        json.dump(block_state_data, f, indent=4)
+        dumpJson(block_state_data, f)
     
     # Do the same for the dynamic trees namespace
     if leaf.dynamictrees_namespace != None:
@@ -268,7 +271,7 @@ def generateBlockstate(leaf, block_state_copies):
 
         # Write blockstate file
         with open(dyntrees_block_state_file, "w") as f:
-            json.dump(block_state_data, f, indent=4)
+            dumpJson(block_state_data, f)
     
     # Additional block state copies
     if (leaf.getId()) in block_state_copies:
@@ -283,7 +286,7 @@ def generateBlockstate(leaf, block_state_copies):
 
             # Write blockstate file
             with open(block_state_copy_file, "w") as f:
-                json.dump(block_state_data, f, indent=4)
+                dumpJson(block_state_data, f)
                 printOverride(f"Writing blockstate copy: {block_state_copy_id}")
     
 
@@ -309,7 +312,7 @@ def generateBlockModels(leaf):
 
         # Write block model file
         with open(block_model_file, "w") as f:
-            json.dump(block_model_data, f, indent=4)
+            dumpJson(block_model_data, f)
 
 def generateItemModel(leaf):
     mod_namespace = leaf.getId().split(":")[0]
@@ -339,7 +342,7 @@ def generateItemModel(leaf):
         item_model_data["textures"]["overlay"] = leaf.overlay_texture_id
     
     with open(block_item_model_file, "w") as f:
-        json.dump(item_model_data, f, indent=4)
+        dumpJson(item_model_data, f)
     
     if leaf.should_generate_item_model:
         # Create models folder if it doesn't exist already
@@ -347,7 +350,7 @@ def generateItemModel(leaf):
         
         item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"
         with open(item_model_file, "w") as f:
-            json.dump(item_model_data, f, indent=4)
+            dumpJson(item_model_data, f)
 
 def generateCarpetAssets(carpet):
     mod_namespace = carpet.carpet_id.split(":")[0]
@@ -367,7 +370,7 @@ def generateCarpetAssets(carpet):
 
     # Write blockstate file
     with open(block_state_file, "w") as f:
-        json.dump(block_state_data, f, indent=4)
+        dumpJson(block_state_data, f)
 
     # Create models folder if it doesn't exist already
     os.makedirs("assets/{}/models/block/".format(mod_namespace), exist_ok=True)
@@ -382,7 +385,7 @@ def generateCarpetAssets(carpet):
     }
     # Save the carpet block model file
     with open(block_model_file, "w") as f:
-        json.dump(block_model_data, f, indent=4)
+        dumpJson(block_model_data, f)
 
 def writeMetadata(args):
     edition = args.edition
@@ -422,6 +425,7 @@ if __name__ == '__main__':
     parser.add_argument('edition', nargs="*", type=str, default="§cCustom Edition", help="Define your edition name")
     parser.add_argument('--legacy', '-l', action='store_true', help="Use legacy models (from 8.1) for all leaves")
     parser.add_argument('--programmer', '-p', action='store_true', help="Use programmer art textures")
+    parser.add_argument('--minify', '-m', action='store_true', help="Minify all JSON output files")
     args = parser.parse_args()
 
     print(f"Arguments: {args}")
@@ -429,6 +433,7 @@ if __name__ == '__main__':
     print("Motschen's Better Leaves Lite")
     print("https://github.com/TeamMidnightDust/BetterLeavesLite")
     print()
+    if args.minify: minify = True
 
     # Loads overrides from the json file
     f = open('./input/overrides.json')
