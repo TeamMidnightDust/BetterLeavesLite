@@ -1,6 +1,0 @@
-{
-    "parent": "betterleaves:block/leaves",
-    "textures": {
-        "all": "nethers_exoticism:block/ramboutan_leaves"
-    }
-}
