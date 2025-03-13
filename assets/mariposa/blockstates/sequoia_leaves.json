@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "mariposa:block/sequoia_leaves1"
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves1",
+                "y": 90
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves1",
+                "y": 180
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves1",
+                "y": 270
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves2"
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves2",
+                "y": 90
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves2",
+                "y": 180
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves2",
+                "y": 270
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves3"
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves3",
+                "y": 90
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves3",
+                "y": 180
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves3",
+                "y": 270
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves4"
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves4",
+                "y": 90
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves4",
+                "y": 180
+            },
+            {
+                "model": "mariposa:block/sequoia_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}
