@@ -29,7 +29,8 @@
         "minecraft": "dynamictrees",
         "biomesoplenty": "dtbop",
         "aether": "dtaether",
-        "natures_spirit": "dtnatures_spirit"
+        "natures_spirit": "dtnatures_spirit",
+        "ecologics": "dtecologics"
     },
     "generateItemModels": [
         "biomesoplenty:rainbow_birch_leaves",

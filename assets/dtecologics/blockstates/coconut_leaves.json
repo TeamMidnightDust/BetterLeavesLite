@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "ecologics:block/coconut_leaves1"
+            },
+            {
+                "model": "ecologics:block/coconut_leaves1",
+                "y": 90
+            },
+            {
+                "model": "ecologics:block/coconut_leaves1",
+                "y": 180
+            },
+            {
+                "model": "ecologics:block/coconut_leaves1",
+                "y": 270
+            },
+            {
+                "model": "ecologics:block/coconut_leaves2"
+            },
+            {
+                "model": "ecologics:block/coconut_leaves2",
+                "y": 90
+            },
+            {
+                "model": "ecologics:block/coconut_leaves2",
+                "y": 180
+            },
+            {
+                "model": "ecologics:block/coconut_leaves2",
+                "y": 270
+            },
+            {
+                "model": "ecologics:block/coconut_leaves3"
+            },
+            {
+                "model": "ecologics:block/coconut_leaves3",
+                "y": 90
+            },
+            {
+                "model": "ecologics:block/coconut_leaves3",
+                "y": 180
+            },
+            {
+                "model": "ecologics:block/coconut_leaves3",
+                "y": 270
+            },
+            {
+                "model": "ecologics:block/coconut_leaves4"
+            },
+            {
+                "model": "ecologics:block/coconut_leaves4",
+                "y": 90
+            },
+            {
+                "model": "ecologics:block/coconut_leaves4",
+                "y": 180
+            },
+            {
+                "model": "ecologics:block/coconut_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}
