@@ -23,7 +23,9 @@
         "terrestria:japanese_maple_leaves_dark": "terrestria:dark_japanese_maple_leaves",
         "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves",
         "palegarden:pale_oak_leaves": "palegarden:pale_leaves",
-        "biomeswevegone:berry_leaves": "biomeswevegone:holly_berry_leaves"
+        "biomeswevegone:berry_leaves": "biomeswevegone:holly_berry_leaves",
+        "aurorasdeco:jacaranda_leaves_budding_flowers": "aurorasdeco:budding_jacaranda_leaves",
+        "aurorasdeco:jacaranda_leaves_flowers": "aurorasdeco:flowering_jacaranda_leaves"
     },
     "dynamicTreesNamespaces": {
         "minecraft": "dynamictrees",
