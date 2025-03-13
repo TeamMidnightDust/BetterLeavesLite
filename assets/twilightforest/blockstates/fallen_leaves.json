@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "twilightforest:block/fallen_leaves"
+            },
+            {
+                "model": "twilightforest:block/fallen_leaves",
+                "y": 90
+            },
+            {
+                "model": "twilightforest:block/fallen_leaves",
+                "y": 180
+            },
+            {
+                "model": "twilightforest:block/fallen_leaves",
+                "y": 270
+            }
+        ]
+    }
+}

@@ -6,7 +6,7 @@
         "palegarden:pale_oak_leaves"
     ],
     "leavesWithCarpet": {
-        "minecraft:oak_leaves": ["quark:oak_leaf_carpet", "immersive_weathering:oak_leaf_pile"],
+        "minecraft:oak_leaves": ["quark:oak_leaf_carpet", "immersive_weathering:oak_leaf_pile", "twilightforest:fallen_leaves"],
         "minecraft:birch_leaves": ["quark:birch_leaf_carpet", "immersive_weathering:birch_leaf_pile"],
         "minecraft:spruce_leaves": ["quark:spruce_leaf_carpet", "immersive_weathering:spruce_leaf_pile"],
         "minecraft:jungle_leaves": ["quark:jungle_leaf_carpet", "immersive_weathering:jungle_leaf_pile"],
@@ -71,5 +71,11 @@
         "betterend:dragon_tree_leaves",
         "betterend:pythadendron_leaves",
         "betterend:shadow_berry_leaves"
-    ]
+    ],
+    "blockStateCopies": {
+        "minecraft:oak_leaves": ["twilightforest:twilight_oak_leaves", "twilightforest:rainbow_oak_leaves", "twilightforest:thorn_leaves"],
+        "minecraft:birch_leaves": "twilightforest:mangrove_leaves",
+        "minecraft:spruce_leaves": "twilightforest:canopy_leaves",
+        "minecraft:acacia_leaves": "twilightforest:beanstalk_leaves"
+    }
 }

@@ -55,6 +55,7 @@ def autoGen(jsonData, args):
     leaves_with_carpet = jsonData["leavesWithCarpet"]
     dynamictrees_namespaces = jsonData["dynamicTreesNamespaces"]
     generate_itemmodels_overrides = jsonData["generateItemModels"]
+    block_state_copies = jsonData["blockStateCopies"]
     print("Generating assets...")
     if (os.path.exists("./assets")): shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
@@ -134,7 +135,7 @@ def autoGen(jsonData, args):
                     printOverride("Also generating item model")
 
                 # Generate blockstates & models
-                generateBlockstate(leaf)
+                generateBlockstate(leaf, block_state_copies)
                 generateBlockModels(leaf)
                 generateItemModel(leaf)
 
@@ -238,7 +239,7 @@ def generateTexture(root, infile, useProgrammerArt=False):
             print("Error while generating texture for '%s'" % infile)
 
 
-def generateBlockstate(leaf):
+def generateBlockstate(leaf, block_state_copies):
     mod_namespace = leaf.getId().split(":")[0]
     block_name = leaf.getId().split(":")[1]
 
@@ -268,6 +269,22 @@ def generateBlockstate(leaf):
         # Write blockstate file
         with open(dyntrees_block_state_file, "w") as f:
             json.dump(block_state_data, f, indent=4)
+    
+    # Additional block state copies
+    if (leaf.getId()) in block_state_copies:
+        block_state_copy_ids = block_state_copies[leaf.getId()]
+        if not isinstance(block_state_copy_ids, list): block_state_copy_ids = [block_state_copy_ids] # In case only one blockstate is provided (as a string), turn it into a list
+        for block_state_copy_id in block_state_copy_ids:
+            block_state_copy_namespace = block_state_copy_id.split(":")[0]
+            block_state_copy_name = block_state_copy_id.split(":")[1]
+
+            block_state_copy_file = f"assets/{block_state_copy_namespace}/blockstates/{block_state_copy_name}.json"
+            os.makedirs("assets/{}/blockstates/".format(block_state_copy_namespace), exist_ok=True)
+
+            # Write blockstate file
+            with open(block_state_copy_file, "w") as f:
+                json.dump(block_state_data, f, indent=4)
+                printOverride(f"Writing blockstate copy: {block_state_copy_id}")
     
 
 def generateBlockModels(leaf):
