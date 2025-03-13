@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaf_carpet",
+    "textures": {
+        "wool": "quark:block/orange_blossom_leaves"
+    }
+}

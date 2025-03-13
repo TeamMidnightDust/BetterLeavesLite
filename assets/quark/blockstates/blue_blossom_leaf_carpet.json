@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "quark:block/blue_blossom_leaf_carpet"
+            },
+            {
+                "model": "quark:block/blue_blossom_leaf_carpet",
+                "y": 90
+            },
+            {
+                "model": "quark:block/blue_blossom_leaf_carpet",
+                "y": 180
+            },
+            {
+                "model": "quark:block/blue_blossom_leaf_carpet",
+                "y": 270
+            }
+        ]
+    }
+}
