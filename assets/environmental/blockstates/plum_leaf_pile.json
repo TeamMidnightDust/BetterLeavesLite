@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "environmental:block/plum_leaf_pile"
+            },
+            {
+                "model": "environmental:block/plum_leaf_pile",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/plum_leaf_pile",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/plum_leaf_pile",
+                "y": 270
+            }
+        ]
+    }
+}

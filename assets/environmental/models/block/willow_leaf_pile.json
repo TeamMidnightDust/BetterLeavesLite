@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaf_carpet",
+    "textures": {
+        "wool": "environmental:block/willow_leaves"
+    }
+}

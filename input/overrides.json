@@ -26,7 +26,18 @@
         "paradise_lost:lavender_wisteria_leaves": "paradise_lost:lavender_wisteria_leaf_pile",
         "paradise_lost:aurel_leaves": "paradise_lost:aurel_leaf_pile",
         "paradise_lost:rose_wisteria_leaves": "paradise_lost:rose_wisteria_leaf_pile",
-        "paradise_lost:frost_wisteria_leaves": "paradise_lost:frost_wisteria_leaf_pile"
+        "paradise_lost:frost_wisteria_leaves": "paradise_lost:frost_wisteria_leaf_pile",
+        "environmental:blue_wisteria_leaves": "environmental:blue_wisteria_leaf_pile",
+        "environmental:cheerful_plum_leaves": "environmental:cheerful_plum_leaf_pile",
+        "environmental:hibiscus_leaves": "environmental:hibiscus_leaf_pile",
+        "environmental:moody_plum_leaves": "environmental:moody_plum_leaf_pile",
+        "environmental:pine_leaves": "environmental:pine_leaf_pile",
+        "environmental:pink_wisteria_leaves": "environmental:pink_wisteria_leaf_pile",
+        "environmental:plum_leaves": "environmental:plum_leaf_pile",
+        "environmental:purple_wisteria_leaves": "environmental:purple_wisteria_leaf_pile",
+        "environmental:white_wisteria_leaves": "environmental:white_wisteria_leaf_pile",
+        "environmental:willow_leaves": "environmental:willow_leaf_pile",
+        "environmental:wisteria_leaves": "environmental:wisteria_leaf_pile"
     },
     "blockTextures": {
         "biomesoplenty:rainbow_birch_leaves": "minecraft:block/birch_leaves"
