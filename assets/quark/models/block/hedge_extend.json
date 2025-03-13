@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+    "textures": {
+        "particle": "#leaf"
+    },
+	"elements": [
+		{
+			"from": [2, 0, 2],
+			"to": [14, 16, 14],
+			"faces": {
+				"north": {"uv": [5, 4, 11, 12], "texture": "#leaf", "tintindex": 0},
+				"east": {"uv": [5, 4, 11, 12], "texture": "#leaf", "tintindex": 0},
+				"south": {"uv": [5, 4, 11, 12], "texture": "#leaf", "tintindex": 0},
+				"west": {"uv": [5, 4, 11, 12], "texture": "#leaf", "tintindex": 0},
+				"up": {"uv": [5, 5, 11, 11], "texture": "#leaf", "tintindex": 0}
+			}
+		}
+	]
+}
