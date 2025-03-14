@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "environmental:block/pink_wisteria_leaves"
+    }
+}

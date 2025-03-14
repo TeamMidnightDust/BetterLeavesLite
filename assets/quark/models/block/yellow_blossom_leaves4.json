@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves4",
+    "textures": {
+        "all": "quark:block/yellow_blossom_leaves"
+    }
+}

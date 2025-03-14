@@ -1,0 +1,21 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "quark:block/acacia_leaf_carpet"
+            },
+            {
+                "model": "quark:block/acacia_leaf_carpet",
+                "y": 90
+            },
+            {
+                "model": "quark:block/acacia_leaf_carpet",
+                "y": 180
+            },
+            {
+                "model": "quark:block/acacia_leaf_carpet",
+                "y": 270
+            }
+        ]
+    }
+}

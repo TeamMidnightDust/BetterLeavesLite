@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves_legacy1",
+    "textures": {
+        "all": "deeperdarker:block/echo_leaves"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaf_carpet_notint",
+    "textures": {
+        "wool": "minecraft:block/flowering_azalea_leaves"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "credit": "Made with Blockbench",
+    "textures": {
+        "particle": "#leaf"
+    },
+    "elements": [
+        {
+            "from": [2, 2, 0],
+            "to": [14, 16, 2],
+            "faces": {
+                "east": {"uv": [4, 4, 5, 11], "rotation": 180, "texture": "#leaf", "tintindex": 0},
+                "west": {"uv": [4, 4, 5, 11], "texture": "#leaf", "tintindex": 0},
+                "up": {"uv": [4, 4.5, 5, 11.5], "rotation": 270, "texture": "#leaf", "tintindex": 0},
+                "down": {"uv": [4, 4.5, 5, 11.5], "rotation": 270, "texture": "#leaf", "tintindex": 0}
+            }
+        }
+    ]
+}

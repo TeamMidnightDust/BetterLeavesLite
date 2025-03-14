@@ -1,0 +1,2 @@
+pillow>=11.1.0
+setuptools>=76.0.0

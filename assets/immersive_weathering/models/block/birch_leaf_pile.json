@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaf_carpet",
+    "textures": {
+        "wool": "minecraft:block/birch_leaves"
+    }
+}

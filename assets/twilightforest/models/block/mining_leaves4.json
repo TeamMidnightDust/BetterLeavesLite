@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves_legacy4",
+    "textures": {
+        "all": "twilightforest:block/mining_leaves"
+    }
+}

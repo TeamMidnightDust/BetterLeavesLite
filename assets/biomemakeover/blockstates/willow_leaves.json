@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "biomemakeover:block/willow_leaves1"
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves1",
+                "y": 90
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves1",
+                "y": 180
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves1",
+                "y": 270
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves2"
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves2",
+                "y": 90
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves2",
+                "y": 180
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves2",
+                "y": 270
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves3"
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves3",
+                "y": 90
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves3",
+                "y": 180
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves3",
+                "y": 270
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves4"
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves4",
+                "y": 90
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves4",
+                "y": 180
+            },
+            {
+                "model": "biomemakeover:block/willow_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

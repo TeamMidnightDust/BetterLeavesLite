@@ -12,10 +12,24 @@ import time
 from PIL import Image
 from distutils.dir_util import copy_tree
 
+minify = False
+
 # Utility functions
 def printGreen(out): print("\033[92m{}\033[00m".format(out))
 def printCyan(out): print("\033[96m{}\033[00m" .format(out))
 def printOverride(out): print(" -> {}".format(out))
+def dumpJson(data, f): json.dump(data, f, separators=(',', ':')) if minify else json.dump(data, f, indent=4)
+
+class BlockStateData:
+    def __init__(self, namespace, block_name, state):
+        self.namespace = namespace
+        self.block_name = block_name
+        self.state = state
+    def fromFile(leaf, root, infile):
+        with open(os.path.join(root, infile), "r") as f:
+            printOverride("Loading blockstate data from: "+f.name)
+            return BlockStateData.fromJson(leaf, json.load(f).get("blockStateData"))
+    def fromJson(leaf, data): return BlockStateData(data["block"].split(":")[0], data["block"].split(":")[1], data["state"]) if "block" in data else BlockStateData(leaf.getId().split(":")[0], leaf.getId().split(":")[1], data["state"])
 
 class LeafBlock:
     def __init__(self, namespace, block_name, texture_name):
@@ -33,6 +47,7 @@ class LeafBlock:
     block_id_override = None
     texture_id_override = None
     dynamictrees_namespace = None
+    blockstate_data = None
     def getId(self):
         if (self.block_id_override != None): return self.block_id_override
         return self.namespace+":"+self.block_name
@@ -55,10 +70,14 @@ def autoGen(jsonData, args):
     leaves_with_carpet = jsonData["leavesWithCarpet"]
     dynamictrees_namespaces = jsonData["dynamicTreesNamespaces"]
     generate_itemmodels_overrides = jsonData["generateItemModels"]
+    block_state_copies = jsonData["blockStateCopies"]
     print("Generating assets...")
     if (os.path.exists("./assets")): shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
+    if minify: minifyJsonFiles()
+
     filecount = 0
+    if (args.programmer): unpackTexturepacks("./input/programmer_art")
     unpackTexturepacks()
     unpackMods()
     scanModsForTextures()
@@ -95,7 +114,7 @@ def autoGen(jsonData, args):
                     printOverride("Using legacy model as requested")
 
                 # Generate texture
-                if not leaf.use_legacy_model: generateTexture(root, infile)
+                if not leaf.use_legacy_model: generateTexture(root, infile, args.programmer)
 
                 # Set block id and apply overrides
                 if leaf.getId() in block_id_overrides:
@@ -131,22 +150,30 @@ def autoGen(jsonData, args):
                 if leaf.getId() in generate_itemmodels_overrides:
                     leaf.should_generate_item_model = True
                     printOverride("Also generating item model")
+                
+                # Check for blockstate data
+                if infile.replace(".png", ".betterleaves.json") in files:
+                    leaf.blockstate_data = BlockStateData.fromFile(leaf, root, infile.replace(".png", ".betterleaves.json"))
 
                 # Generate blockstates & models
-                generateBlockstate(leaf)
+                generateBlockstate(leaf, block_state_copies)
                 generateBlockModels(leaf)
                 generateItemModel(leaf)
 
                 # Certain mods contain leaf carpets.
                 # Because we change the leaf texture, we need to fix the carpet models.
                 if (leaf.getId()) in leaves_with_carpet:
-                    carpet = CarpetBlock(leaves_with_carpet[leaf.getId()], leaf)
-                    generateCarpetAssets(carpet)
-                    printOverride(f"Generating leaf carpet: {carpet.carpet_id}")
+                    carpet_ids = leaves_with_carpet[leaf.getId()]
+                    if not isinstance(carpet_ids, list): carpet_ids = [carpet_ids] # In case only one carpet is provided (as a string), turn it into a list
+                    for carpet_id in carpet_ids:
+                        carpet = CarpetBlock(carpet_id, leaf)
+                        generateCarpetAssets(carpet)
+                        printOverride(f"Generating leaf carpet: {carpet.carpet_id}")
 
                 filecount += 1
     # End of autoGen
     print()
+    if (args.programmer): cleanupTexturepacks("./input/programmer_art")
     cleanupTexturepacks()
     cleanupMods()
     printCyan("Processed {} leaf blocks".format(filecount))
@@ -177,8 +204,8 @@ def scanModsForTextures():
                     shutil.copyfile(os.path.join(root, infile), os.path.join(inputfolder, infile))
 
 
-def unpackTexturepacks():
-    for root, dirs, files in os.walk("./input/texturepacks"):
+def unpackTexturepacks(rootFolder="./input/texturepacks"):
+    for root, dirs, files in os.walk(rootFolder):
         for infile in files:
             if infile.endswith(".zip"):
                 print("Unpacking texturepack: "+infile)
@@ -186,26 +213,50 @@ def unpackTexturepacks():
                 zf.extractall(os.path.join(root, infile.replace(".zip", "_temp")))
                 zf.close()
 
-def cleanupTexturepacks():
-    for root, dirs, files in os.walk("./input/texturepacks"):
+def cleanupTexturepacks(rootFolder="./input/texturepacks"):
+    for root, dirs, files in os.walk(rootFolder):
         for folder in dirs:
             if folder.endswith("_temp"):
                 shutil.rmtree(os.path.join(root, folder))
 
-def scanPacksForTexture(baseRoot, baseInfile):
-    for root, dirs, files in os.walk("./input/texturepacks"):
+def scanPacksForTexture(baseRoot, baseInfile, rootFolder="./input/texturepacks"):
+    for root, dirs, files in os.walk(rootFolder):
         for infile in files:
             if "assets" in root and "assets" in baseRoot:
                 if infile.endswith(".png") and (len(root.split("/")) > 3) and (baseInfile == infile) and (root.split("assets")[1] == baseRoot.split("assets")[1]):
-                    printCyan(" Using texture from: " + root.split("assets")[0].replace("./input/texturepacks/", ""))
+                    printCyan(" Using texture from: " + root.split("assets")[0].replace(rootFolder, ""))
                     return root;
     return baseRoot
 
-def generateTexture(root, infile):
+def generateTexture(root, infile, useProgrammerArt=False):
     outfolder = root.replace("assets", "").replace("input", "assets")
     os.makedirs(outfolder, exist_ok=True)
 
+    # Check for texture stitching data
+    textureMap = {}
+    if os.path.isfile(os.path.join(root, infile.replace(".png", ".betterleaves.json"))):
+        with open(os.path.join(root, infile.replace(".png", ".betterleaves.json")), "r") as f:
+            json_data = json.load(f)
+            if "textureStitching" in json_data:
+                printOverride("Using texture stitching data from: " + f.name)
+                # Create texture map from stitching data
+                for key, value in json_data["textureStitching"].items():
+                    if "-" in key:
+                        for i in range(int(key.split("-")[0]), int(key.split("-")[1])+1): textureMap[str(i)] = value
+                    else: textureMap[key] = value
+                # Turn texture map into absolute paths
+                for key, value in textureMap.items():
+                    textureRoot = f"./input/assets/{value.split(':')[0]}/textures/"
+                    textureFile = value.split(":")[1] + ".png"
+                    if "/" in textureFile: 
+                        textureRoot += textureFile.rsplit("/")[0]
+                        textureFile = textureFile.rsplit("/")[1]
+                    textureRoot = scanPacksForTexture(textureRoot, textureFile)
+                    if useProgrammerArt: root = scanPacksForTexture(textureRoot, textureFile, "./input/programmer_art")
+                    textureMap[key] = os.path.join(textureRoot, textureFile)
+
     root = scanPacksForTexture(root, infile)
+    if useProgrammerArt: root = scanPacksForTexture(root, infile, "./input/programmer_art")
 
     outfile = os.path.splitext(os.path.join(outfolder, infile))[0] + ".png"
     if infile != outfile:
@@ -220,7 +271,11 @@ def generateTexture(root, infile):
             # Now we paste the regular texture in a 3x3 grid, centered in the middle
             for x in range(-1, 2):
                 for y in range(-1, 2):
-                    out.paste(vanilla, (int(width / 2 + width * x), int(height / 2 + height * y)))
+                    texture = vanilla
+                    index = (x + 2) + (y + 1) * 3 # Turns coordinates into a number from 1 to 9
+                    if str(index) in textureMap: # Load texture from texture stitching map
+                        texture = Image.open(textureMap[str(index)])
+                    out.paste(texture, (int(width / 2 + width * x), int(height / 2 + height * y)))
 
             # As the last step, we apply our custom mask to round the edges and smoothen things out
             mask = Image.open('input/mask.png').convert('L').resize(out.size, resample=Image.NEAREST)
@@ -232,27 +287,41 @@ def generateTexture(root, infile):
             print("Error while generating texture for '%s'" % infile)
 
 
-def generateBlockstate(leaf):
+def generateBlockstate(leaf, block_state_copies):
     mod_namespace = leaf.getId().split(":")[0]
     block_name = leaf.getId().split(":")[1]
 
+    block_state_namespace = mod_namespace
+    block_state_name = block_name
+
+    state = ""
+    if leaf.blockstate_data != None: # In case custom blockstate data is defined
+        block_state_namespace = leaf.blockstate_data.namespace
+        block_state_name = leaf.blockstate_data.block_name
+        state = leaf.blockstate_data.state
+
     # Create structure for blockstate file
-    block_state_file = f"assets/{mod_namespace}/blockstates/{block_name}.json"
+    block_state_file = f"assets/{block_state_namespace}/blockstates/{block_state_name}.json"
     block_state_data = {
         "variants": {
-            "": []
+            f"{state}": []
         }
     }
+    if os.path.exists(block_state_file): # In case the blockstate file already exists, we want to add to it
+        with open(block_state_file, "r") as f:
+            block_state_data = json.load(f)
+            block_state_data["variants"][state] = []
+    
     # Add four rotations for each of the four individual leaf models
     for i in range(1, 5):
-        block_state_data["variants"][""] += { "model": f"{mod_namespace}:block/{block_name}{i}" }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 90 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 180 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 270 },
+        block_state_data["variants"][state] += { "model": f"{mod_namespace}:block/{block_name}{i}" }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 90 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 180 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 270 },
 
     # Create blockstates folder if it doesn't exist already
-    os.makedirs("assets/{}/blockstates/".format(mod_namespace), exist_ok=True)
+    os.makedirs("assets/{}/blockstates/".format(block_state_namespace), exist_ok=True)
 
     # Write blockstate file
     with open(block_state_file, "w") as f:
-        json.dump(block_state_data, f, indent=4)
+        dumpJson(block_state_data, f)
     
     # Do the same for the dynamic trees namespace
     if leaf.dynamictrees_namespace != None:
@@ -261,7 +330,23 @@ def generateBlockstate(leaf):
 
         # Write blockstate file
         with open(dyntrees_block_state_file, "w") as f:
-            json.dump(block_state_data, f, indent=4)
+            dumpJson(block_state_data, f)
+    
+    # Additional block state copies
+    if (leaf.getId()) in block_state_copies:
+        block_state_copy_ids = block_state_copies[leaf.getId()]
+        if not isinstance(block_state_copy_ids, list): block_state_copy_ids = [block_state_copy_ids] # In case only one blockstate is provided (as a string), turn it into a list
+        for block_state_copy_id in block_state_copy_ids:
+            block_state_copy_namespace = block_state_copy_id.split(":")[0]
+            block_state_copy_name = block_state_copy_id.split(":")[1]
+
+            block_state_copy_file = f"assets/{block_state_copy_namespace}/blockstates/{block_state_copy_name}.json"
+            os.makedirs("assets/{}/blockstates/".format(block_state_copy_namespace), exist_ok=True)
+
+            # Write blockstate file
+            with open(block_state_copy_file, "w") as f:
+                dumpJson(block_state_data, f)
+                printOverride(f"Writing blockstate copy: {block_state_copy_id}")
     
 
 def generateBlockModels(leaf):
@@ -286,7 +371,7 @@ def generateBlockModels(leaf):
 
         # Write block model file
         with open(block_model_file, "w") as f:
-            json.dump(block_model_data, f, indent=4)
+            dumpJson(block_model_data, f)
 
 def generateItemModel(leaf):
     mod_namespace = leaf.getId().split(":")[0]
@@ -316,7 +401,7 @@ def generateItemModel(leaf):
         item_model_data["textures"]["overlay"] = leaf.overlay_texture_id
     
     with open(block_item_model_file, "w") as f:
-        json.dump(item_model_data, f, indent=4)
+        dumpJson(item_model_data, f)
     
     if leaf.should_generate_item_model:
         # Create models folder if it doesn't exist already
@@ -324,11 +409,13 @@ def generateItemModel(leaf):
         
         item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"
         with open(item_model_file, "w") as f:
-            json.dump(item_model_data, f, indent=4)
+            dumpJson(item_model_data, f)
 
 def generateCarpetAssets(carpet):
     mod_namespace = carpet.carpet_id.split(":")[0]
     block_name = carpet.carpet_id.split(":")[1]
+    # Create blockstate folder if it doesn't exist already
+    os.makedirs("assets/{}/blockstates/".format(mod_namespace), exist_ok=True)
 
     # Create structure for blockstate file
     block_state_file = f"assets/{mod_namespace}/blockstates/{block_name}.json"
@@ -342,7 +429,10 @@ def generateCarpetAssets(carpet):
 
     # Write blockstate file
     with open(block_state_file, "w") as f:
-        json.dump(block_state_data, f, indent=4)
+        dumpJson(block_state_data, f)
+
+    # Create models folder if it doesn't exist already
+    os.makedirs("assets/{}/models/block/".format(mod_namespace), exist_ok=True)
 
     # Create structure for block model file
     block_model_file = f"assets/{mod_namespace}/models/block/{block_name}.json"
@@ -354,7 +444,18 @@ def generateCarpetAssets(carpet):
     }
     # Save the carpet block model file
     with open(block_model_file, "w") as f:
-        json.dump(block_model_data, f, indent=4)
+        dumpJson(block_model_data, f)
+
+def minifyJsonFiles(rootDir="./assets"):
+    for root, dirs, files in os.walk(rootDir):
+        for infile in files:
+            if infile.endswith(".json"):
+                minifyExistingJson(root, infile)
+def minifyExistingJson(root, infile):
+    with open(os.path.join(root, infile), "r") as rf:
+        data = json.load(rf)
+        with open(os.path.join(root, infile), "w") as wf:
+            json.dump(data, wf, separators=(',', ':'))
 
 def writeMetadata(args):
     edition = args.edition
@@ -393,6 +494,8 @@ if __name__ == '__main__':
     parser.add_argument('version', type=str)
     parser.add_argument('edition', nargs="*", type=str, default="§cCustom Edition", help="Define your edition name")
     parser.add_argument('--legacy', '-l', action='store_true', help="Use legacy models (from 8.1) for all leaves")
+    parser.add_argument('--programmer', '-p', action='store_true', help="Use programmer art textures")
+    parser.add_argument('--minify', '-m', action='store_true', help="Minify all JSON output files")
     args = parser.parse_args()
 
     print(f"Arguments: {args}")
@@ -400,6 +503,7 @@ if __name__ == '__main__':
     print("Motschen's Better Leaves Lite")
     print("https://github.com/TeamMidnightDust/BetterLeavesLite")
     print()
+    if args.minify: minify = True
 
     # Loads overrides from the json file
     f = open('./input/overrides.json')
@@ -410,7 +514,7 @@ if __name__ == '__main__':
     writeMetadata(args)
     print()
     print("Zipping it up...")
-    makeZip(f"Better-Leaves-{args.version}.zip");
+    makeZip(f"Better-Leaves-{args.version}.zip" if not args.programmer else f"Better-Leaves-(Programmer-Art)-{args.version}.zip");
     print("Done!")
     print("--- Finished in %s seconds ---" % (round((time.perf_counter() - start_time)*1000)/1000))
     

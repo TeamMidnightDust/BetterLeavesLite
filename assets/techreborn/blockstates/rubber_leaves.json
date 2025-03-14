@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "techreborn:block/rubber_leaves1"
+            },
+            {
+                "model": "techreborn:block/rubber_leaves1",
+                "y": 90
+            },
+            {
+                "model": "techreborn:block/rubber_leaves1",
+                "y": 180
+            },
+            {
+                "model": "techreborn:block/rubber_leaves1",
+                "y": 270
+            },
+            {
+                "model": "techreborn:block/rubber_leaves2"
+            },
+            {
+                "model": "techreborn:block/rubber_leaves2",
+                "y": 90
+            },
+            {
+                "model": "techreborn:block/rubber_leaves2",
+                "y": 180
+            },
+            {
+                "model": "techreborn:block/rubber_leaves2",
+                "y": 270
+            },
+            {
+                "model": "techreborn:block/rubber_leaves3"
+            },
+            {
+                "model": "techreborn:block/rubber_leaves3",
+                "y": 90
+            },
+            {
+                "model": "techreborn:block/rubber_leaves3",
+                "y": 180
+            },
+            {
+                "model": "techreborn:block/rubber_leaves3",
+                "y": 270
+            },
+            {
+                "model": "techreborn:block/rubber_leaves4"
+            },
+            {
+                "model": "techreborn:block/rubber_leaves4",
+                "y": 90
+            },
+            {
+                "model": "techreborn:block/rubber_leaves4",
+                "y": 180
+            },
+            {
+                "model": "techreborn:block/rubber_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{   
+    "blockStateData": {
+        "block": "environmental:purple_wisteria_leaves",
+        "state": "half=top"
+    },
+    "textureStitching": {
+        "1-3": "environmental:block/wisteria_leaves",
+        "7-9": "environmental:block/purple_wisteria_leaves"
+    }
+}

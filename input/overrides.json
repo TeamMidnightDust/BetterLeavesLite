@@ -6,11 +6,39 @@
         "palegarden:pale_oak_leaves"
     ],
     "leavesWithCarpet": {
+        "minecraft:oak_leaves": ["quark:oak_leaf_carpet", "immersive_weathering:oak_leaf_pile", "twilightforest:fallen_leaves"],
+        "minecraft:birch_leaves": ["quark:birch_leaf_carpet", "immersive_weathering:birch_leaf_pile"],
+        "minecraft:spruce_leaves": ["quark:spruce_leaf_carpet", "immersive_weathering:spruce_leaf_pile"],
+        "minecraft:jungle_leaves": ["quark:jungle_leaf_carpet", "immersive_weathering:jungle_leaf_pile"],
+        "minecraft:acacia_leaves": ["quark:acacia_leaf_carpet", "immersive_weathering:acacia_leaf_pile"],
+        "minecraft:dark_oak_leaves": ["quark:dark_oak_leaf_carpet", "immersive_weathering:dark_oak_leaf_pile"],
+        "minecraft:mangrove_leaves": ["quark:mangrove_leaf_carpet", "immersive_weathering:mangrove_leaf_pile"],
+        "minecraft:cherry_leaves": ["quark:cherry_leaf_carpet", "immersive_weathering:cherry_leaf_pile"],
+        "minecraft:azalea_leaves": ["quark:azalea_leaf_carpet", "immersive_weathering:azalea_leaf_pile"],
+        "minecraft:flowering_azalea_leaves": ["quark:flowering_azalea_leaf_carpet", "immersive_weathering:flowering_azalea_leaf_pile"],
+        "minecraft:pale_oak_leaves": ["quark:pale_oak_leaf_carpet", "immersive_weathering:pale_oak_leaf_pile"],
+        "quark:ancient_leaves": "quark:ancient_leaf_carpet",
+        "quark:blue_blossom_leaves": "quark:blue_blossom_leaf_carpet",
+        "quark:lavender_blossom_leaves": "quark:lavender_blossom_leaf_carpet",
+        "quark:orange_blossom_leaves": "quark:orange_blossom_leaf_carpet",
+        "quark:red_blossom_leaves": "quark:red_blossom_leaf_carpet",
+        "quark:yellow_blossom_leaves": "quark:yellow_blossom_leaf_carpet",
         "terrestria:sakura_leaves": "terrestria:sakura_leaf_pile",
         "paradise_lost:lavender_wisteria_leaves": "paradise_lost:lavender_wisteria_leaf_pile",
         "paradise_lost:aurel_leaves": "paradise_lost:aurel_leaf_pile",
         "paradise_lost:rose_wisteria_leaves": "paradise_lost:rose_wisteria_leaf_pile",
-        "paradise_lost:frost_wisteria_leaves": "paradise_lost:frost_wisteria_leaf_pile"
+        "paradise_lost:frost_wisteria_leaves": "paradise_lost:frost_wisteria_leaf_pile",
+        "environmental:blue_wisteria_leaves": "environmental:blue_wisteria_leaf_pile",
+        "environmental:cheerful_plum_leaves": "environmental:cheerful_plum_leaf_pile",
+        "environmental:hibiscus_leaves": "environmental:hibiscus_leaf_pile",
+        "environmental:moody_plum_leaves": "environmental:moody_plum_leaf_pile",
+        "environmental:pine_leaves": "environmental:pine_leaf_pile",
+        "environmental:pink_wisteria_leaves": "environmental:pink_wisteria_leaf_pile",
+        "environmental:plum_leaves": "environmental:plum_leaf_pile",
+        "environmental:purple_wisteria_leaves": "environmental:purple_wisteria_leaf_pile",
+        "environmental:white_wisteria_leaves": "environmental:white_wisteria_leaf_pile",
+        "environmental:willow_leaves": "environmental:willow_leaf_pile",
+        "environmental:wisteria_leaves": "environmental:wisteria_leaf_pile"
     },
     "blockTextures": {
         "biomesoplenty:rainbow_birch_leaves": "minecraft:block/birch_leaves"
@@ -23,13 +51,16 @@
         "terrestria:japanese_maple_leaves_dark": "terrestria:dark_japanese_maple_leaves",
         "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves",
         "palegarden:pale_oak_leaves": "palegarden:pale_leaves",
-        "biomeswevegone:berry_leaves": "biomeswevegone:holly_berry_leaves"
+        "biomeswevegone:berry_leaves": "biomeswevegone:holly_berry_leaves",
+        "aurorasdeco:jacaranda_leaves_budding_flowers": "aurorasdeco:budding_jacaranda_leaves",
+        "aurorasdeco:jacaranda_leaves_flowers": "aurorasdeco:flowering_jacaranda_leaves"
     },
     "dynamicTreesNamespaces": {
         "minecraft": "dynamictrees",
         "biomesoplenty": "dtbop",
         "aether": "dtaether",
-        "natures_spirit": "dtnatures_spirit"
+        "natures_spirit": "dtnatures_spirit",
+        "ecologics": "dtecologics"
     },
     "generateItemModels": [
         "biomesoplenty:rainbow_birch_leaves",
@@ -40,5 +71,11 @@
         "betterend:dragon_tree_leaves",
         "betterend:pythadendron_leaves",
         "betterend:shadow_berry_leaves"
-    ]
+    ],
+    "blockStateCopies": {
+        "minecraft:oak_leaves": ["twilightforest:twilight_oak_leaves", "twilightforest:rainbow_oak_leaves", "twilightforest:thorn_leaves"],
+        "minecraft:birch_leaves": "twilightforest:mangrove_leaves",
+        "minecraft:spruce_leaves": "twilightforest:canopy_leaves",
+        "minecraft:acacia_leaves": "twilightforest:beanstalk_leaves"
+    }
 }
