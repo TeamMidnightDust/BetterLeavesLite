@@ -62,6 +62,8 @@ def autoGen(jsonData, args):
     print("Generating assets...")
     if (os.path.exists("./assets")): shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
+    if minify: minifyJsonFiles()
+
     filecount = 0
     if (args.programmer): unpackTexturepacks("./input/programmer_art")
     unpackTexturepacks()
@@ -386,6 +388,17 @@ def generateCarpetAssets(carpet):
     # Save the carpet block model file
     with open(block_model_file, "w") as f:
         dumpJson(block_model_data, f)
+
+def minifyJsonFiles(rootDir="./assets"):
+    for root, dirs, files in os.walk(rootDir):
+        for infile in files:
+            if infile.endswith(".json"):
+                minifyExistingJson(root, infile)
+def minifyExistingJson(root, infile):
+    with open(os.path.join(root, infile), "r") as rf:
+        data = json.load(rf)
+        with open(os.path.join(root, infile), "w") as wf:
+            json.dump(data, wf, separators=(',', ':'))
 
 def writeMetadata(args):
     edition = args.edition
