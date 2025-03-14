@@ -246,7 +246,7 @@ def generateTexture(root, infile, useProgrammerArt=False):
                     else: textureMap[key] = value
                 # Turn texture map into absolute paths
                 for key, value in textureMap.items():
-                    textureRoot = f"./input/assets/{value.split(":")[0]}/textures/"
+                    textureRoot = f"./input/assets/{value.split(':')[0]}/textures/"
                     textureFile = value.split(":")[1] + ".png"
                     if "/" in textureFile: 
                         textureRoot += textureFile.rsplit("/")[0]
