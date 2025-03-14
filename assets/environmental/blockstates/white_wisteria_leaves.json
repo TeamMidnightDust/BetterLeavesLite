@@ -1,6 +1,6 @@
 {
     "variants": {
-        "": [
+        "half=bottom": [
             {
                 "model": "environmental:block/white_wisteria_leaves1"
             },
@@ -59,6 +59,68 @@
             },
             {
                 "model": "environmental:block/white_wisteria_leaves4",
+                "y": 270
+            }
+        ],
+        "half=top": [
+            {
+                "model": "environmental:block/white_wisteria_leaves_top1"
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top1",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top1",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top1",
+                "y": 270
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top2"
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top2",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top2",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top2",
+                "y": 270
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top3"
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top3",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top3",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top3",
+                "y": 270
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top4"
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top4",
+                "y": 90
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top4",
+                "y": 180
+            },
+            {
+                "model": "environmental:block/white_wisteria_leaves_top4",
                 "y": 270
             }
         ]

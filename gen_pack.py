@@ -20,6 +20,17 @@ def printCyan(out): print("\033[96m{}\033[00m" .format(out))
 def printOverride(out): print(" -> {}".format(out))
 def dumpJson(data, f): json.dump(data, f, separators=(',', ':')) if minify else json.dump(data, f, indent=4)
 
+class BlockStateData:
+    def __init__(self, namespace, block_name, state):
+        self.namespace = namespace
+        self.block_name = block_name
+        self.state = state
+    def fromFile(leaf, root, infile):
+        with open(os.path.join(root, infile), "r") as f:
+            printOverride("Loading blockstate data from: "+f.name)
+            return BlockStateData.fromJson(leaf, json.load(f).get("blockStateData"))
+    def fromJson(leaf, data): return BlockStateData(data["block"].split(":")[0], data["block"].split(":")[1], data["state"]) if "block" in data else BlockStateData(leaf.getId().split(":")[0], leaf.getId().split(":")[1], data["state"])
+
 class LeafBlock:
     def __init__(self, namespace, block_name, texture_name):
         self.namespace = namespace
@@ -36,6 +47,7 @@ class LeafBlock:
     block_id_override = None
     texture_id_override = None
     dynamictrees_namespace = None
+    blockstate_data = None
     def getId(self):
         if (self.block_id_override != None): return self.block_id_override
         return self.namespace+":"+self.block_name
@@ -138,6 +150,10 @@ def autoGen(jsonData, args):
                 if leaf.getId() in generate_itemmodels_overrides:
                     leaf.should_generate_item_model = True
                     printOverride("Also generating item model")
+                
+                # Check for blockstate data
+                if infile.replace(".png", ".betterleaves.json") in files:
+                    leaf.blockstate_data = BlockStateData.fromFile(leaf, root, infile.replace(".png", ".betterleaves.json"))
 
                 # Generate blockstates & models
                 generateBlockstate(leaf, block_state_copies)
@@ -216,6 +232,29 @@ def generateTexture(root, infile, useProgrammerArt=False):
     outfolder = root.replace("assets", "").replace("input", "assets")
     os.makedirs(outfolder, exist_ok=True)
 
+    # Check for texture stitching data
+    textureMap = {}
+    if os.path.isfile(os.path.join(root, infile.replace(".png", ".betterleaves.json"))):
+        with open(os.path.join(root, infile.replace(".png", ".betterleaves.json")), "r") as f:
+            json_data = json.load(f)
+            if "textureStitching" in json_data:
+                printOverride("Using texture stitching data from: " + f.name)
+                # Create texture map from stitching data
+                for key, value in json_data["textureStitching"].items():
+                    if "-" in key:
+                        for i in range(int(key.split("-")[0]), int(key.split("-")[1])+1): textureMap[str(i)] = value
+                    else: textureMap[key] = value
+                # Turn texture map into absolute paths
+                for key, value in textureMap.items():
+                    textureRoot = f"./input/assets/{value.split(":")[0]}/textures/"
+                    textureFile = value.split(":")[1] + ".png"
+                    if "/" in textureFile: 
+                        textureRoot += textureFile.rsplit("/")[0]
+                        textureFile = textureFile.rsplit("/")[1]
+                    textureRoot = scanPacksForTexture(textureRoot, textureFile)
+                    if useProgrammerArt: root = scanPacksForTexture(textureRoot, textureFile, "./input/programmer_art")
+                    textureMap[key] = os.path.join(textureRoot, textureFile)
+
     root = scanPacksForTexture(root, infile)
     if useProgrammerArt: root = scanPacksForTexture(root, infile, "./input/programmer_art")
 
@@ -232,7 +271,11 @@ def generateTexture(root, infile, useProgrammerArt=False):
             # Now we paste the regular texture in a 3x3 grid, centered in the middle
             for x in range(-1, 2):
                 for y in range(-1, 2):
-                    out.paste(vanilla, (int(width / 2 + width * x), int(height / 2 + height * y)))
+                    texture = vanilla
+                    index = (x + 2) + (y + 1) * 3 # Turns coordinates into a number from 1 to 9
+                    if str(index) in textureMap: # Load texture from texture stitching map
+                        texture = Image.open(textureMap[str(index)])
+                    out.paste(texture, (int(width / 2 + width * x), int(height / 2 + height * y)))
 
             # As the last step, we apply our custom mask to round the edges and smoothen things out
             mask = Image.open('input/mask.png').convert('L').resize(out.size, resample=Image.NEAREST)
@@ -248,19 +291,33 @@ def generateBlockstate(leaf, block_state_copies):
     mod_namespace = leaf.getId().split(":")[0]
     block_name = leaf.getId().split(":")[1]
 
+    block_state_namespace = mod_namespace
+    block_state_name = block_name
+
+    state = ""
+    if leaf.blockstate_data != None: # In case custom blockstate data is defined
+        block_state_namespace = leaf.blockstate_data.namespace
+        block_state_name = leaf.blockstate_data.block_name
+        state = leaf.blockstate_data.state
+
     # Create structure for blockstate file
-    block_state_file = f"assets/{mod_namespace}/blockstates/{block_name}.json"
+    block_state_file = f"assets/{block_state_namespace}/blockstates/{block_state_name}.json"
     block_state_data = {
         "variants": {
-            "": []
+            f"{state}": []
         }
     }
+    if os.path.exists(block_state_file): # In case the blockstate file already exists, we want to add to it
+        with open(block_state_file, "r") as f:
+            block_state_data = json.load(f)
+            block_state_data["variants"][state] = []
+    
     # Add four rotations for each of the four individual leaf models
     for i in range(1, 5):
-        block_state_data["variants"][""] += { "model": f"{mod_namespace}:block/{block_name}{i}" }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 90 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 180 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 270 },
+        block_state_data["variants"][state] += { "model": f"{mod_namespace}:block/{block_name}{i}" }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 90 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 180 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 270 },
 
     # Create blockstates folder if it doesn't exist already
-    os.makedirs("assets/{}/blockstates/".format(mod_namespace), exist_ok=True)
+    os.makedirs("assets/{}/blockstates/".format(block_state_namespace), exist_ok=True)
 
     # Write blockstate file
     with open(block_state_file, "w") as f:
