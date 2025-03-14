@@ -26,4 +26,4 @@ The second downside is that certain mods or resourcepacks might use the leaf tex
 Make sure to report such cases to me, though not every bug of this nature can get fixed.
 
 ## Building versions for your texturepack (or mod)
-Head over to the new [wiki](https://www.midnightdust.eu/wiki/betterleaveslite/) :)
+Head over to the new [wiki](https://www.midnightdust.eu/wiki/betterleaves/) :)
