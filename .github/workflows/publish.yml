@@ -43,12 +43,13 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
           files: |
-            Better-Leaves-${{ inputs.version }}.zip
-            Better-Leaves-(Programmer-Art)-${{ inputs.version }}.zip
+            ./Better-Leaves-${{ inputs.version }}.zip
+            ./Better-Leaves-(Programmer-Art)-${{ inputs.version }}.zip
 
           name: Better Leaves ${{ inputs.version }} - 1.20+
           version: ${{ inputs.version }}
           version-type: release
+          loaders: minecraft
 
           game-versions: |
             >=1.20
