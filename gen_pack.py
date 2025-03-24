@@ -278,7 +278,9 @@ def generateTexture(root, infile, useProgrammerArt=False):
                     out.paste(texture, (int(width / 2 + width * x), int(height / 2 + height * y)))
 
             # As the last step, we apply our custom mask to round the edges and smoothen things out
-            mask = Image.open('input/mask.png').convert('L').resize(out.size, resample=Image.NEAREST)
+            mask_location = f"input/mask_{width}px.png"
+            if not os.path.isfile(mask_location): mask_location = "input/mask_16px.png"
+            mask = Image.open(mask_location).convert('L').resize(out.size, resample=Image.NEAREST)
             out = Image.composite(out, transparent, mask)
 
             # Finally, we save the texture to the assets folder
