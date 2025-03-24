@@ -71,7 +71,8 @@
         "betterend:lacugrove_leaves",
         "betterend:dragon_tree_leaves",
         "betterend:pythadendron_leaves",
-        "betterend:shadow_berry_leaves"
+        "betterend:shadow_berry_leaves",
+        "ars_elemental:yellow_archwood_leaves"
     ],
     "blockStateCopies": {
         "minecraft:oak_leaves": [
