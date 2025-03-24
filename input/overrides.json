@@ -73,9 +73,97 @@
         "betterend:shadow_berry_leaves"
     ],
     "blockStateCopies": {
-        "minecraft:oak_leaves": ["twilightforest:twilight_oak_leaves", "twilightforest:rainbow_oak_leaves", "twilightforest:thorn_leaves"],
-        "minecraft:birch_leaves": "twilightforest:mangrove_leaves",
-        "minecraft:spruce_leaves": "twilightforest:canopy_leaves",
-        "minecraft:acacia_leaves": "twilightforest:beanstalk_leaves"
+        "minecraft:oak_leaves": [
+            "twilightforest:twilight_oak_leaves",
+            "twilightforest:rainbow_oak_leaves",
+            "twilightforest:thorn_leaves",
+            "dtterralith:oak_conifer_leaves",
+            "dtterralith:oak_kapok_leaves",
+            "dtterralith:oak_scruffy_leaves",
+            "dtterralith:oak_scruffy_tall_conifer_leaves",
+            "dtterralith:oak_sparse_leaves",
+            "dtterralith:oak_tall_conifer_leaves",
+            "dtterralith:oak_twiglet_leaves",
+            "dtterralith:oak_twilight_leaves",
+            "dtterralith:oak_yellow_conifer_leaves"
+        ],
+        "minecraft:birch_leaves": [
+            "twilightforest:mangrove_leaves",
+            "dtterralith:birch_conifer_leaves",
+            "dtterralith:birch_poplar_leaves",
+            "dtterralith:birch_scruffy_conifer_leaves",
+            "dtterralith:birch_scruffy_leaves",
+            "dtterralith:birch_short_conifer_leaves",
+            "dtterralith:birch_sparse_leaves",
+            "dtterralith:birch_twilight_leaves",
+            "dtterralith:birch_windswept_leaves"
+        ],
+        "minecraft:spruce_leaves": [
+            "twilightforest:canopy_leaves",
+            "dtterralith:spruce_bush_leaves",
+            "dtterralith:spruce_moonlight_leaves",
+            "dtterralith:spruce_poplar_leaves",
+            "dtterralith:spruce_round_leaves",
+            "dtterralith:spruce_short_conifer_leaves",
+            "dtterralith:spruce_sparse_leaves",
+            "dtterralith:spruce_tall_conifer_leaves",
+            "dtterralith:spruce_twiglet_leaves"
+        ],
+        "minecraft:acacia_leaves": [
+            "twilightforest:beanstalk_leaves", 
+            "dtterralith:acacia_amethyst_leaves", 
+            "dtterralith:acacia_bush_leaves", 
+            "dtterralith:acacia_conifer_leaves", 
+            "dtterralith:acacia_deciduous_leaves", 
+            "dtterralith:acacia_kapok_leaves", 
+            "dtterralith:acacia_poplar_leaves", 
+            "dtterralith:acacia_sparse_leaves",
+            "dtterralith:acacia_twiglet_leaves", 
+            "dtterralith:acacia_windswept_leaves"
+        ],
+        "minecraft:azalea_leaves": [
+            "dtterralith:azalea_bush_leaves", 
+            "dtterralith:azalea_canopy_leaves", 
+            "dtterralith:azalea_ebony_leaves", 
+            "dtterralith:azalea_mahogany_leaves", 
+            "dtterralith:azalea_mangrove_leaves", 
+            "dtterralith:azalea_oasis_leaves"
+        ],
+        "minecraft:cherry_leaves": [
+            "dtterralith:cherry_bush_leaves"
+        ],
+        "minecraft:dark_oak_leaves": [
+            "dtterralith:dark_oak_ancient_leaves",
+            "dtterralith:dark_oak_ancient_mirage_leaves",
+            "dtterralith:dark_oak_blue_conifer_leaves",
+            "dtterralith:dark_oak_canopy_leaves",
+            "dtterralith:dark_oak_canopy_mirage_leaves",
+            "dtterralith:dark_oak_jacaranda_leaves",
+            "dtterralith:dark_oak_maple_leaves",
+            "dtterralith:dark_oak_orange_conifer_leaves",
+            "dtterralith:dark_oak_red_azalea_leaves",
+            "dtterralith:dark_oak_red_conifer_leaves",
+            "dtterralith:dark_oak_red_maple_leaves",
+            "dtterralith:dark_oak_sakura_bush_leaves",
+            "dtterralith:dark_oak_sakura_leaves",
+            "dtterralith:dark_oak_wide_leaves",
+            "dtterralith:tall_dark_oak_leaves"
+        ],
+        "minecraft:flowering_azalea_leaves": [
+            "dtterralith:flowering_azalea_canopy_leaves", 
+            "dtterralith:flowering_azalea_mahogany_leaves", 
+            "dtterralith:flowering_azalea_mangrove_leaves", 
+            "dtterralith:flowering_azalea_oasis_leaves"
+        ],
+        "minecraft:jungle_leaves": [
+            "dtterralith:jungle_jacaranda_leaves", 
+            "dtterralith:jungle_sakura_leaves", 
+            "dtterralith:jungle_sparse_leaves", 
+            "dtterralith:jungle_windswept_leaves"
+        ],
+        "minecraft:mangrove_leaves": [
+            "dtterralith:mangrove_scruffy_leaves",
+            "dtterralith:mangrove_sparse_leaves"
+        ]
     }
 }
