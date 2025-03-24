@@ -53,7 +53,8 @@
         "palegarden:pale_oak_leaves": "palegarden:pale_leaves",
         "biomeswevegone:berry_leaves": "biomeswevegone:holly_berry_leaves",
         "aurorasdeco:jacaranda_leaves_budding_flowers": "aurorasdeco:budding_jacaranda_leaves",
-        "aurorasdeco:jacaranda_leaves_flowers": "aurorasdeco:flowering_jacaranda_leaves"
+        "aurorasdeco:jacaranda_leaves_flowers": "aurorasdeco:flowering_jacaranda_leaves",
+        "integrateddynamics:menril_leaves_fancy": "integrateddynamics:menril_leaves"
     },
     "dynamicTreesNamespaces": {
         "minecraft": "dynamictrees",
