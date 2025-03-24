@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves4",
+    "textures": {
+        "all": "ars_nouveau:block/purple_archwood_leaves_2"
+    }
+}

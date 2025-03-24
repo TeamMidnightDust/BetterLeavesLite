@@ -312,7 +312,7 @@ def generateBlockstate(leaf, block_state_copies):
     if os.path.exists(block_state_file): # In case the blockstate file already exists, we want to add to it
         with open(block_state_file, "r") as f:
             block_state_data = json.load(f)
-            block_state_data["variants"][state] = []
+            if state not in block_state_data["variants"]: block_state_data["variants"][state] = []
     
     # Add four rotations for each of the four individual leaf models
     for i in range(1, 5):
