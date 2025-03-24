@@ -153,7 +153,9 @@ def autoGen(jsonData, args):
                 
                 # Check for blockstate data
                 if infile.replace(".png", ".betterleaves.json") in files:
-                    leaf.blockstate_data = BlockStateData.fromFile(leaf, root, infile.replace(".png", ".betterleaves.json"))
+                    with open(os.path.join(root, infile.replace(".png", ".betterleaves.json")), "r") as f:
+                        if "blockStateData" in json.load(f):
+                            leaf.blockstate_data = BlockStateData.fromFile(leaf, root, infile.replace(".png", ".betterleaves.json"))
 
                 # Generate blockstates & models
                 generateBlockstate(leaf, block_state_copies)
