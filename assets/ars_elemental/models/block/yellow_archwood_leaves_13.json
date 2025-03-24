@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "ars_elemental:block/yellow_archwood_leaves_1"
+    }
+}
