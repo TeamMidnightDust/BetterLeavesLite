@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves1"
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves1",
+                "y": 90
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves1",
+                "y": 180
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves1",
+                "y": 270
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves2"
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves2",
+                "y": 90
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves2",
+                "y": 180
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves2",
+                "y": 270
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves3"
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves3",
+                "y": 90
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves3",
+                "y": 180
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves3",
+                "y": 270
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves4"
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves4",
+                "y": 90
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves4",
+                "y": 180
+            },
+            {
+                "model": "forbidden_arcanus:block/nuggety_aurum_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

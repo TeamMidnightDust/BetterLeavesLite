@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves4",
+    "textures": {
+        "all": "forbidden_arcanus:block/aurum_leaves"
+    }
+}
