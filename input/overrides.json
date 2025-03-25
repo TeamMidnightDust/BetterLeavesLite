@@ -79,6 +79,7 @@
             "twilightforest:twilight_oak_leaves",
             "twilightforest:rainbow_oak_leaves",
             "twilightforest:thorn_leaves",
+            "dynamictrees:oak_undergrowth_leaves",
             "dtterralith:oak_conifer_leaves",
             "dtterralith:oak_kapok_leaves",
             "dtterralith:oak_scruffy_leaves",
@@ -158,6 +159,7 @@
             "dtterralith:flowering_azalea_oasis_leaves"
         ],
         "minecraft:jungle_leaves": [
+            "dynamictrees:jungle_undergrowth_leaves",
             "dtterralith:jungle_jacaranda_leaves", 
             "dtterralith:jungle_sakura_leaves", 
             "dtterralith:jungle_sparse_leaves", 
