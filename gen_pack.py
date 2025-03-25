@@ -483,7 +483,7 @@ def zipdir(path, ziph):
 
 # Creates a compressed zip file
 def makeZip(filename, programmer_art=False):
-    with zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    with zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as zipf:
         zipdir('assets/', zipf)
         zipf.write('pack.mcmeta')
         zipf.write('pack_programmer_art.png', arcname='pack.png') if programmer_art else zipf.write('pack.png')
