@@ -9,6 +9,7 @@ import os
 import zipfile
 import shutil
 import time
+import random
 from PIL import Image
 from distutils.dir_util import copy_tree
 
@@ -280,8 +281,10 @@ def generateTexture(root, infile, useProgrammerArt=False):
                     out.paste(texture, (int(width / 2 + width * x), int(height / 2 + height * y)))
 
             # As the last step, we apply our custom mask to round the edges and smoothen things out
-            mask_location = f"input/mask_{width}px.png"
-            if not os.path.isfile(mask_location): mask_location = "input/mask_16px.png"
+            mask_location = f"input/masks/{width}px" # If possible, use a mask designed for the texture's size
+            if not os.path.isdir(mask_location) or len(os.listdir(mask_location)) == 0: mask_location = "input/masks/16px"
+            random.seed(infile) # Use the filename as a seed. This ensures we always get the same mask per block.
+            mask_location += f"/{random.choice(os.listdir(mask_location))}" # Choose a random mask to get some variation between the different types of leaves
             mask = Image.open(mask_location).convert('L').resize(out.size, resample=Image.NEAREST)
             out = Image.composite(out, transparent, mask)
 
