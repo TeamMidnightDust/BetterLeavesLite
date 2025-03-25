@@ -482,11 +482,11 @@ def zipdir(path, ziph):
                                        os.path.join(path, '..')))
 
 # Creates a compressed zip file
-def makeZip(filename):
+def makeZip(filename, programmer_art=False):
     with zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
         zipdir('assets/', zipf)
         zipf.write('pack.mcmeta')
-        zipf.write('pack.png')
+        zipf.write('pack_programmer_art.png', arcname='pack.png') if programmer_art else zipf.write('pack.png')
         zipf.write('LICENSE')
         zipf.write('README.md')
 
@@ -521,7 +521,7 @@ if __name__ == '__main__':
     writeMetadata(args)
     print()
     print("Zipping it up...")
-    makeZip(f"Better-Leaves-{args.version}.zip" if not args.programmer else f"Better-Leaves-(Programmer-Art)-{args.version}.zip");
+    makeZip(f"Better-Leaves-{args.version}.zip" if not args.programmer else f"Better-Leaves-(Programmer-Art)-{args.version}.zip", args.programmer);
     print("Done!")
     print("--- Finished in %s seconds ---" % (round((time.perf_counter() - start_time)*1000)/1000))
     
