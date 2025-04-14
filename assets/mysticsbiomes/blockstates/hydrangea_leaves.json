@@ -1,0 +1,246 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves1"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves1",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves1",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves1",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves2"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves2",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves2",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves2",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves3"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves3",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves3",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves3",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves4"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves4",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves4",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves4",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant1"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant1",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant1",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant1",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant2"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant2",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant2",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant2",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant3"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant3",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant3",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant3",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant4"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant4",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant4",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant4",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant21"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant21",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant21",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant21",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant22"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant22",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant22",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant22",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant23"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant23",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant23",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant23",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant24"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant24",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant24",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant24",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant31"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant31",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant31",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant31",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant32"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant32",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant32",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant32",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant33"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant33",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant33",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant33",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant34"
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant34",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant34",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/hydrangea_leaves_variant34",
+                "y": 270
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "mysticsbiomes:block/maple_leaves_variant2"
+    }
+}
