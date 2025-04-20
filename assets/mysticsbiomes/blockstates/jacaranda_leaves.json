@@ -1,0 +1,126 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves1"
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves1",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves1",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves1",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves2"
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves2",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves2",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves2",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves3"
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves3",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves3",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves3",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves4"
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves4",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves4",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves4",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant1"
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant1",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant1",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant1",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant2"
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant2",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant2",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant2",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant3"
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant3",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant3",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant3",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant4"
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant4",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant4",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/jacaranda_leaves_variant4",
+                "y": 270
+            }
+        ]
+    }
+}

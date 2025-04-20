@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "mysticsbiomes:block/peach_leaves1"
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves1",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves1",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves1",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves2"
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves2",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves2",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves2",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves3"
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves3",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves3",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves3",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves4"
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves4",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves4",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/peach_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

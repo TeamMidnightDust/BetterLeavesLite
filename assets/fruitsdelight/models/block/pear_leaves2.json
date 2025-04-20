@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "fruitsdelight:block/pear_leaves"
+    }
+}

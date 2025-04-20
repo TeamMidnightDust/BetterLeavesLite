@@ -9,6 +9,7 @@ import os
 import zipfile
 import shutil
 import time
+import random
 from PIL import Image
 from distutils.dir_util import copy_tree
 
@@ -153,7 +154,9 @@ def autoGen(jsonData, args):
                 
                 # Check for blockstate data
                 if infile.replace(".png", ".betterleaves.json") in files:
-                    leaf.blockstate_data = BlockStateData.fromFile(leaf, root, infile.replace(".png", ".betterleaves.json"))
+                    with open(os.path.join(root, infile.replace(".png", ".betterleaves.json")), "r") as f:
+                        if "blockStateData" in json.load(f):
+                            leaf.blockstate_data = BlockStateData.fromFile(leaf, root, infile.replace(".png", ".betterleaves.json"))
 
                 # Generate blockstates & models
                 generateBlockstate(leaf, block_state_copies)
@@ -278,7 +281,11 @@ def generateTexture(root, infile, useProgrammerArt=False):
                     out.paste(texture, (int(width / 2 + width * x), int(height / 2 + height * y)))
 
             # As the last step, we apply our custom mask to round the edges and smoothen things out
-            mask = Image.open('input/mask.png').convert('L').resize(out.size, resample=Image.NEAREST)
+            mask_location = f"input/masks/{width}px" # If possible, use a mask designed for the texture's size
+            if not os.path.isdir(mask_location) or len(os.listdir(mask_location)) == 0: mask_location = "input/masks/16px"
+            random.seed(infile) # Use the filename as a seed. This ensures we always get the same mask per block.
+            mask_location += f"/{random.choice(os.listdir(mask_location))}" # Choose a random mask to get some variation between the different types of leaves
+            mask = Image.open(mask_location).convert('L').resize(out.size, resample=Image.NEAREST)
             out = Image.composite(out, transparent, mask)
 
             # Finally, we save the texture to the assets folder
@@ -310,7 +317,7 @@ def generateBlockstate(leaf, block_state_copies):
     if os.path.exists(block_state_file): # In case the blockstate file already exists, we want to add to it
         with open(block_state_file, "r") as f:
             block_state_data = json.load(f)
-            block_state_data["variants"][state] = []
+            if state not in block_state_data["variants"]: block_state_data["variants"][state] = []
     
     # Add four rotations for each of the four individual leaf models
     for i in range(1, 5):
@@ -475,11 +482,11 @@ def zipdir(path, ziph):
                                        os.path.join(path, '..')))
 
 # Creates a compressed zip file
-def makeZip(filename):
-    with zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
+def makeZip(filename, programmer_art=False):
+    with zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as zipf:
         zipdir('assets/', zipf)
         zipf.write('pack.mcmeta')
-        zipf.write('pack.png')
+        zipf.write('pack_programmer_art.png', arcname='pack.png') if programmer_art else zipf.write('pack.png')
         zipf.write('LICENSE')
         zipf.write('README.md')
 
@@ -514,7 +521,7 @@ if __name__ == '__main__':
     writeMetadata(args)
     print()
     print("Zipping it up...")
-    makeZip(f"Better-Leaves-{args.version}.zip" if not args.programmer else f"Better-Leaves-(Programmer-Art)-{args.version}.zip");
+    makeZip(f"Better-Leaves-{args.version}.zip" if not args.programmer else f"Better-Leaves-(Programmer-Art)-{args.version}.zip", args.programmer);
     print("Done!")
     print("--- Finished in %s seconds ---" % (round((time.perf_counter() - start_time)*1000)/1000))
     

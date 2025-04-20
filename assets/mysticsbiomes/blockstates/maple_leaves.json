@@ -1,0 +1,186 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "mysticsbiomes:block/maple_leaves1"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves1",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves1",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves1",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves2"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves2",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves2",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves2",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves3"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves3",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves3",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves3",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves4"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves4",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves4",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves4",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant1"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant1",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant1",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant1",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant2"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant2",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant2",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant2",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant3"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant3",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant3",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant3",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant4"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant4",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant4",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant4",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant21"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant21",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant21",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant21",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant22"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant22",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant22",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant22",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant23"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant23",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant23",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant23",
+                "y": 270
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant24"
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant24",
+                "y": 90
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant24",
+                "y": 180
+            },
+            {
+                "model": "mysticsbiomes:block/maple_leaves_variant24",
+                "y": 270
+            }
+        ]
+    }
+}

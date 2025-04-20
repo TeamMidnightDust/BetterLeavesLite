@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "fruitsdelight:block/pear_leaves1"
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves1",
+                "y": 90
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves1",
+                "y": 180
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves1",
+                "y": 270
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves2"
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves2",
+                "y": 90
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves2",
+                "y": 180
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves2",
+                "y": 270
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves3"
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves3",
+                "y": 90
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves3",
+                "y": 180
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves3",
+                "y": 270
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves4"
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves4",
+                "y": 90
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves4",
+                "y": 180
+            },
+            {
+                "model": "fruitsdelight:block/pear_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}
