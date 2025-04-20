@@ -1,5 +1,6 @@
 {
 	"credit": "Motschen's Better Leaves Lite",
+	"render_type": "minecraft:cutout_mipped",
 	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
