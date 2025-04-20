@@ -52,18 +52,18 @@ jobs:
       - name: Upload programmer art version
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: uvpymuxq
+          modrinth-id: wip
           modrinth-featured: true
           modrinth-unfeature-mode: subset
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
 
-          curseforge-id: 380969
+          curseforge-id: 1247519
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
 
           files: ./Better-Leaves-(Programmer-Art)-${{ inputs.version }}.zip
 
           name: Better Leaves (Programmer Art) ${{ inputs.version }} - 1.20+
-          version: ${{ inputs.version }}-pa
+          version: ${{ inputs.version }}
           version-type: release
           loaders: minecraft
 
