@@ -4,6 +4,8 @@
 	"parent": "block/block",
 	"texture_size": [32, 32],
 	"textures": {
+	  "top": "#all",
+		"bottom": "#all",
 		"particle": "#all"
 	},
 	"elements": [
@@ -15,8 +17,8 @@
 				"east": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "east", "tintindex": 0},
 				"south": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "south", "tintindex": 0},
 				"west": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "west", "tintindex": 0},
-				"up": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "up", "tintindex": 0},
-				"down": {"uv": [4, 4, 12, 12], "texture": "#all", "cullface": "down", "tintindex": 0}
+				"up": {"uv": [4, 4, 12, 12], "texture": "#top", "cullface": "up", "tintindex": 0},
+				"down": {"uv": [4, 4, 12, 12], "texture": "#bottom", "cullface": "down", "tintindex": 0}
 			}
 		},
 		{

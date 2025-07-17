@@ -49,6 +49,7 @@ class LeafBlock:
     texture_id_override = None
     dynamictrees_namespace = None
     blockstate_data = None
+    sprite_overrides = None
     def getId(self):
         if (self.block_id_override != None): return self.block_id_override
         return self.namespace+":"+self.block_name
@@ -160,8 +161,11 @@ def autoGen(jsonData, args):
                 # Check for blockstate data
                 if infile.replace(".png", ".betterleaves.json") in files:
                     with open(os.path.join(root, infile.replace(".png", ".betterleaves.json")), "r") as f:
-                        if "blockStateData" in json.load(f):
+                        jsonFile = json.load(f)
+                        if "blockStateData" in jsonFile:
                             leaf.blockstate_data = BlockStateData.fromFile(leaf, root, infile.replace(".png", ".betterleaves.json"))
+                        if "spriteOverrides" in jsonFile:
+                            leaf.sprite_overrides = jsonFile["spriteOverrides"]
 
                 # Generate blockstates & models
                 generateBlockstate(leaf, block_state_copies)
@@ -258,7 +262,7 @@ def generateTexture(root, infile, useProgrammerArt=False):
                     textureFile = value.split(":")[1] + ".png"
                     if "/" in textureFile:
                         textureRoot += textureFile.rsplit("/")[0]
-                        textureFile = textureFile.rsplit("/")[1]
+                        textureFile = textureFile[len(textureFile.rsplit("/")[0])+1:] # The rest of the string, starting behind the first '/'
                     textureRoot = scanPacksForTexture(textureRoot, textureFile)
                     if useProgrammerArt: root = scanPacksForTexture(textureRoot, textureFile, "./input/programmer_art")
                     textureMap[key] = os.path.join(textureRoot, textureFile)
@@ -380,6 +384,11 @@ def generateBlockModels(leaf):
         # Add overlay texture on request
         if (leaf.overlay_texture_id != ""):
             block_model_data["textures"]["overlay"] = leaf.overlay_texture_id
+
+        # Add additional textures
+        if (leaf.sprite_overrides):
+            for key in leaf.sprite_overrides:
+                block_model_data["textures"][key] = leaf.sprite_overrides[key];
 
         # Write block model file
         with open(block_model_file, "w") as f:

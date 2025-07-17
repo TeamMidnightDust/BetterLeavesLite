@@ -1,6 +1,0 @@
-{
-    "parent": "betterleaves:block/leaves4",
-    "textures": {
-        "all": "eternal_starlight:block/jinglestem_leaves"
-    }
-}
