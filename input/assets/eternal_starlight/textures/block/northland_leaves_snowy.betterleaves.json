@@ -1,0 +1,10 @@
+{
+    "blockStateData": {
+        "block": "eternal_starlight:northland_leaves",
+        "state": "snowy=true"
+    },
+    "textureStitching": {
+        "1-3": "minecraft:block/snow",
+        "7-9": "eternal_starlight:block/northland_leaves"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves4",
+    "textures": {
+        "all": "eternal_starlight:block/lunar_leaves"
+    }
+}

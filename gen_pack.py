@@ -67,6 +67,7 @@ def autoGen(jsonData, args):
     notint_overrides = jsonData["noTint"]
     block_texture_overrides = jsonData["blockTextures"]
     overlay_textures = jsonData["overlayTextures"]
+    compileonly_textures = jsonData["compileOnly"]
     block_id_overrides = jsonData["blockIds"]
     leaves_with_carpet = jsonData["leavesWithCarpet"]
     dynamictrees_namespaces = jsonData["dynamicTreesNamespaces"]
@@ -103,14 +104,18 @@ def autoGen(jsonData, args):
                 else: printGreen(leaf.getId())
 
                 # We don't want to generate assets for overlay textures
-                if (leaf.getTextureId()) in overlay_textures.values(): 
+                if (leaf.getTextureId()) in overlay_textures.values():
                     printOverride("Skipping overlay texture")
-                    continue 
+                    continue
+                # We don't want to generate assets for compile-only textures
+                if (leaf.getTextureId()) in compileonly_textures:
+                    printOverride("Skipping compile-only texture")
+                    continue
 
                 texture = Image.open(os.path.join(root, infile))
                 leaf.use_legacy_model = texture.size[0] != texture.size[1]
                 if leaf.use_legacy_model: printOverride("Animated – using legacy model")
-                if args.legacy: 
+                if args.legacy:
                     leaf.use_legacy_model = True
                     printOverride("Using legacy model as requested")
 
@@ -130,7 +135,7 @@ def autoGen(jsonData, args):
 
                 # Check if the block appears in the notint overrides
                 leaf.has_no_tint = leaf.getId() in notint_overrides
-                if leaf.use_legacy_model: 
+                if leaf.use_legacy_model:
                     leaf.base_model = "leaves_legacy"
                 elif leaf.has_no_tint:
                     leaf.base_model = "leaves_notint"
@@ -140,10 +145,10 @@ def autoGen(jsonData, args):
                 if leaf.getId() in overlay_textures:
                     leaf.base_model = "leaves_overlay"
                     leaf.overlay_texture_id = overlay_textures[leaf.getId()]
-                    printOverride("Has overlay texture: "+leaf.overlay_texture_id) 
+                    printOverride("Has overlay texture: "+leaf.overlay_texture_id)
 
                 # Check if the block has a dynamic trees addon namespace
-                
+
                 if (leaf.namespace) in dynamictrees_namespaces:
                     leaf.dynamictrees_namespace = dynamictrees_namespaces[leaf.namespace]
 
@@ -151,7 +156,7 @@ def autoGen(jsonData, args):
                 if leaf.getId() in generate_itemmodels_overrides:
                     leaf.should_generate_item_model = True
                     printOverride("Also generating item model")
-                
+
                 # Check for blockstate data
                 if infile.replace(".png", ".betterleaves.json") in files:
                     with open(os.path.join(root, infile.replace(".png", ".betterleaves.json")), "r") as f:
@@ -251,7 +256,7 @@ def generateTexture(root, infile, useProgrammerArt=False):
                 for key, value in textureMap.items():
                     textureRoot = f"./input/assets/{value.split(':')[0]}/textures/"
                     textureFile = value.split(":")[1] + ".png"
-                    if "/" in textureFile: 
+                    if "/" in textureFile:
                         textureRoot += textureFile.rsplit("/")[0]
                         textureFile = textureFile.rsplit("/")[1]
                     textureRoot = scanPacksForTexture(textureRoot, textureFile)
@@ -318,7 +323,7 @@ def generateBlockstate(leaf, block_state_copies):
         with open(block_state_file, "r") as f:
             block_state_data = json.load(f)
             if state not in block_state_data["variants"]: block_state_data["variants"][state] = []
-    
+
     # Add four rotations for each of the four individual leaf models
     for i in range(1, 5):
         block_state_data["variants"][state] += { "model": f"{mod_namespace}:block/{block_name}{i}" }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 90 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 180 }, { "model": f"{mod_namespace}:block/{block_name}{i}", "y": 270 },
@@ -329,7 +334,7 @@ def generateBlockstate(leaf, block_state_copies):
     # Write blockstate file
     with open(block_state_file, "w") as f:
         dumpJson(block_state_data, f)
-    
+
     # Do the same for the dynamic trees namespace
     if leaf.dynamictrees_namespace != None:
         dyntrees_block_state_file = f"assets/{leaf.dynamictrees_namespace}/blockstates/{block_name}.json"
@@ -338,7 +343,7 @@ def generateBlockstate(leaf, block_state_copies):
         # Write blockstate file
         with open(dyntrees_block_state_file, "w") as f:
             dumpJson(block_state_data, f)
-    
+
     # Additional block state copies
     if (leaf.getId()) in block_state_copies:
         block_state_copy_ids = block_state_copies[leaf.getId()]
@@ -354,7 +359,7 @@ def generateBlockstate(leaf, block_state_copies):
             with open(block_state_copy_file, "w") as f:
                 dumpJson(block_state_data, f)
                 printOverride(f"Writing blockstate copy: {block_state_copy_id}")
-    
+
 
 def generateBlockModels(leaf):
     mod_namespace = leaf.getId().split(":")[0]
@@ -406,14 +411,14 @@ def generateItemModel(leaf):
     # Add overlay texture on request
     if (leaf.overlay_texture_id != ""):
         item_model_data["textures"]["overlay"] = leaf.overlay_texture_id
-    
+
     with open(block_item_model_file, "w") as f:
         dumpJson(item_model_data, f)
-    
+
     if leaf.should_generate_item_model:
         # Create models folder if it doesn't exist already
         os.makedirs("assets/{}/models/item/".format(mod_namespace), exist_ok=True)
-        
+
         item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"
         with open(item_model_file, "w") as f:
             dumpJson(item_model_data, f)
@@ -477,8 +482,8 @@ def zipdir(path, ziph):
     # ziph is zipfile handle
     for root, dirs, files in os.walk(path):
         for file in files:
-            ziph.write(os.path.join(root, file), 
-                       os.path.relpath(os.path.join(root, file), 
+            ziph.write(os.path.join(root, file),
+                       os.path.relpath(os.path.join(root, file),
                                        os.path.join(path, '..')))
 
 # Creates a compressed zip file
@@ -524,4 +529,3 @@ if __name__ == '__main__':
     makeZip(f"Better-Leaves-{args.version}.zip" if not args.programmer else f"Better-Leaves-(Programmer-Art)-{args.version}.zip", args.programmer);
     print("Done!")
     print("--- Finished in %s seconds ---" % (round((time.perf_counter() - start_time)*1000)/1000))
-    

@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves",
+    "textures": {
+        "all": "chipped:block/jungle_leaves/frosted_jungle_leaves_top"
+    }
+}
