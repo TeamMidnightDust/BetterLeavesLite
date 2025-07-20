@@ -3,6 +3,7 @@
 
 """This script can automatically generate blockstate and block model files, as well as textures for the Better Leaves Lite resourcepack."""
 
+# Depencency imports
 import argparse
 import json
 import os
@@ -12,6 +13,9 @@ import time
 import random
 from PIL import Image
 from distutils.dir_util import copy_tree
+
+# Local imports
+from download_helper import downloadFromModrinth
 
 minify = False
 
@@ -517,6 +521,7 @@ if __name__ == '__main__':
     parser.add_argument('--legacy', '-l', action='store_true', help="Use legacy models (from 8.1) for all leaves")
     parser.add_argument('--programmer', '-p', action='store_true', help="Use programmer art textures")
     parser.add_argument('--minify', '-m', action='store_true', help="Minify all JSON output files")
+    parser.add_argument('--download', '-d', help="Downloads the requested resourcepack beforehand")
     args = parser.parse_args()
 
     print(f"Arguments: {args}")
@@ -525,6 +530,7 @@ if __name__ == '__main__':
     print("https://github.com/TeamMidnightDust/BetterLeavesLite")
     print()
     if args.minify: minify = True
+    if args.download != None: downloadFromModrinth(args.download)
 
     # Loads overrides from the json file
     f = open('./input/overrides.json')
