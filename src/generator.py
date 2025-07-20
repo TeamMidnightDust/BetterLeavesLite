@@ -69,7 +69,7 @@ def processLeaf(root, files, infile, jsonData, args) -> int:
 
     # We don't want to generate assets for compile-only or overlay textures
     if leaf.getTextureId() in compileonly_textures or leaf.getTextureId() in overlay_textures.values():
-        printOverride(f"Skipping {"compile-only" if leaf.getTextureId() in compileonly_textures else "overlay"} texture")
+        printOverride(f"Skipping {'compile-only' if leaf.getTextureId() in compileonly_textures else 'overlay'} texture")
         return 0
 
     leaf.use_legacy_model = shouldUseLegacyModel(leaf, root, infile, args)
