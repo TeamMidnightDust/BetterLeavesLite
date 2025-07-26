@@ -64,6 +64,6 @@ def generateItemModel(leaf):
         # Create models folder if it doesn't exist already
         os.makedirs("assets/{}/models/item/".format(mod_namespace), exist_ok=True)
 
-        item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json"
+        item_model_file = f"assets/{mod_namespace}/models/item/{block_name}.json" if (leaf.blockstate_data == None) else f"assets/{leaf.blockstate_data.namespace}/models/item/{leaf.blockstate_data.block_name}.json"
         with open(item_model_file, "w") as f:
             dumpJson(item_model_data, f)
