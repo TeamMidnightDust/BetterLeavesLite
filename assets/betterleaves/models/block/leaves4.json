@@ -31,9 +31,9 @@
 			}
 		},
 		{
-			"from": [-7.98223, -6, 8.00736],
-			"to": [24.01777, 22, 8.00736],
-			"rotation": {"angle": -22.5, "axis": "y", "origin": [8.01041, 8, 8]},
+			"from": [-7.98223, -5, 8.00736],
+			"to": [24.01777, 23, 8.00736],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8.01041, 9, 8]},
 			"faces": {
 				"north": {"uv": [0, 1, 16, 15], "texture": "#all", "tintindex": 0},
 				"south": {"uv": [0, 1, 16, 15], "texture": "#all", "tintindex": 0}

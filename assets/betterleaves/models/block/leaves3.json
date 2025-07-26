@@ -22,9 +22,9 @@
 			}
 		},
 		{
-			"from": [-6.98223, -6, 8.99264],
-			"to": [25.01777, 22, 8.99264],
-			"rotation": {"angle": 22.5, "axis": "y", "origin": [9.01041, 8, 9]},
+			"from": [-6.98223, -7, 8.99264],
+			"to": [25.01777, 21, 8.99264],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [9.01041, 7, 9]},
 			"faces": {
 				"north": {"uv": [0, 1, 16, 15], "texture": "#all", "tintindex": 0},
 				"south": {"uv": [0, 1, 16, 15], "texture": "#all", "tintindex": 0}
