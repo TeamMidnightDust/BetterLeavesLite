@@ -10,7 +10,7 @@ import time
 
 # Local imports
 from src.generator import autoGen
-from src.download_helper import downloadFromModrinth
+from src.download_helper import downloadPack
 from src.zip_utils import makeZip
 import src.json_utils
 
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     print("https://github.com/TeamMidnightDust/BetterLeavesLite")
     print()
     if args.minify: src.json_utils.minify = True
-    if args.download != None: downloadFromModrinth(args.download)
+    if args.download != None: downloadPack(args.download)
 
     # Loads overrides from the json file
     f = open('./input/overrides.json')
