@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "betterend:block/lucernia_leaves_1"
+    }
+}

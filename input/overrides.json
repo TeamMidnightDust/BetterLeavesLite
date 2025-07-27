@@ -72,6 +72,8 @@
         "betterend:dragon_tree_leaves",
         "betterend:pythadendron_leaves",
         "betterend:shadow_berry_leaves",
+        "betterend:lucernia_leaves_1",
+        "betterend:cave_bush_leaves_1",
         "ars_elemental:yellow_archwood_leaves"
     ],
     "blockStateCopies": {
@@ -113,23 +115,23 @@
             "dtterralith:spruce_twiglet_leaves"
         ],
         "minecraft:acacia_leaves": [
-            "twilightforest:beanstalk_leaves", 
-            "dtterralith:acacia_amethyst_leaves", 
-            "dtterralith:acacia_bush_leaves", 
-            "dtterralith:acacia_conifer_leaves", 
-            "dtterralith:acacia_deciduous_leaves", 
-            "dtterralith:acacia_kapok_leaves", 
-            "dtterralith:acacia_poplar_leaves", 
+            "twilightforest:beanstalk_leaves",
+            "dtterralith:acacia_amethyst_leaves",
+            "dtterralith:acacia_bush_leaves",
+            "dtterralith:acacia_conifer_leaves",
+            "dtterralith:acacia_deciduous_leaves",
+            "dtterralith:acacia_kapok_leaves",
+            "dtterralith:acacia_poplar_leaves",
             "dtterralith:acacia_sparse_leaves",
-            "dtterralith:acacia_twiglet_leaves", 
+            "dtterralith:acacia_twiglet_leaves",
             "dtterralith:acacia_windswept_leaves"
         ],
         "minecraft:azalea_leaves": [
-            "dtterralith:azalea_bush_leaves", 
-            "dtterralith:azalea_canopy_leaves", 
-            "dtterralith:azalea_ebony_leaves", 
-            "dtterralith:azalea_mahogany_leaves", 
-            "dtterralith:azalea_mangrove_leaves", 
+            "dtterralith:azalea_bush_leaves",
+            "dtterralith:azalea_canopy_leaves",
+            "dtterralith:azalea_ebony_leaves",
+            "dtterralith:azalea_mahogany_leaves",
+            "dtterralith:azalea_mangrove_leaves",
             "dtterralith:azalea_oasis_leaves"
         ],
         "minecraft:cherry_leaves": [
@@ -153,21 +155,24 @@
             "dtterralith:tall_dark_oak_leaves"
         ],
         "minecraft:flowering_azalea_leaves": [
-            "dtterralith:flowering_azalea_canopy_leaves", 
-            "dtterralith:flowering_azalea_mahogany_leaves", 
-            "dtterralith:flowering_azalea_mangrove_leaves", 
+            "dtterralith:flowering_azalea_canopy_leaves",
+            "dtterralith:flowering_azalea_mahogany_leaves",
+            "dtterralith:flowering_azalea_mangrove_leaves",
             "dtterralith:flowering_azalea_oasis_leaves"
         ],
         "minecraft:jungle_leaves": [
             "dynamictrees:jungle_undergrowth_leaves",
-            "dtterralith:jungle_jacaranda_leaves", 
-            "dtterralith:jungle_sakura_leaves", 
-            "dtterralith:jungle_sparse_leaves", 
+            "dtterralith:jungle_jacaranda_leaves",
+            "dtterralith:jungle_sakura_leaves",
+            "dtterralith:jungle_sparse_leaves",
             "dtterralith:jungle_windswept_leaves"
         ],
         "minecraft:mangrove_leaves": [
             "dtterralith:mangrove_scruffy_leaves",
             "dtterralith:mangrove_sparse_leaves"
         ]
-    }
+    },
+    "compileOnly": [
+      "minecraft:block/snow"
+    ]
 }

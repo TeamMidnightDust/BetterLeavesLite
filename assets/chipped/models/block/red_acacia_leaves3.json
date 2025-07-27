@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "chipped:block/acacia_leaves/red_acacia_leaves"
+    }
+}

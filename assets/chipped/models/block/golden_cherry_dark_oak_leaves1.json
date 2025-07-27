@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves1",
+    "textures": {
+        "all": "chipped:block/dark_oak_leaves/golden_cherry_dark_oak_leaves"
+    }
+}

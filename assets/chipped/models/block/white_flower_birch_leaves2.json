@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "chipped:block/birch_leaves/white_flower_birch_leaves"
+    }
+}

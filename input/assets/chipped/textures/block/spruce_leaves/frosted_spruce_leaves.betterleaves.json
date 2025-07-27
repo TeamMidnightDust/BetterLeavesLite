@@ -1,0 +1,9 @@
+{
+    "textureStitching": {
+        "1-3": "chipped:block/spruce_leaves/frosted_spruce_leaves_top"
+    },
+    "spriteOverrides": {
+        "top": "chipped:block/spruce_leaves/frosted_spruce_leaves_top",
+        "bottom": "#top"
+    }
+}

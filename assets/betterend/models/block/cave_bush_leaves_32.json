@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "betterend:block/cave_bush_leaves_3"
+    }
+}
