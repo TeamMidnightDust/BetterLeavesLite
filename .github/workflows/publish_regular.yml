@@ -1,0 +1,50 @@
+name: Build & Publish Resourcepack (only Regular Edition)
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'The version name'
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Compile Regular Edition
+        run: python gen_pack.py -m ${{ inputs.version }} Vanilla Edition
+      - name: Upload regular version
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: uvpymuxq
+          modrinth-featured: true
+          modrinth-unfeature-mode: subset
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+
+          curseforge-id: 380969
+          curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
+
+          files: ./Better-Leaves-${{ inputs.version }}.zip
+
+          name: Better Leaves ${{ inputs.version }} - 1.20+
+          version: ${{ inputs.version }}
+          version-type: release
+          loaders: minecraft
+          changelog-file: CHANGELOG.*
+
+          game-versions: |
+            >=1.20
+          game-version-filter: releases
+          dependencies: |
+            cull-leaves(recommended)
