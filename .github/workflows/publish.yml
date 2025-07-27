@@ -43,6 +43,7 @@ jobs:
           version: ${{ inputs.version }}
           version-type: release
           loaders: minecraft
+          changelog-file: CHANGELOG.*
 
           game-versions: |
             >=1.20
@@ -52,7 +53,7 @@ jobs:
       - name: Upload programmer art version
         uses: Kir-Antipov/mc-publish@v3.3
         with:
-          modrinth-id: wip
+          modrinth-id: QXePegVz
           modrinth-featured: true
           modrinth-unfeature-mode: subset
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
@@ -66,6 +67,7 @@ jobs:
           version: ${{ inputs.version }}
           version-type: release
           loaders: minecraft
+          changelog-file: CHANGELOG.*
 
           game-versions: |
             >=1.20
