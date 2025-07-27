@@ -61,7 +61,7 @@ jobs:
           curseforge-id: 1247519
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
 
-          files: ./Better-Leaves-(Programmer-Art)-${{ inputs.version }}.zip
+          files: ./Better-Leaves-\(Programmer-Art\)-${{ inputs.version }}.zip
 
           name: Better Leaves (Programmer Art) ${{ inputs.version }} - 1.20+
           version: ${{ inputs.version }}
