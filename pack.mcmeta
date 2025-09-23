@@ -1,7 +1,9 @@
 {
   "pack": {
     "pack_format": 15,
-    "supported_formats": [15, 99],
-    "description": "§2Version 9.3 §aVanilla Edition\n§e©Motschen 2025 | MIT Licence"
+    "supported_formats": [15, 255],
+    "min_format": 15,
+    "max_format": 255,
+    "description": "§2Version 9.4 §a§aVanilla Edition\n§e©Motschen 2025 | MIT Licence"
   }
 }
