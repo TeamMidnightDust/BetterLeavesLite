@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "aether_redux:block/natural/fieldsproot_leaves_0"
+    }
+}

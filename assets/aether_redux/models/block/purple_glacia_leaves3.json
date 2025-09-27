@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "aether_redux:block/natural/purple_glacia_leaves"
+    }
+}

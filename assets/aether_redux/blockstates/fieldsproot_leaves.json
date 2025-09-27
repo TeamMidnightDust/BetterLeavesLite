@@ -1,0 +1,438 @@
+{
+    "variants": {
+        "color=0": [
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_01"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_01",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_01",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_01",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_02"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_02",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_02",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_02",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_03"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_03",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_03",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_03",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_04"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_04",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_04",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_04",
+                "y": 270
+            }
+        ],
+        "color=1": [
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_11"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_11",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_11",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_11",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_12"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_12",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_12",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_12",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_13"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_13",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_13",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_13",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_14"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_14",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_14",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_14",
+                "y": 270
+            }
+        ],
+        "color=2": [
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_21"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_21",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_21",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_21",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_22"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_22",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_22",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_22",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_23"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_23",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_23",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_23",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_24"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_24",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_24",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_24",
+                "y": 270
+            }
+        ],
+        "color=3": [
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_31"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_31",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_31",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_31",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_32"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_32",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_32",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_32",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_33"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_33",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_33",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_33",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_34"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_34",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_34",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_34",
+                "y": 270
+            }
+        ],
+        "color=4": [
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_41"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_41",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_41",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_41",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_42"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_42",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_42",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_42",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_43"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_43",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_43",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_43",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_44"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_44",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_44",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_44",
+                "y": 270
+            }
+        ],
+        "color=5": [
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_51"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_51",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_51",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_51",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_52"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_52",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_52",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_52",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_53"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_53",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_53",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_53",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_54"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_54",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_54",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_54",
+                "y": 270
+            }
+        ],
+        "color=6": [
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_61"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_61",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_61",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_61",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_62"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_62",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_62",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_62",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_63"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_63",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_63",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_63",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_64"
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_64",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_64",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/fieldsproot_leaves_64",
+                "y": 270
+            }
+        ]
+    }
+}

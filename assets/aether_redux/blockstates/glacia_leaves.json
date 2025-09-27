@@ -1,0 +1,128 @@
+{
+    "variants": {
+        "snowy=false": [
+            {
+                "model": "aether_redux:block/glacia_leaves1"
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves1",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves1",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves1",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves2"
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves2",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves2",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves2",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves3"
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves3",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves3",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves3",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves4"
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves4",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves4",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves4",
+                "y": 270
+            }
+        ],
+        "snowy=true": [
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy1"
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy1",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy1",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy1",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy2"
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy2",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy2",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy2",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy3"
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy3",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy3",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy3",
+                "y": 270
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy4"
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy4",
+                "y": 90
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy4",
+                "y": 180
+            },
+            {
+                "model": "aether_redux:block/glacia_leaves_snowy4",
+                "y": 270
+            }
+        ]
+    }
+}

@@ -1,11 +1,5 @@
 - Added compatibility for:
-  - Chipped
-  - Eternal Starlight
-  - BetterEnd (Cave Bush Leaves & Lucernia Leaves)
-  - Enderscape
-- Improved model variety
-- Allow leaves to have different top and bottom textures
-
-- Build-Process:
-  - Refactored the Python script into multiple files, improving code readability and maintainability
-  - Use the `-d <zip-url|modrinth-slug>` argument to download resourcepack zips or automatically grab the latest Modrinth release of a pack
+  - Dynamic Trees – Oh The Biomes We've Gone (Addon)
+  - Deep Aether
+  - The Aether: Redux
+- Support for the 1.21.9 pack.mcmeta format

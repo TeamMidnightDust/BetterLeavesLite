@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_overlay3",
+    "textures": {
+        "all": "aether_redux:block/natural/shimmering_crystal_glowfruit_leaves",
+        "overlay": "aether_redux:block/natural/shimmering_crystal_glowfruit_leaves_glow"
+    }
+}

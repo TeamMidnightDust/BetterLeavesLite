@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves4",
+    "textures": {
+        "all": "aether_redux:block/natural/gilded_oak_leaves"
+    }
+}

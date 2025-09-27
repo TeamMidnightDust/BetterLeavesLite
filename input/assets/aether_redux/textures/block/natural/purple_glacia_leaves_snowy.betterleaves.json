@@ -1,0 +1,14 @@
+{
+    "blockStateData": {
+        "block": "aether_redux:purple_glacia_leaves",
+        "state": "snowy=true"
+    },
+    "textureStitching": {
+        "1-3": "minecraft:block/snow",
+        "7-9": "aether_redux:block/natural/purple_glacia_leaves"
+    },
+    "spriteOverrides": {
+        "top": "minecraft:block/snow",
+        "bottom": "aether_redux:block/natural/purple_glacia_leaves"
+    }
+}

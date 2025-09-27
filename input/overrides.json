@@ -45,7 +45,10 @@
     },
     "overlayTextures": {
         "biomesoplenty:pine_leaves": "biomesoplenty:block/pine_leaves_overlay",
-        "biomesoplenty:flowering_oak_leaves": "biomesoplenty:block/flowering_oak_leaves_overlay"
+        "biomesoplenty:flowering_oak_leaves": "biomesoplenty:block/flowering_oak_leaves_overlay",
+        "aether_redux:shimmering_crystal_glowfruit_leaves": "aether_redux:block/natural/shimmering_crystal_glowfruit_leaves_glow",
+        "deep_aether:flowering_blue_roseroot_leaves": "deep_aether:block/flowering_blue_roseroot_leaves_overlay",
+        "deep_aether:flowering_roseroot_leaves": "deep_aether:block/flowering_roseroot_leaves_overlay"
     },
     "blockIds": {
         "terrestria:japanese_maple_leaves_dark": "terrestria:dark_japanese_maple_leaves",
