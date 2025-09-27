@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay1"
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay1",
+                "y": 90
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay1",
+                "y": 180
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay1",
+                "y": 270
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay2"
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay2",
+                "y": 90
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay2",
+                "y": 180
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay2",
+                "y": 270
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay3"
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay3",
+                "y": 90
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay3",
+                "y": 180
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay3",
+                "y": 270
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay4"
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay4",
+                "y": 90
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay4",
+                "y": 180
+            },
+            {
+                "model": "biomeswevegone:block/ripe_yucca_leaves_overlay4",
+                "y": 270
+            }
+        ]
+    }
+}

@@ -61,7 +61,8 @@
         "biomesoplenty": "dtbop",
         "aether": "dtaether",
         "natures_spirit": "dtnatures_spirit",
-        "ecologics": "dtecologics"
+        "ecologics": "dtecologics",
+        "biomeswevegone": "dtbwg"
     },
     "generateItemModels": [
         "biomesoplenty:rainbow_birch_leaves",
