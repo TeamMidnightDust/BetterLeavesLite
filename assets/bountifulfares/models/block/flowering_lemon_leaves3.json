@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_overlay3",
+    "textures": {
+        "all": "bountifulfares:block/lemon_leaves",
+        "overlay": "bountifulfares:block/flowering_lemon_leaves"
+    }
+}

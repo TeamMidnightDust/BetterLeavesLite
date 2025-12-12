@@ -50,6 +50,12 @@
         "deep_aether:flowering_blue_roseroot_leaves": "deep_aether:block/flowering_blue_roseroot_leaves_overlay",
         "deep_aether:flowering_roseroot_leaves": "deep_aether:block/flowering_roseroot_leaves_overlay"
     },
+    "overlayVariants": {
+        "bountifulfares:flowering_apple_leaves": "bountifulfares:block/apple_leaves",
+        "bountifulfares:flowering_lemon_leaves": "bountifulfares:block/lemon_leaves",
+        "bountifulfares:flowering_orange_leaves": "bountifulfares:block/orange_leaves",
+        "bountifulfares:flowering_plum_leaves": "bountifulfares:block/plum_leaves"
+    },
     "blockIds": {
         "terrestria:japanese_maple_leaves_dark": "terrestria:dark_japanese_maple_leaves",
         "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves",

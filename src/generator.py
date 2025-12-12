@@ -48,6 +48,7 @@ def processLeaf(root, files, infile, jsonData, args) -> int:
     notint_overrides = jsonData["noTint"]
     block_texture_overrides = jsonData["blockTextures"]
     overlay_textures = jsonData["overlayTextures"]
+    overlay_variants = jsonData["overlayVariants"]
     compileonly_textures = jsonData["compileOnly"]
     block_id_overrides = jsonData["blockIds"]
     leaves_with_carpet = jsonData["leavesWithCarpet"]
@@ -75,7 +76,8 @@ def processLeaf(root, files, infile, jsonData, args) -> int:
     leaf.use_legacy_model = shouldUseLegacyModel(leaf, root, infile, args)
 
     # Generate texture
-    if not leaf.use_legacy_model: generateTexture(root, infile, args.programmer)
+    if not (leaf.use_legacy_model or leaf.getId() in overlay_variants.keys()):
+        generateTexture(root, infile, args.programmer)
 
     # Set block id and apply overrides
     if leaf.getId() in block_id_overrides:
@@ -101,6 +103,11 @@ def processLeaf(root, files, infile, jsonData, args) -> int:
         leaf.base_model = "leaves_overlay"
         leaf.overlay_texture_id = overlay_textures[leaf.getId()]
         printOverride("Has overlay texture: "+leaf.overlay_texture_id)
+    elif leaf.getId() in overlay_variants:
+        leaf.base_model = "leaves_overlay"
+        leaf.overlay_texture_id = leaf.getTextureId()
+        leaf.texture_id_override = overlay_variants[leaf.getId()]
+        printOverride("Has overlay variant: "+leaf.texture_id_override)
 
     # Check if the block has a dynamic trees addon namespace
 

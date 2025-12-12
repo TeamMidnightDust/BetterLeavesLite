@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves1"
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves1",
+                "y": 90
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves1",
+                "y": 180
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves1",
+                "y": 270
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves2"
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves2",
+                "y": 90
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves2",
+                "y": 180
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves2",
+                "y": 270
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves3"
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves3",
+                "y": 90
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves3",
+                "y": 180
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves3",
+                "y": 270
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves4"
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves4",
+                "y": 90
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves4",
+                "y": 180
+            },
+            {
+                "model": "bountifulfares:block/flowering_plum_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}
