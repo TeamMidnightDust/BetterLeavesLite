@@ -48,7 +48,8 @@
         "biomesoplenty:flowering_oak_leaves": "biomesoplenty:block/flowering_oak_leaves_overlay",
         "aether_redux:shimmering_crystal_glowfruit_leaves": "aether_redux:block/natural/shimmering_crystal_glowfruit_leaves_glow",
         "deep_aether:flowering_blue_roseroot_leaves": "deep_aether:block/flowering_blue_roseroot_leaves_overlay",
-        "deep_aether:flowering_roseroot_leaves": "deep_aether:block/flowering_roseroot_leaves_overlay"
+        "deep_aether:flowering_roseroot_leaves": "deep_aether:block/flowering_roseroot_leaves_overlay",
+        "windswept:flowering_acacia_leaves": "windswept:block/flowering_acacia_leaves_overlay"
     },
     "overlayVariants": {
         "bountifulfares:flowering_apple_leaves": "bountifulfares:block/apple_leaves",

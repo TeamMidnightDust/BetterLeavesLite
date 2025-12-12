@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "windswept:block/pine_leaves1"
+            },
+            {
+                "model": "windswept:block/pine_leaves1",
+                "y": 90
+            },
+            {
+                "model": "windswept:block/pine_leaves1",
+                "y": 180
+            },
+            {
+                "model": "windswept:block/pine_leaves1",
+                "y": 270
+            },
+            {
+                "model": "windswept:block/pine_leaves2"
+            },
+            {
+                "model": "windswept:block/pine_leaves2",
+                "y": 90
+            },
+            {
+                "model": "windswept:block/pine_leaves2",
+                "y": 180
+            },
+            {
+                "model": "windswept:block/pine_leaves2",
+                "y": 270
+            },
+            {
+                "model": "windswept:block/pine_leaves3"
+            },
+            {
+                "model": "windswept:block/pine_leaves3",
+                "y": 90
+            },
+            {
+                "model": "windswept:block/pine_leaves3",
+                "y": 180
+            },
+            {
+                "model": "windswept:block/pine_leaves3",
+                "y": 270
+            },
+            {
+                "model": "windswept:block/pine_leaves4"
+            },
+            {
+                "model": "windswept:block/pine_leaves4",
+                "y": 90
+            },
+            {
+                "model": "windswept:block/pine_leaves4",
+                "y": 180
+            },
+            {
+                "model": "windswept:block/pine_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

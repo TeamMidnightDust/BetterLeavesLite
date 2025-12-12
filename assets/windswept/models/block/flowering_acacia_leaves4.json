@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_overlay4",
+    "textures": {
+        "all": "windswept:block/flowering_acacia_leaves",
+        "overlay": "windswept:block/flowering_acacia_leaves_overlay"
+    }
+}
