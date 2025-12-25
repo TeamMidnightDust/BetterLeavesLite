@@ -181,6 +181,15 @@
         "minecraft:mangrove_leaves": [
             "dtterralith:mangrove_scruffy_leaves",
             "dtterralith:mangrove_sparse_leaves"
+        ],
+        "betterend:dragon_tree_leaves": [
+            "lighterend:dragon_tree_leaves"
+        ],
+        "betterend:shadow_berry_leaves": [
+            "lighterend:shadow_berry_leaves"
+        ],
+        "betterend:tenanea_leaves": [
+            "lighterend:tenanea_leaves"
         ]
     },
     "compileOnly": [
