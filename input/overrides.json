@@ -193,6 +193,7 @@
         ]
     },
     "compileOnly": [
-      "minecraft:block/snow"
+      "minecraft:block/snow",
+      "minecraft:block/grass_block_snow"
     ]
 }

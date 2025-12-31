@@ -33,6 +33,7 @@ if __name__ == '__main__':
     parser.add_argument('edition', nargs="*", type=str, default="§cCustom Edition", help="Define your edition name")
     parser.add_argument('--legacy', '-l', action='store_true', help="Use legacy models (from 8.1) for all leaves")
     parser.add_argument('--programmer', '-p', action='store_true', help="Use programmer art textures")
+    parser.add_argument('--snowy', '-s', action='store_true', help="Builds the pack with support for Puzzle's Block Predicates to add a snowy overlay when snow is on top")
     parser.add_argument('--minify', '-m', action='store_true', help="Minify all JSON output files")
     parser.add_argument('--download', '-d', help="Downloads the requested resourcepack beforehand")
     args = parser.parse_args()

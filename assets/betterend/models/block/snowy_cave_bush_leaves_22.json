@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy2",
+    "textures": {
+        "all": "betterend:block/cave_bush_leaves_2",
+        "snowy": "betterleaves:block/snowy_overlay2"
+    }
+}

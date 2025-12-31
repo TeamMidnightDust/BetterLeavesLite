@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy2",
+    "textures": {
+        "all": "bewitchment:block/juniper_leaves",
+        "snowy": "betterleaves:block/snowy_overlay2"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy1",
+    "textures": {
+        "all": "fruitsdelight:block/mangosteen_leaves",
+        "snowy": "betterleaves:block/snowy_overlay2"
+    }
+}

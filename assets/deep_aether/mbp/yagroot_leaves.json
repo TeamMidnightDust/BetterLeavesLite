@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "deep_aether:snowy_yagroot_leaves1",
+                "deep_aether:snowy_yagroot_leaves2",
+                "deep_aether:snowy_yagroot_leaves3",
+                "deep_aether:snowy_yagroot_leaves4"
+            ]
+        }
+    ]
+}

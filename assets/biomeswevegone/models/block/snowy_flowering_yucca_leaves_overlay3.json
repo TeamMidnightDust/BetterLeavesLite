@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy3",
+    "textures": {
+        "all": "biomeswevegone:block/flowering_yucca_leaves_overlay",
+        "snowy": "betterleaves:block/snowy_overlay1"
+    }
+}

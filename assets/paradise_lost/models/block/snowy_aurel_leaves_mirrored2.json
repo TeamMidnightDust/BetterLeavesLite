@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy2",
+    "textures": {
+        "all": "paradise_lost:block/aurel_leaves_mirrored",
+        "snowy": "betterleaves:block/snowy_overlay3"
+    }
+}

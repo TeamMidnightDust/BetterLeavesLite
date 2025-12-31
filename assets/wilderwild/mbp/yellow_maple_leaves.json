@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "wilderwild:snowy_yellow_maple_leaves1",
+                "wilderwild:snowy_yellow_maple_leaves2",
+                "wilderwild:snowy_yellow_maple_leaves3",
+                "wilderwild:snowy_yellow_maple_leaves4"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "phantasm:snowy_pream_leaves1",
+                "phantasm:snowy_pream_leaves2",
+                "phantasm:snowy_pream_leaves3",
+                "phantasm:snowy_pream_leaves4"
+            ]
+        }
+    ]
+}

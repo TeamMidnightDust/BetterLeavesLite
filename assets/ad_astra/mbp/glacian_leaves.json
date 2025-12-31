@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "ad_astra:snowy_glacian_leaves1",
+                "ad_astra:snowy_glacian_leaves2",
+                "ad_astra:snowy_glacian_leaves3",
+                "ad_astra:snowy_glacian_leaves4"
+            ]
+        }
+    ]
+}

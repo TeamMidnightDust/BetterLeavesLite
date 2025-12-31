@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "mysticsbiomes:snowy_jacaranda_leaves1",
+                "mysticsbiomes:snowy_jacaranda_leaves2",
+                "mysticsbiomes:snowy_jacaranda_leaves3",
+                "mysticsbiomes:snowy_jacaranda_leaves4"
+            ]
+        }
+    ]
+}

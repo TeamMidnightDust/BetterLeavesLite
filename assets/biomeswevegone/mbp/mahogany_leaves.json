@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "biomeswevegone:snowy_mahogany_leaves1",
+                "biomeswevegone:snowy_mahogany_leaves2",
+                "biomeswevegone:snowy_mahogany_leaves3",
+                "biomeswevegone:snowy_mahogany_leaves4"
+            ]
+        }
+    ]
+}

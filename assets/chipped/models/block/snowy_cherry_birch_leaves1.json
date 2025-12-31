@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy1",
+    "textures": {
+        "all": "chipped:block/birch_leaves/cherry_birch_leaves",
+        "snowy": "betterleaves:block/snowy_overlay1"
+    }
+}

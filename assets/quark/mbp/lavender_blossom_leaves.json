@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "quark:snowy_lavender_blossom_leaves1",
+                "quark:snowy_lavender_blossom_leaves2",
+                "quark:snowy_lavender_blossom_leaves3",
+                "quark:snowy_lavender_blossom_leaves4"
+            ]
+        }
+    ]
+}

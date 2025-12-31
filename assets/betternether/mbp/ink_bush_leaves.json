@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "betternether:snowy_ink_bush_leaves1",
+                "betternether:snowy_ink_bush_leaves2",
+                "betternether:snowy_ink_bush_leaves3",
+                "betternether:snowy_ink_bush_leaves4"
+            ]
+        }
+    ]
+}

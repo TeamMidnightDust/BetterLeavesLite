@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy2",
+    "textures": {
+        "all": "regions_unexplored:block/mauve_leaves_flowering_3",
+        "snowy": "betterleaves:block/snowy_overlay1"
+    }
+}

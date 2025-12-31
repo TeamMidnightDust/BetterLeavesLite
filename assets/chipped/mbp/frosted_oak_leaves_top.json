@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "chipped:snowy_frosted_oak_leaves_top1",
+                "chipped:snowy_frosted_oak_leaves_top2",
+                "chipped:snowy_frosted_oak_leaves_top3",
+                "chipped:snowy_frosted_oak_leaves_top4"
+            ]
+        }
+    ]
+}

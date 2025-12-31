@@ -1,0 +1,8 @@
+{
+    "parent": "betterleaves:block/leaves_snowy1",
+    "textures": {
+        "all": "deep_aether:block/flowering_roseroot_leaves",
+        "snowy": "betterleaves:block/snowy_overlay0",
+        "overlay": "deep_aether:block/flowering_roseroot_leaves_overlay"
+    }
+}

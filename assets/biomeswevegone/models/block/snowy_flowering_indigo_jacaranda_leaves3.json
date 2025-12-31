@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy3",
+    "textures": {
+        "all": "biomeswevegone:block/flowering_indigo_jacaranda_leaves",
+        "snowy": "betterleaves:block/snowy_overlay3"
+    }
+}

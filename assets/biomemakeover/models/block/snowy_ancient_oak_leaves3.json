@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy3",
+    "textures": {
+        "all": "biomemakeover:block/ancient_oak_leaves",
+        "snowy": "betterleaves:block/snowy_overlay0"
+    }
+}

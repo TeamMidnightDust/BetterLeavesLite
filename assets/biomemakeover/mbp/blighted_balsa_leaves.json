@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "biomemakeover:snowy_blighted_balsa_leaves1",
+                "biomemakeover:snowy_blighted_balsa_leaves2",
+                "biomemakeover:snowy_blighted_balsa_leaves3",
+                "biomemakeover:snowy_blighted_balsa_leaves4"
+            ]
+        }
+    ]
+}

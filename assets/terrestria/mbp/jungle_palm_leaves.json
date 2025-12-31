@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "terrestria:snowy_jungle_palm_leaves1",
+                "terrestria:snowy_jungle_palm_leaves2",
+                "terrestria:snowy_jungle_palm_leaves3",
+                "terrestria:snowy_jungle_palm_leaves4"
+            ]
+        }
+    ]
+}

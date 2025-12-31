@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy2",
+    "textures": {
+        "all": "aether_redux:block/natural/fieldsproot_leaves_3",
+        "snowy": "betterleaves:block/snowy_overlay3"
+    }
+}

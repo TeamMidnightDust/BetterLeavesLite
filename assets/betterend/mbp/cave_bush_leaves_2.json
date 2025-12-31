@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "betterend:snowy_cave_bush_leaves_21",
+                "betterend:snowy_cave_bush_leaves_22",
+                "betterend:snowy_cave_bush_leaves_23",
+                "betterend:snowy_cave_bush_leaves_24"
+            ]
+        }
+    ]
+}

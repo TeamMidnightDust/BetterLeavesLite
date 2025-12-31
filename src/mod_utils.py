@@ -12,7 +12,8 @@ def unpackMods():
                 zf.close()
 
 def cleanupMods():
-    if (os.path.exists("./input/mods")): shutil.rmtree("./input/mods")
+    if (os.path.exists("./input/mods")):
+        shutil.rmtree("./input/mods")
     os.makedirs("./input/mods")
 
 def scanModsForTextures():

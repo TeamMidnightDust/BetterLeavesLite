@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "regions_unexplored:snowy_larch_leaves_cone1",
+                "regions_unexplored:snowy_larch_leaves_cone2",
+                "regions_unexplored:snowy_larch_leaves_cone3",
+                "regions_unexplored:snowy_larch_leaves_cone4"
+            ]
+        }
+    ]
+}

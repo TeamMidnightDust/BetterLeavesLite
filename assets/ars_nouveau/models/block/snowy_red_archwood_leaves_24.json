@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy4",
+    "textures": {
+        "all": "ars_nouveau:block/red_archwood_leaves_2",
+        "snowy": "betterleaves:block/snowy_overlay0"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy4",
+    "textures": {
+        "all": "mysticsbiomes:block/jacaranda_leaves_variant",
+        "snowy": "betterleaves:block/snowy_overlay3"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "croptopia:snowy_cinnamon_leaves1",
+                "croptopia:snowy_cinnamon_leaves2",
+                "croptopia:snowy_cinnamon_leaves3",
+                "croptopia:snowy_cinnamon_leaves4"
+            ]
+        }
+    ]
+}

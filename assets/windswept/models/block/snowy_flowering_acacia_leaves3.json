@@ -1,0 +1,8 @@
+{
+    "parent": "betterleaves:block/leaves_snowy3",
+    "textures": {
+        "all": "windswept:block/flowering_acacia_leaves",
+        "snowy": "betterleaves:block/snowy_overlay2",
+        "overlay": "windswept:block/flowering_acacia_leaves_overlay"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "aether_redux:snowy_glacia_leaves1",
+                "aether_redux:snowy_glacia_leaves2",
+                "aether_redux:snowy_glacia_leaves3",
+                "aether_redux:snowy_glacia_leaves4"
+            ]
+        }
+    ]
+}

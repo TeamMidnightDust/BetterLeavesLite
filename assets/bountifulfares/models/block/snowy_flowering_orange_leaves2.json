@@ -1,0 +1,8 @@
+{
+    "parent": "betterleaves:block/leaves_snowy2",
+    "textures": {
+        "all": "bountifulfares:block/orange_leaves",
+        "snowy": "betterleaves:block/snowy_overlay0",
+        "overlay": "bountifulfares:block/flowering_orange_leaves"
+    }
+}

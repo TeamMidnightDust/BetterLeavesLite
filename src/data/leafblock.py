@@ -17,11 +17,14 @@ class LeafBlock:
     dynamictrees_namespace = None
     blockstate_data = None
     sprite_overrides = None
+    mask_index = 0
 
     def getId(self):
-        if (self.block_id_override != None): return self.block_id_override
+        if (self.block_id_override is not None):
+            return self.block_id_override
         return self.namespace+":"+self.block_name
 
     def getTextureId(self):
-        if (self.texture_id_override != None): return self.texture_id_override
+        if (self.texture_id_override is not None):
+            return self.texture_id_override
         return self.namespace+":block/"+self.texture_prefix+self.texture_name

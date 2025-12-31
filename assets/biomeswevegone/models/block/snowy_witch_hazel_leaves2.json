@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy2",
+    "textures": {
+        "all": "biomeswevegone:block/witch_hazel/leaves",
+        "snowy": "betterleaves:block/snowy_overlay0"
+    }
+}

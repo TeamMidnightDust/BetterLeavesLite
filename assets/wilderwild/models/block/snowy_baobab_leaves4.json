@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy4",
+    "textures": {
+        "all": "wilderwild:block/baobab_leaves",
+        "snowy": "betterleaves:block/snowy_overlay3"
+    }
+}

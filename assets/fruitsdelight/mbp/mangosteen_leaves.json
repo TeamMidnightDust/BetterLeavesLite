@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "fruitsdelight:snowy_mangosteen_leaves1",
+                "fruitsdelight:snowy_mangosteen_leaves2",
+                "fruitsdelight:snowy_mangosteen_leaves3",
+                "fruitsdelight:snowy_mangosteen_leaves4"
+            ]
+        }
+    ]
+}

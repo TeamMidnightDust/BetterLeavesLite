@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "paradise_lost:snowy_aurel_leaves_mirrored1",
+                "paradise_lost:snowy_aurel_leaves_mirrored2",
+                "paradise_lost:snowy_aurel_leaves_mirrored3",
+                "paradise_lost:snowy_aurel_leaves_mirrored4"
+            ]
+        }
+    ]
+}

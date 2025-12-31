@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "bountifulfares:snowy_flowering_orange_leaves1",
+                "bountifulfares:snowy_flowering_orange_leaves2",
+                "bountifulfares:snowy_flowering_orange_leaves3",
+                "bountifulfares:snowy_flowering_orange_leaves4"
+            ]
+        }
+    ]
+}

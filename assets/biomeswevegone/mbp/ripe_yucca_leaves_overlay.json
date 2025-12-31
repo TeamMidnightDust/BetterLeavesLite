@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "biomeswevegone:snowy_ripe_yucca_leaves_overlay1",
+                "biomeswevegone:snowy_ripe_yucca_leaves_overlay2",
+                "biomeswevegone:snowy_ripe_yucca_leaves_overlay3",
+                "biomeswevegone:snowy_ripe_yucca_leaves_overlay4"
+            ]
+        }
+    ]
+}

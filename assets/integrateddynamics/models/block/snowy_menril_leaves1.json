@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy1",
+    "textures": {
+        "all": "integrateddynamics:block/menril_leaves_fancy",
+        "snowy": "betterleaves:block/snowy_overlay3"
+    }
+}

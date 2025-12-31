@@ -8,6 +8,8 @@ from setuptools._distutils.dir_util import copy_tree
 from src.data.leafblock import LeafBlock
 from src.data.carpetblock import CarpetBlock
 from src.mod_utils import unpackMods, cleanupMods, scanModsForTextures
+from src.puzzle.snowy_model_generator import generateSnowyBlockModels
+from src.puzzle.snowy_overlay_generator import generateSnowyOverlay
 from src.texturepack_utils import unpackTexturepacks, cleanupTexturepacks
 from src.utilities import printCyan, printGreen, printOverride
 from src.texture_generator import generateTexture
@@ -16,19 +18,26 @@ from src.blockstate_generator import generateBlockstate
 from src.carpet_generator import generateCarpetAssets
 from src.json_utils import minifyJsonFiles, minify
 from src.betterleaves_json import applyJson
+from src.puzzle.predicate_generator import generatePredicates
 
 # This is where the magic happens
 def autoGen(jsonData, args):
     print("Generating assets...")
-    if (os.path.exists("./assets")): shutil.rmtree("./assets")
+    if (os.path.exists("./assets")):
+        shutil.rmtree("./assets")
     copy_tree("./base/assets/", "./assets/")
-    if minify: minifyJsonFiles()
+    if minify:
+        minifyJsonFiles()
 
     filecount = 0
-    if (args.programmer): unpackTexturepacks("./input/programmer_art")
+    if (args.programmer):
+        unpackTexturepacks("./input/programmer_art")
     unpackTexturepacks()
     unpackMods()
     scanModsForTextures()
+
+    if (args.snowy):
+        generateSnowyOverlay(args.programmer)
 
     for root, dirs, files in os.walk("./input/assets"):
         for infile in files:
@@ -36,7 +45,8 @@ def autoGen(jsonData, args):
                 filecount += processLeaf(root, files, infile, jsonData, args)
 
     print()
-    if (args.programmer): cleanupTexturepacks("./input/programmer_art")
+    if (args.programmer):
+        cleanupTexturepacks("./input/programmer_art")
     cleanupTexturepacks()
     cleanupMods()
     printCyan("Processed {} leaf blocks".format(filecount))
@@ -65,8 +75,9 @@ def processLeaf(root, files, infile, jsonData, args) -> int:
             printOverride("Auto-redirected from "+leaf.getId())
         else: # For mods that use a structure like "texture/natural/some_leaves.png"
             printGreen(leaf.getId())
-            printOverride("Prefix: "+ leaf.texture_prefix);
-    else: printGreen(leaf.getId())
+            printOverride("Prefix: "+ leaf.texture_prefix)
+    else:
+        printGreen(leaf.getId())
 
     # We don't want to generate assets for compile-only or overlay textures
     if leaf.getTextureId() in compileonly_textures or leaf.getTextureId() in overlay_textures.values():
@@ -77,7 +88,7 @@ def processLeaf(root, files, infile, jsonData, args) -> int:
 
     # Generate texture
     if not (leaf.use_legacy_model or leaf.getId() in overlay_variants.keys()):
-        generateTexture(root, infile, args.programmer)
+        generateTexture(leaf, root, infile, args.programmer)
 
     # Set block id and apply overrides
     if leaf.getId() in block_id_overrides:
@@ -110,7 +121,6 @@ def processLeaf(root, files, infile, jsonData, args) -> int:
         printOverride("Has overlay variant: "+leaf.texture_id_override)
 
     # Check if the block has a dynamic trees addon namespace
-
     if (leaf.namespace) in dynamictrees_namespaces:
         leaf.dynamictrees_namespace = dynamictrees_namespaces[leaf.namespace]
 
@@ -126,6 +136,9 @@ def processLeaf(root, files, infile, jsonData, args) -> int:
     generateBlockstate(leaf, block_state_copies)
     generateBlockModels(leaf)
     generateItemModel(leaf)
+    if args.snowy:
+        generatePredicates(leaf)
+        generateSnowyBlockModels(leaf)
 
     # Certain mods contain leaf carpets.
     # Because we change the leaf texture, we need to fix the carpet models.
@@ -144,11 +157,13 @@ def shouldUseLegacyModel(leaf, root, infile, args) -> bool:
     return False
 
 def generateCarpet(leaf, leaves_with_carpet):
-    if (leaf.getId()) not in leaves_with_carpet: return
+    if (leaf.getId()) not in leaves_with_carpet:
+        return
 
     carpet_ids = leaves_with_carpet[leaf.getId()]
     # In case only one carpet is provided (as a string), turn it into a list
-    if not isinstance(carpet_ids, list): carpet_ids = [carpet_ids]
+    if not isinstance(carpet_ids, list):
+        carpet_ids = [carpet_ids]
 
     for carpet_id in carpet_ids:
         carpet = CarpetBlock(carpet_id, leaf)

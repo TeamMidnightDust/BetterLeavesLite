@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy1",
+    "textures": {
+        "all": "ad_astra:block/glacian_leaves",
+        "snowy": "betterleaves:block/snowy_overlay3"
+    }
+}

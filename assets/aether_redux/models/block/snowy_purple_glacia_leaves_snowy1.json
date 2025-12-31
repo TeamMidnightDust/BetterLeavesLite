@@ -1,0 +1,9 @@
+{
+    "parent": "betterleaves:block/leaves_snowy1",
+    "textures": {
+        "all": "aether_redux:block/natural/purple_glacia_leaves_snowy",
+        "snowy": "betterleaves:block/snowy_overlay3",
+        "top": "minecraft:block/snow",
+        "bottom": "aether_redux:block/natural/purple_glacia_leaves"
+    }
+}

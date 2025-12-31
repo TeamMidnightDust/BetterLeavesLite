@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "mysticsbiomes:snowy_hydrangea_leaves_variant31",
+                "mysticsbiomes:snowy_hydrangea_leaves_variant32",
+                "mysticsbiomes:snowy_hydrangea_leaves_variant33",
+                "mysticsbiomes:snowy_hydrangea_leaves_variant34"
+            ]
+        }
+    ]
+}

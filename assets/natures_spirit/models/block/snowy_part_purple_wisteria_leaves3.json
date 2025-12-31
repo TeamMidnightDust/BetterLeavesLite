@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy3",
+    "textures": {
+        "all": "natures_spirit:block/part_purple_wisteria_leaves",
+        "snowy": "betterleaves:block/snowy_overlay2"
+    }
+}

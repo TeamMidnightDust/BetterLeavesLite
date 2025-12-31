@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_snowy1",
+    "textures": {
+        "all": "regions_unexplored:block/golden_larch_leaves_cone",
+        "snowy": "betterleaves:block/snowy_overlay3"
+    }
+}

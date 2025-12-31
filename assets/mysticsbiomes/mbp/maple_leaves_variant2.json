@@ -1,0 +1,36 @@
+{
+    "overrides": [
+        {
+            "when": {
+                "or": [
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    },
+                    {
+                        "adjacent_block": {
+                            "state": "minecraft:snow_block",
+                            "offset": {
+                                "x": 0,
+                                "y": 1,
+                                "z": 0
+                            }
+                        }
+                    }
+                ]
+            },
+            "apply": [
+                "mysticsbiomes:snowy_maple_leaves_variant21",
+                "mysticsbiomes:snowy_maple_leaves_variant22",
+                "mysticsbiomes:snowy_maple_leaves_variant23",
+                "mysticsbiomes:snowy_maple_leaves_variant24"
+            ]
+        }
+    ]
+}

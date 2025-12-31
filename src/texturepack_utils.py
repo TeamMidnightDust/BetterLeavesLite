@@ -24,5 +24,5 @@ def scanPacksForTexture(baseRoot, baseInfile, rootFolder="./input/texturepacks")
             if "assets" in root and "assets" in baseRoot:
                 if infile.endswith(".png") and (len(root.split("/")) > 3) and (baseInfile == infile) and (root.split("assets")[1] == baseRoot.split("assets")[1]):
                     printCyan(" Using texture from: " + root.split("assets")[0].replace(rootFolder, ""))
-                    return root;
+                    return root
     return baseRoot
