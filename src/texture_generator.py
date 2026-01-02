@@ -6,7 +6,7 @@ from PIL import Image
 # Local imports
 from src.data.leafblock import LeafBlock
 from src.texturepack_utils import scanPacksForTexture
-from src.utilities import printOverride
+from src.utilities import list_files_alphabetically, printOverride
 
 def generateTexture(leaf: LeafBlock, root, infile, useProgrammerArt=False):
     outfolder = root.replace("assets", "").replace("input", "assets")
@@ -75,7 +75,7 @@ def stitchTexture(leaf: LeafBlock, textureMap, root, infile, outfile):
     if not os.path.isdir(mask_location) or len(os.listdir(mask_location)) == 0:
         mask_location = "input/masks/16px"
     random.seed(infile) # Use the filename as a seed. This ensures we always get the same mask per block.
-    masks = os.listdir(mask_location)
+    masks = list_files_alphabetically(mask_location)
     leaf.mask_index = random.randint(0, len(masks)-1) # Choose a random mask to get some variation between the different types of leaves
     mask_location += f"/{masks[leaf.mask_index]}"
     mask = Image.open(mask_location).convert('L').resize(out.size, resample=Image.NEAREST)

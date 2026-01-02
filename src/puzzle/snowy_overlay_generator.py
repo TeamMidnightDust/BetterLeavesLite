@@ -3,7 +3,7 @@ from PIL import Image
 
 # Local imports
 from src.texturepack_utils import scanPacksForTexture
-from src.utilities import printOverride
+from src.utilities import list_files_alphabetically, printOverride
 
 def generateSnowyOverlay(useProgrammerArt=False):
     outfolder = "assets/betterleaves/textures/block/"
@@ -12,7 +12,7 @@ def generateSnowyOverlay(useProgrammerArt=False):
     try:
         stitchTexture(outfolder, useProgrammerArt)
     except IOError:
-        print("Error while generating snow overly texture for")
+        print("Error while generating snow overlay texture")
 
 
 def stitchTexture(outfolder, useProgrammerArt):
@@ -33,10 +33,10 @@ def stitchTexture(outfolder, useProgrammerArt):
         out.paste(side, (int(width / 2 + width * x), int(height / 2)))
 
     # As the last step, we apply our custom mask to round the edges and smoothen things out
-    mask_location = f"input/masks/{width}px" # If possible, use a mask designed for the texture's size
+    mask_location = f"input/masks/{width}px/snowy" # If possible, use a mask designed for the texture's size
     if not os.path.isdir(mask_location) or len(os.listdir(mask_location)) == 0:
-        mask_location = "input/masks/16px"
-    masks = os.listdir(mask_location)
+        mask_location = "input/masks/16px/snowy"
+    masks = list_files_alphabetically(mask_location)
     for mask_index in range(0, len(masks)):
         mask = Image.open(os.path.join(mask_location, masks[mask_index])).convert('L').resize(out.size, resample=Image.NEAREST)
         output = Image.composite(out, transparent, mask)
