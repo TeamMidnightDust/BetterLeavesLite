@@ -125,7 +125,9 @@
             "dtterralith:oak_tall_conifer_leaves",
             "dtterralith:oak_twiglet_leaves",
             "dtterralith:oak_twilight_leaves",
-            "dtterralith:oak_yellow_conifer_leaves"
+            "dtterralith:oak_yellow_conifer_leaves",
+            "dtbop:sparse_oak_leaves",
+            "dtbwg:prairie_oak_leaves"
         ],
         "minecraft:birch_leaves": [
             "twilightforest:mangrove_leaves",
@@ -187,7 +189,8 @@
             "dtterralith:dark_oak_sakura_bush_leaves",
             "dtterralith:dark_oak_sakura_leaves",
             "dtterralith:dark_oak_wide_leaves",
-            "dtterralith:tall_dark_oak_leaves"
+            "dtterralith:tall_dark_oak_leaves",
+            "dtbop:dark_poplar_leaves"
         ],
         "minecraft:flowering_azalea_leaves": [
             "dtterralith:flowering_azalea_canopy_leaves",
