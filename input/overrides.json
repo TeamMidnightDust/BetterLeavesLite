@@ -85,7 +85,8 @@
         "dreamwoods:rose_leaves": "dreamwoods:rose_leaves_flowering",
         "dreamwoods:swamp_willow_leaves_full": "dreamwoods:swamp_willow_leaves",
         "dreamwoods:swampy_leaves": "dreamwoods:swamp_leaves",
-        "dreamwoods:wisteria_leaves_new": "dreamwoods:wisteria_leaves"
+        "dreamwoods:wisteria_leaves_new": "dreamwoods:wisteria_leaves",
+        "meadow:alpine_birch_leaves_top": "meadow:alpine_birch_leaves_hanging"
     },
     "dynamicTreesNamespaces": {
         "minecraft": "dynamictrees",

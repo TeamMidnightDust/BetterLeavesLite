@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging1"
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging1",
+                "y": 90
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging1",
+                "y": 180
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging1",
+                "y": 270
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging2"
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging2",
+                "y": 90
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging2",
+                "y": 180
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging2",
+                "y": 270
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging3"
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging3",
+                "y": 90
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging3",
+                "y": 180
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging3",
+                "y": 270
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging4"
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging4",
+                "y": 90
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging4",
+                "y": 180
+            },
+            {
+                "model": "meadow:block/alpine_birch_leaves_hanging4",
+                "y": 270
+            }
+        ]
+    }
+}
