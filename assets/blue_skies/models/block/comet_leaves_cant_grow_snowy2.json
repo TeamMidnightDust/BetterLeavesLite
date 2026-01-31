@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "blue_skies:block/leaves/comet_leaves_cant_grow_snowy"
+    }
+}

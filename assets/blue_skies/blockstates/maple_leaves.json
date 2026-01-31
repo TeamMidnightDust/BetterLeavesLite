@@ -1,0 +1,128 @@
+{
+    "variants": {
+        "snowy=false": [
+            {
+                "model": "blue_skies:block/maple_leaves1"
+            },
+            {
+                "model": "blue_skies:block/maple_leaves1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/maple_leaves1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/maple_leaves1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/maple_leaves2"
+            },
+            {
+                "model": "blue_skies:block/maple_leaves2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/maple_leaves2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/maple_leaves2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/maple_leaves3"
+            },
+            {
+                "model": "blue_skies:block/maple_leaves3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/maple_leaves3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/maple_leaves3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/maple_leaves4"
+            },
+            {
+                "model": "blue_skies:block/maple_leaves4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/maple_leaves4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/maple_leaves4",
+                "y": 270
+            }
+        ],
+        "snowy=true": [
+            {
+                "model": "blue_skies:block/maple_leaves_snowy1"
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy2"
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy3"
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy4"
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/maple_leaves_snowy4",
+                "y": 270
+            }
+        ]
+    }
+}

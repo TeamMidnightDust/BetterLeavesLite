@@ -1,0 +1,252 @@
+{
+    "variants": {
+        "snowy=false,mature=false": [
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves1"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves2"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves3"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves4"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves4",
+                "y": 270
+            }
+        ],
+        "snowy=false,mature=true": [
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature1"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature2"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature3"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature4"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature4",
+                "y": 270
+            }
+        ],
+        "snowy=true,mature=true": [
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy1"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy2"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy3"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy4"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_mature_snowy4",
+                "y": 270
+            }
+        ],
+        "snowy=true,mature=false": [
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy1"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy2"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy3"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy4"
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/crescent_fruit_leaves_snowy4",
+                "y": 270
+            }
+        ]
+    }
+}

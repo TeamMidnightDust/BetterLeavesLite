@@ -1,0 +1,376 @@
+{
+    "variants": {
+        "snowy=false,growth=cant_grow": [
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow1"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow2"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow3"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow4"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow4",
+                "y": 270
+            }
+        ],
+        "snowy=true,growth=cant_grow": [
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy1"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy2"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy3"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy4"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_cant_grow_snowy4",
+                "y": 270
+            }
+        ],
+        "snowy=false,growth=can_grow": [
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow1"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow2"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow3"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow4"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow4",
+                "y": 270
+            }
+        ],
+        "snowy=true,growth=can_grow": [
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy1"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy2"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy3"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy4"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_can_grow_snowy4",
+                "y": 270
+            }
+        ],
+        "snowy=false,growth=grown": [
+            {
+                "model": "blue_skies:block/comet_leaves_grown1"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown2"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown3"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown4"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown4",
+                "y": 270
+            }
+        ],
+        "snowy=true,growth=grown": [
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy1"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy1",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy1",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy1",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy2"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy2",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy2",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy2",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy3"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy3",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy3",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy3",
+                "y": 270
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy4"
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy4",
+                "y": 90
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy4",
+                "y": 180
+            },
+            {
+                "model": "blue_skies:block/comet_leaves_grown_snowy4",
+                "y": 270
+            }
+        ]
+    }
+}
