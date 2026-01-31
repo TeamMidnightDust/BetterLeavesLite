@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves1"
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves1",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves1",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves1",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves2"
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves2",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves2",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves2",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves3"
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves3",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves3",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves3",
+                "y": 270
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves4"
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves4",
+                "y": 90
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves4",
+                "y": 180
+            },
+            {
+                "model": "regions_unexplored:block/golden_larch_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

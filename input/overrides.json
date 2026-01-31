@@ -94,7 +94,8 @@
         "aether": "dtaether",
         "natures_spirit": "dtnatures_spirit",
         "ecologics": "dtecologics",
-        "biomeswevegone": "dtbwg"
+        "biomeswevegone": "dtbwg",
+        "regions_unexplored": "dtru"
     },
     "generateItemModels": [
         "biomesoplenty:rainbow_birch_leaves",
