@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "dreamwoods:block/magic_blue_leaves_2"
+    }
+}

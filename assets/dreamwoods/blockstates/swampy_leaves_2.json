@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "dreamwoods:block/swampy_leaves_21"
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_21",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_21",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_21",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_22"
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_22",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_22",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_22",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_23"
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_23",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_23",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_23",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_24"
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_24",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_24",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/swampy_leaves_24",
+                "y": 270
+            }
+        ]
+    }
+}

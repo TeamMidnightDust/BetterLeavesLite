@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves",
+    "textures": {
+        "all": "dreamwoods:block/holly_leaves_alt"
+    }
+}

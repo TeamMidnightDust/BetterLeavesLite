@@ -1,0 +1,186 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "dreamwoods:block/giant_oak_leaves1"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves1",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves1",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves1",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves2"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves2",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves2",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves2",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves3"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves3",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves3",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves3",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves4"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves4",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves4",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves4",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_21"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_21",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_21",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_21",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_22"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_22",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_22",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_22",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_23"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_23",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_23",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_23",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_24"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_24",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_24",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_24",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_31"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_31",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_31",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_31",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_32"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_32",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_32",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_32",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_33"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_33",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_33",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_33",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_34"
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_34",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_34",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/giant_oak_leaves_34",
+                "y": 270
+            }
+        ]
+    }
+}

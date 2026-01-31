@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering1"
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering1",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering1",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering1",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering2"
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering2",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering2",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering2",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering3"
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering3",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering3",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering3",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering4"
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering4",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering4",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/rose_leaves_flowering4",
+                "y": 270
+            }
+        ]
+    }
+}

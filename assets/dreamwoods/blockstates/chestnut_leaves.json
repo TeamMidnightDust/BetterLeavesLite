@@ -1,0 +1,306 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "dreamwoods:block/chestnut_leaves1"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves1",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves1",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves1",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves2"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves2",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves2",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves2",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves3"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves3",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves3",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves3",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves4"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves4",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves4",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves4",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_11"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_11",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_11",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_11",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_12"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_12",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_12",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_12",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_13"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_13",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_13",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_13",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_14"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_14",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_14",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_14",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_21"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_21",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_21",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_21",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_22"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_22",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_22",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_22",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_23"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_23",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_23",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_23",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_24"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_24",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_24",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_24",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_31"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_31",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_31",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_31",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_32"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_32",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_32",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_32",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_33"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_33",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_33",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_33",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_34"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_34",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_34",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_fl_34",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering1"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering1",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering1",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering1",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering2"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering2",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering2",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering2",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering3"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering3",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering3",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering3",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering4"
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering4",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering4",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/chestnut_leaves_flowering4",
+                "y": 270
+            }
+        ]
+    }
+}

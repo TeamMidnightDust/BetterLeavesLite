@@ -1,0 +1,126 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "dreamwoods:block/magic_blue_leaves1"
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves1",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves1",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves1",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves2"
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves2",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves2",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves2",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves3"
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves3",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves3",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves3",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves4"
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves4",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves4",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves4",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_21"
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_21",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_21",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_21",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_22"
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_22",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_22",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_22",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_23"
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_23",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_23",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_23",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_24"
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_24",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_24",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/magic_blue_leaves_24",
+                "y": 270
+            }
+        ]
+    }
+}

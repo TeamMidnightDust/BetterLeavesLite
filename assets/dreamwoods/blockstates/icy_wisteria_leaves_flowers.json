@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers1"
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers1",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers1",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers1",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers2"
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers2",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers2",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers2",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers3"
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers3",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers3",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers3",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers4"
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers4",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers4",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/icy_wisteria_leaves_flowers4",
+                "y": 270
+            }
+        ]
+    }
+}

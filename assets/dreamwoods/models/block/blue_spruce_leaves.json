@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves",
+    "textures": {
+        "all": "dreamwoods:block/blue_spruce_leaves"
+    }
+}

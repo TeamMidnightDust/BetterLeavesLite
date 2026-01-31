@@ -1,0 +1,9 @@
+{
+    "blockStateData": {
+        "block": "dreamwoods:great_willow_leaves",
+        "state": ""
+    },
+    "spriteOverrides": {
+        "bottom": "dreamwoods:block/great_willow_leaves_full_bottom"
+    }
+}

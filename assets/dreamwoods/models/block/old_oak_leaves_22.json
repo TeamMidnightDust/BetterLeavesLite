@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "dreamwoods:block/old_oak_leaves_2"
+    }
+}

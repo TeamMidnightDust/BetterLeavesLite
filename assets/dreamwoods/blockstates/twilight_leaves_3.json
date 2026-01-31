@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "dreamwoods:block/twilight_leaves_31"
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_31",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_31",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_31",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_32"
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_32",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_32",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_32",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_33"
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_33",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_33",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_33",
+                "y": 270
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_34"
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_34",
+                "y": 90
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_34",
+                "y": 180
+            },
+            {
+                "model": "dreamwoods:block/twilight_leaves_34",
+                "y": 270
+            }
+        ]
+    }
+}
