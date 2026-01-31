@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "bloomingnature:block/fan_palm_leaves1"
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves1",
+                "y": 90
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves1",
+                "y": 180
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves1",
+                "y": 270
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves2"
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves2",
+                "y": 90
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves2",
+                "y": 180
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves2",
+                "y": 270
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves3"
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves3",
+                "y": 90
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves3",
+                "y": 180
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves3",
+                "y": 270
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves4"
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves4",
+                "y": 90
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves4",
+                "y": 180
+            },
+            {
+                "model": "bloomingnature:block/fan_palm_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

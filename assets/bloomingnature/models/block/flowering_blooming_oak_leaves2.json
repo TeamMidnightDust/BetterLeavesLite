@@ -1,0 +1,7 @@
+{
+    "parent": "betterleaves:block/leaves_overlay2",
+    "textures": {
+        "all": "bloomingnature:block/flowering_blooming_oak_leaves",
+        "overlay": "bloomingnature:block/flowering_blooming_oak_leaves_overlay"
+    }
+}
