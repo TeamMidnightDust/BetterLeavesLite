@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "vinery:block/grapevine_leaves1"
+            },
+            {
+                "model": "vinery:block/grapevine_leaves1",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/grapevine_leaves1",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/grapevine_leaves1",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/grapevine_leaves2"
+            },
+            {
+                "model": "vinery:block/grapevine_leaves2",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/grapevine_leaves2",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/grapevine_leaves2",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/grapevine_leaves3"
+            },
+            {
+                "model": "vinery:block/grapevine_leaves3",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/grapevine_leaves3",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/grapevine_leaves3",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/grapevine_leaves4"
+            },
+            {
+                "model": "vinery:block/grapevine_leaves4",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/grapevine_leaves4",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/grapevine_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves2",
+    "textures": {
+        "all": "vinery:block/apple_leaves_0"
+    }
+}

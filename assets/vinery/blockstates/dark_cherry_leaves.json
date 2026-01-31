@@ -1,0 +1,252 @@
+{
+    "variants": {
+        "age=0": [
+            {
+                "model": "vinery:block/dark_cherry_leaves_01"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_01",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_01",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_01",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_02"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_02",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_02",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_02",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_03"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_03",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_03",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_03",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_04"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_04",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_04",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_04",
+                "y": 270
+            }
+        ],
+        "age=1": [
+            {
+                "model": "vinery:block/dark_cherry_leaves_11"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_11",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_11",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_11",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_12"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_12",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_12",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_12",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_13"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_13",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_13",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_13",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_14"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_14",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_14",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_14",
+                "y": 270
+            }
+        ],
+        "age=2": [
+            {
+                "model": "vinery:block/dark_cherry_leaves_21"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_21",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_21",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_21",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_22"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_22",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_22",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_22",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_23"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_23",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_23",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_23",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_24"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_24",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_24",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_24",
+                "y": 270
+            }
+        ],
+        "age=3": [
+            {
+                "model": "vinery:block/dark_cherry_leaves_31"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_31",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_31",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_31",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_32"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_32",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_32",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_32",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_33"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_33",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_33",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_33",
+                "y": 270
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_34"
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_34",
+                "y": 90
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_34",
+                "y": 180
+            },
+            {
+                "model": "vinery:block/dark_cherry_leaves_34",
+                "y": 270
+            }
+        ]
+    }
+}
