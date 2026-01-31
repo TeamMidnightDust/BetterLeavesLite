@@ -95,7 +95,8 @@
         "natures_spirit": "dtnatures_spirit",
         "ecologics": "dtecologics",
         "biomeswevegone": "dtbwg",
-        "regions_unexplored": "dtru"
+        "regions_unexplored": "dtru",
+        "ars_nouveau": "darsnouveau"
     },
     "generateItemModels": [
         "biomesoplenty:rainbow_birch_leaves",

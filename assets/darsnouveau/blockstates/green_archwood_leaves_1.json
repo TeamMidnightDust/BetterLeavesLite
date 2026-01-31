@@ -1,0 +1,126 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves1"
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves1",
+                "y": 90
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves1",
+                "y": 180
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves1",
+                "y": 270
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves2"
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves2",
+                "y": 90
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves2",
+                "y": 180
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves2",
+                "y": 270
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves3"
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves3",
+                "y": 90
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves3",
+                "y": 180
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves3",
+                "y": 270
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves4"
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves4",
+                "y": 90
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves4",
+                "y": 180
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves4",
+                "y": 270
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_11"
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_11",
+                "y": 90
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_11",
+                "y": 180
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_11",
+                "y": 270
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_12"
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_12",
+                "y": 90
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_12",
+                "y": 180
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_12",
+                "y": 270
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_13"
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_13",
+                "y": 90
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_13",
+                "y": 180
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_13",
+                "y": 270
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_14"
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_14",
+                "y": 90
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_14",
+                "y": 180
+            },
+            {
+                "model": "ars_nouveau:block/green_archwood_leaves_14",
+                "y": 270
+            }
+        ]
+    }
+}
