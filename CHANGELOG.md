@@ -1,3 +1,16 @@
+## Better Leaves v9.6
+
+- Added compatibility for:
+  - Minecraft 26.3 (Wilderness Bound)
+  - No Man's Land
+  - Create Northstar (Redux)
+  - Dynamic Trees for BetterEnd
+  - Dynamic Trees for BetterNether
+  - Dynamic Trees for Quark
+  - Dynamic Trees for Vanilla Backport
+
+## Better Leaves v9.5
+
 - Added compatibility for:
   - Blue Skies
   - Alex's Caves
