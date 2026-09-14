@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "nomansland:block/maple/maple_leaves"
+    }
+}
