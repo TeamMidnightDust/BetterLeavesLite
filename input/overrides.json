@@ -1,225 +1,219 @@
 {
-    "noTint": [
-        "minecraft:azalea_leaves",
-        "minecraft:flowering_azalea_leaves",
-        "ad_astra:glacian_leaves",
-        "palegarden:pale_oak_leaves"
+  "noTint": [
+    "minecraft:azalea_leaves",
+    "minecraft:flowering_azalea_leaves",
+    "ad_astra:glacian_leaves",
+    "palegarden:pale_oak_leaves"
+  ],
+  "leavesWithCarpet": {
+    "minecraft:oak_leaves": [
+      "quark:oak_leaf_carpet",
+      "twilightforest:fallen_leaves"
     ],
-    "leavesWithCarpet": {
-        "minecraft:oak_leaves": ["quark:oak_leaf_carpet", "twilightforest:fallen_leaves"],
-        "minecraft:birch_leaves": ["quark:birch_leaf_carpet"],
-        "minecraft:spruce_leaves": ["quark:spruce_leaf_carpet"],
-        "minecraft:jungle_leaves": ["quark:jungle_leaf_carpet"],
-        "minecraft:acacia_leaves": ["quark:acacia_leaf_carpet"],
-        "minecraft:dark_oak_leaves": ["quark:dark_oak_leaf_carpet"],
-        "minecraft:mangrove_leaves": ["quark:mangrove_leaf_carpet"],
-        "minecraft:cherry_leaves": ["quark:cherry_leaf_carpet"],
-        "minecraft:azalea_leaves": ["quark:azalea_leaf_carpet"],
-        "minecraft:flowering_azalea_leaves": ["quark:flowering_azalea_leaf_carpet"],
-        "minecraft:pale_oak_leaves": ["quark:pale_oak_leaf_carpet"],
-        "quark:ancient_leaves": "quark:ancient_leaf_carpet",
-        "quark:blue_blossom_leaves": "quark:blue_blossom_leaf_carpet",
-        "quark:lavender_blossom_leaves": "quark:lavender_blossom_leaf_carpet",
-        "quark:orange_blossom_leaves": "quark:orange_blossom_leaf_carpet",
-        "quark:red_blossom_leaves": "quark:red_blossom_leaf_carpet",
-        "quark:yellow_blossom_leaves": "quark:yellow_blossom_leaf_carpet",
-        "terrestria:sakura_leaves": "terrestria:sakura_leaf_pile",
-        "paradise_lost:lavender_wisteria_leaves": "paradise_lost:lavender_wisteria_leaf_pile",
-        "paradise_lost:aurel_leaves": "paradise_lost:aurel_leaf_pile",
-        "paradise_lost:rose_wisteria_leaves": "paradise_lost:rose_wisteria_leaf_pile",
-        "paradise_lost:frost_wisteria_leaves": "paradise_lost:frost_wisteria_leaf_pile",
-        "environmental:blue_wisteria_leaves": "environmental:blue_wisteria_leaf_pile",
-        "environmental:cheerful_plum_leaves": "environmental:cheerful_plum_leaf_pile",
-        "environmental:hibiscus_leaves": "environmental:hibiscus_leaf_pile",
-        "environmental:moody_plum_leaves": "environmental:moody_plum_leaf_pile",
-        "environmental:pine_leaves": "environmental:pine_leaf_pile",
-        "environmental:pink_wisteria_leaves": "environmental:pink_wisteria_leaf_pile",
-        "environmental:plum_leaves": "environmental:plum_leaf_pile",
-        "environmental:purple_wisteria_leaves": "environmental:purple_wisteria_leaf_pile",
-        "environmental:white_wisteria_leaves": "environmental:white_wisteria_leaf_pile",
-        "environmental:willow_leaves": "environmental:willow_leaf_pile",
-        "environmental:wisteria_leaves": "environmental:wisteria_leaf_pile"
-    },
-    "blockTextures": {
-        "biomesoplenty:rainbow_birch_leaves": "minecraft:block/birch_leaves"
-    },
-    "overlayTextures": {
-        "biomesoplenty:pine_leaves": "biomesoplenty:block/pine_leaves_overlay",
-        "biomesoplenty:flowering_oak_leaves": "biomesoplenty:block/flowering_oak_leaves_overlay",
-        "aether_redux:shimmering_crystal_glowfruit_leaves": "aether_redux:block/natural/shimmering_crystal_glowfruit_leaves_glow",
-        "deep_aether:flowering_blue_roseroot_leaves": "deep_aether:block/flowering_blue_roseroot_leaves_overlay",
-        "deep_aether:flowering_roseroot_leaves": "deep_aether:block/flowering_roseroot_leaves_overlay",
-        "windswept:flowering_acacia_leaves": "windswept:block/flowering_acacia_leaves_overlay",
-        "bloomingnature:flowering_blooming_oak_leaves": "bloomingnature:block/flowering_blooming_oak_leaves_overlay"
-    },
-    "overlayVariants": {
-        "bountifulfares:flowering_apple_leaves": "bountifulfares:block/apple_leaves",
-        "bountifulfares:flowering_lemon_leaves": "bountifulfares:block/lemon_leaves",
-        "bountifulfares:flowering_orange_leaves": "bountifulfares:block/orange_leaves",
-        "bountifulfares:flowering_plum_leaves": "bountifulfares:block/plum_leaves"
-    },
-    "blockIds": {
-        "terrestria:japanese_maple_leaves_dark": "terrestria:dark_japanese_maple_leaves",
-        "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves",
-        "palegarden:pale_oak_leaves": "palegarden:pale_leaves",
-        "biomeswevegone:berry_leaves": "biomeswevegone:holly_berry_leaves",
-        "aurorasdeco:jacaranda_leaves_budding_flowers": "aurorasdeco:budding_jacaranda_leaves",
-        "aurorasdeco:jacaranda_leaves_flowers": "aurorasdeco:flowering_jacaranda_leaves",
-        "integrateddynamics:menril_leaves_fancy": "integrateddynamics:menril_leaves",
-        "dreamwoods:flowering_blue_leaves": "dreamwoods:blue_azalea_leaves",
-        "dreamwoods:flowering_orange_leaves": "dreamwoods:orange_azalea_leaves",
-        "dreamwoods:flowering_red_leaves": "dreamwoods:red_azalea_leaves",
-        "dreamwoods:flowering_yellow_leaves": "dreamwoods:yellow_azalea_leaves",
-        "dreamwoods:brown_seasonal_leaves": "dreamwoods:brown_autumnal_leaves",
-        "dreamwoods:red_seasonal_leaves": "dreamwoods:red_autumnal_leaves",
-        "dreamwoods:yellow_seasonal_leaves": "dreamwoods:yellow_autumnal_leaves",
-        "dreamwoods:greatoak_leaves_alt": "dreamwoods:great_oak_leaves",
-        "dreamwoods:holly_leaves_alt": "dreamwoods:holly_leaves",
-        "dreamwoods:mahogany_leaves_gray": "dreamwoods:mahogany_leaves",
-        "dreamwoods:medinilla_leaves_mormal": "dreamwoods:medinilla_leaves",
-        "dreamwoods:jungle_orange_leaves": "dreamwoods:orange_jungle_leaves",
-        "dreamwoods:jungle_pink_leaves": "dreamwoods:pink_jungle_leaves",
-        "dreamwoods:jungle_white_leaves": "dreamwoods:white_jungle_leaves",
-        "dreamwoods:pine_leaves_2": "dreamwoods:pine_leaves",
-        "dreamwoods:rose_leaves_base": "dreamwoods:rose_leaves",
-        "dreamwoods:rose_leaves": "dreamwoods:rose_leaves_flowering",
-        "dreamwoods:swamp_willow_leaves_full": "dreamwoods:swamp_willow_leaves",
-        "dreamwoods:swampy_leaves": "dreamwoods:swamp_leaves",
-        "dreamwoods:wisteria_leaves_new": "dreamwoods:wisteria_leaves",
-        "meadow:alpine_birch_leaves_top": "meadow:alpine_birch_leaves_hanging"
-    },
-    "dynamicTreesNamespaces": {
-        "minecraft": "dynamictrees",
-        "biomesoplenty": "dtbop",
-        "aether": "dtaether",
-        "natures_spirit": "dtnatures_spirit",
-        "ecologics": "dtecologics",
-        "biomeswevegone": "dtbwg",
-        "regions_unexplored": "dtru",
-        "ars_nouveau": "darsnouveau"
-    },
-    "generateItemModels": [
-        "biomesoplenty:rainbow_birch_leaves",
-        "betternether:rubeus_leaves",
-        "betternether:ink_bush_leaves",
-        "betterend:tenanea_leaves",
-        "betterend:lacugrove_leaves",
-        "betterend:dragon_tree_leaves",
-        "betterend:pythadendron_leaves",
-        "betterend:shadow_berry_leaves",
-        "betterend:lucernia_leaves_1",
-        "betterend:cave_bush_leaves_1",
-        "ars_elemental:yellow_archwood_leaves"
+    "minecraft:birch_leaves": ["quark:birch_leaf_carpet"],
+    "minecraft:spruce_leaves": ["quark:spruce_leaf_carpet"],
+    "minecraft:jungle_leaves": ["quark:jungle_leaf_carpet"],
+    "minecraft:acacia_leaves": ["quark:acacia_leaf_carpet"],
+    "minecraft:dark_oak_leaves": ["quark:dark_oak_leaf_carpet"],
+    "minecraft:mangrove_leaves": ["quark:mangrove_leaf_carpet"],
+    "minecraft:cherry_leaves": ["quark:cherry_leaf_carpet"],
+    "minecraft:azalea_leaves": ["quark:azalea_leaf_carpet"],
+    "minecraft:flowering_azalea_leaves": ["quark:flowering_azalea_leaf_carpet"],
+    "minecraft:pale_oak_leaves": ["quark:pale_oak_leaf_carpet"],
+    "quark:ancient_leaves": "quark:ancient_leaf_carpet",
+    "quark:blue_blossom_leaves": "quark:blue_blossom_leaf_carpet",
+    "quark:lavender_blossom_leaves": "quark:lavender_blossom_leaf_carpet",
+    "quark:orange_blossom_leaves": "quark:orange_blossom_leaf_carpet",
+    "quark:red_blossom_leaves": "quark:red_blossom_leaf_carpet",
+    "quark:yellow_blossom_leaves": "quark:yellow_blossom_leaf_carpet",
+    "terrestria:sakura_leaves": "terrestria:sakura_leaf_pile",
+    "paradise_lost:lavender_wisteria_leaves": "paradise_lost:lavender_wisteria_leaf_pile",
+    "paradise_lost:aurel_leaves": "paradise_lost:aurel_leaf_pile",
+    "paradise_lost:rose_wisteria_leaves": "paradise_lost:rose_wisteria_leaf_pile",
+    "paradise_lost:frost_wisteria_leaves": "paradise_lost:frost_wisteria_leaf_pile",
+    "environmental:blue_wisteria_leaves": "environmental:blue_wisteria_leaf_pile",
+    "environmental:cheerful_plum_leaves": "environmental:cheerful_plum_leaf_pile",
+    "environmental:hibiscus_leaves": "environmental:hibiscus_leaf_pile",
+    "environmental:moody_plum_leaves": "environmental:moody_plum_leaf_pile",
+    "environmental:pine_leaves": "environmental:pine_leaf_pile",
+    "environmental:pink_wisteria_leaves": "environmental:pink_wisteria_leaf_pile",
+    "environmental:plum_leaves": "environmental:plum_leaf_pile",
+    "environmental:purple_wisteria_leaves": "environmental:purple_wisteria_leaf_pile",
+    "environmental:white_wisteria_leaves": "environmental:white_wisteria_leaf_pile",
+    "environmental:willow_leaves": "environmental:willow_leaf_pile",
+    "environmental:wisteria_leaves": "environmental:wisteria_leaf_pile"
+  },
+  "blockTextures": {
+    "biomesoplenty:rainbow_birch_leaves": "minecraft:block/birch_leaves"
+  },
+  "overlayTextures": {
+    "biomesoplenty:pine_leaves": "biomesoplenty:block/pine_leaves_overlay",
+    "biomesoplenty:flowering_oak_leaves": "biomesoplenty:block/flowering_oak_leaves_overlay",
+    "aether_redux:shimmering_crystal_glowfruit_leaves": "aether_redux:block/natural/shimmering_crystal_glowfruit_leaves_glow",
+    "deep_aether:flowering_blue_roseroot_leaves": "deep_aether:block/flowering_blue_roseroot_leaves_overlay",
+    "deep_aether:flowering_roseroot_leaves": "deep_aether:block/flowering_roseroot_leaves_overlay",
+    "windswept:flowering_acacia_leaves": "windswept:block/flowering_acacia_leaves_overlay",
+    "bloomingnature:flowering_blooming_oak_leaves": "bloomingnature:block/flowering_blooming_oak_leaves_overlay"
+  },
+  "overlayVariants": {
+    "bountifulfares:flowering_apple_leaves": "bountifulfares:block/apple_leaves",
+    "bountifulfares:flowering_lemon_leaves": "bountifulfares:block/lemon_leaves",
+    "bountifulfares:flowering_orange_leaves": "bountifulfares:block/orange_leaves",
+    "bountifulfares:flowering_plum_leaves": "bountifulfares:block/plum_leaves"
+  },
+  "blockIds": {
+    "terrestria:japanese_maple_leaves_dark": "terrestria:dark_japanese_maple_leaves",
+    "terrestria:japanese_maple_leaves_green": "terrestria:japanese_maple_shrub_leaves",
+    "palegarden:pale_oak_leaves": "palegarden:pale_leaves",
+    "biomeswevegone:berry_leaves": "biomeswevegone:holly_berry_leaves",
+    "aurorasdeco:jacaranda_leaves_budding_flowers": "aurorasdeco:budding_jacaranda_leaves",
+    "aurorasdeco:jacaranda_leaves_flowers": "aurorasdeco:flowering_jacaranda_leaves",
+    "integrateddynamics:menril_leaves_fancy": "integrateddynamics:menril_leaves",
+    "dreamwoods:flowering_blue_leaves": "dreamwoods:blue_azalea_leaves",
+    "dreamwoods:flowering_orange_leaves": "dreamwoods:orange_azalea_leaves",
+    "dreamwoods:flowering_red_leaves": "dreamwoods:red_azalea_leaves",
+    "dreamwoods:flowering_yellow_leaves": "dreamwoods:yellow_azalea_leaves",
+    "dreamwoods:brown_seasonal_leaves": "dreamwoods:brown_autumnal_leaves",
+    "dreamwoods:red_seasonal_leaves": "dreamwoods:red_autumnal_leaves",
+    "dreamwoods:yellow_seasonal_leaves": "dreamwoods:yellow_autumnal_leaves",
+    "dreamwoods:greatoak_leaves_alt": "dreamwoods:great_oak_leaves",
+    "dreamwoods:holly_leaves_alt": "dreamwoods:holly_leaves",
+    "dreamwoods:mahogany_leaves_gray": "dreamwoods:mahogany_leaves",
+    "dreamwoods:medinilla_leaves_mormal": "dreamwoods:medinilla_leaves",
+    "dreamwoods:jungle_orange_leaves": "dreamwoods:orange_jungle_leaves",
+    "dreamwoods:jungle_pink_leaves": "dreamwoods:pink_jungle_leaves",
+    "dreamwoods:jungle_white_leaves": "dreamwoods:white_jungle_leaves",
+    "dreamwoods:pine_leaves_2": "dreamwoods:pine_leaves",
+    "dreamwoods:rose_leaves_base": "dreamwoods:rose_leaves",
+    "dreamwoods:rose_leaves": "dreamwoods:rose_leaves_flowering",
+    "dreamwoods:swamp_willow_leaves_full": "dreamwoods:swamp_willow_leaves",
+    "dreamwoods:swampy_leaves": "dreamwoods:swamp_leaves",
+    "dreamwoods:wisteria_leaves_new": "dreamwoods:wisteria_leaves",
+    "meadow:alpine_birch_leaves_top": "meadow:alpine_birch_leaves_hanging"
+  },
+  "dynamicTreesNamespaces": {
+    "minecraft": "dynamictrees",
+    "biomesoplenty": "dtbop",
+    "aether": "dtaether",
+    "natures_spirit": "dtnatures_spirit",
+    "ecologics": "dtecologics",
+    "biomeswevegone": "dtbwg",
+    "regions_unexplored": "dtru",
+    "ars_nouveau": "darsnouveau"
+  },
+  "generateItemModels": [
+    "biomesoplenty:rainbow_birch_leaves",
+    "betternether:rubeus_leaves",
+    "betternether:ink_bush_leaves",
+    "betterend:tenanea_leaves",
+    "betterend:lacugrove_leaves",
+    "betterend:dragon_tree_leaves",
+    "betterend:pythadendron_leaves",
+    "betterend:shadow_berry_leaves",
+    "betterend:lucernia_leaves_1",
+    "betterend:cave_bush_leaves_1",
+    "ars_elemental:yellow_archwood_leaves"
+  ],
+  "blockStateCopies": {
+    "minecraft:oak_leaves": [
+      "twilightforest:twilight_oak_leaves",
+      "twilightforest:rainbow_oak_leaves",
+      "twilightforest:thorn_leaves",
+      "dynamictrees:oak_undergrowth_leaves",
+      "dtterralith:oak_conifer_leaves",
+      "dtterralith:oak_kapok_leaves",
+      "dtterralith:oak_scruffy_leaves",
+      "dtterralith:oak_scruffy_tall_conifer_leaves",
+      "dtterralith:oak_sparse_leaves",
+      "dtterralith:oak_tall_conifer_leaves",
+      "dtterralith:oak_twiglet_leaves",
+      "dtterralith:oak_twilight_leaves",
+      "dtterralith:oak_yellow_conifer_leaves",
+      "dtbop:sparse_oak_leaves",
+      "dtbwg:prairie_oak_leaves"
     ],
-    "blockStateCopies": {
-        "minecraft:oak_leaves": [
-            "twilightforest:twilight_oak_leaves",
-            "twilightforest:rainbow_oak_leaves",
-            "twilightforest:thorn_leaves",
-            "dynamictrees:oak_undergrowth_leaves",
-            "dtterralith:oak_conifer_leaves",
-            "dtterralith:oak_kapok_leaves",
-            "dtterralith:oak_scruffy_leaves",
-            "dtterralith:oak_scruffy_tall_conifer_leaves",
-            "dtterralith:oak_sparse_leaves",
-            "dtterralith:oak_tall_conifer_leaves",
-            "dtterralith:oak_twiglet_leaves",
-            "dtterralith:oak_twilight_leaves",
-            "dtterralith:oak_yellow_conifer_leaves",
-            "dtbop:sparse_oak_leaves",
-            "dtbwg:prairie_oak_leaves"
-        ],
-        "minecraft:birch_leaves": [
-            "twilightforest:mangrove_leaves",
-            "dtterralith:birch_conifer_leaves",
-            "dtterralith:birch_poplar_leaves",
-            "dtterralith:birch_scruffy_conifer_leaves",
-            "dtterralith:birch_scruffy_leaves",
-            "dtterralith:birch_short_conifer_leaves",
-            "dtterralith:birch_sparse_leaves",
-            "dtterralith:birch_twilight_leaves",
-            "dtterralith:birch_windswept_leaves"
-        ],
-        "minecraft:spruce_leaves": [
-            "twilightforest:canopy_leaves",
-            "dtterralith:spruce_bush_leaves",
-            "dtterralith:spruce_moonlight_leaves",
-            "dtterralith:spruce_poplar_leaves",
-            "dtterralith:spruce_round_leaves",
-            "dtterralith:spruce_short_conifer_leaves",
-            "dtterralith:spruce_sparse_leaves",
-            "dtterralith:spruce_tall_conifer_leaves",
-            "dtterralith:spruce_twiglet_leaves"
-        ],
-        "minecraft:acacia_leaves": [
-            "twilightforest:beanstalk_leaves",
-            "dtterralith:acacia_amethyst_leaves",
-            "dtterralith:acacia_bush_leaves",
-            "dtterralith:acacia_conifer_leaves",
-            "dtterralith:acacia_deciduous_leaves",
-            "dtterralith:acacia_kapok_leaves",
-            "dtterralith:acacia_poplar_leaves",
-            "dtterralith:acacia_sparse_leaves",
-            "dtterralith:acacia_twiglet_leaves",
-            "dtterralith:acacia_windswept_leaves"
-        ],
-        "minecraft:azalea_leaves": [
-            "dtterralith:azalea_bush_leaves",
-            "dtterralith:azalea_canopy_leaves",
-            "dtterralith:azalea_ebony_leaves",
-            "dtterralith:azalea_mahogany_leaves",
-            "dtterralith:azalea_mangrove_leaves",
-            "dtterralith:azalea_oasis_leaves"
-        ],
-        "minecraft:cherry_leaves": [
-            "dtterralith:cherry_bush_leaves"
-        ],
-        "minecraft:dark_oak_leaves": [
-            "dtterralith:dark_oak_ancient_leaves",
-            "dtterralith:dark_oak_ancient_mirage_leaves",
-            "dtterralith:dark_oak_blue_conifer_leaves",
-            "dtterralith:dark_oak_canopy_leaves",
-            "dtterralith:dark_oak_canopy_mirage_leaves",
-            "dtterralith:dark_oak_jacaranda_leaves",
-            "dtterralith:dark_oak_maple_leaves",
-            "dtterralith:dark_oak_orange_conifer_leaves",
-            "dtterralith:dark_oak_red_azalea_leaves",
-            "dtterralith:dark_oak_red_conifer_leaves",
-            "dtterralith:dark_oak_red_maple_leaves",
-            "dtterralith:dark_oak_sakura_bush_leaves",
-            "dtterralith:dark_oak_sakura_leaves",
-            "dtterralith:dark_oak_wide_leaves",
-            "dtterralith:tall_dark_oak_leaves",
-            "dtbop:dark_poplar_leaves"
-        ],
-        "minecraft:flowering_azalea_leaves": [
-            "dtterralith:flowering_azalea_canopy_leaves",
-            "dtterralith:flowering_azalea_mahogany_leaves",
-            "dtterralith:flowering_azalea_mangrove_leaves",
-            "dtterralith:flowering_azalea_oasis_leaves"
-        ],
-        "minecraft:jungle_leaves": [
-            "dynamictrees:jungle_undergrowth_leaves",
-            "dtterralith:jungle_jacaranda_leaves",
-            "dtterralith:jungle_sakura_leaves",
-            "dtterralith:jungle_sparse_leaves",
-            "dtterralith:jungle_windswept_leaves"
-        ],
-        "minecraft:mangrove_leaves": [
-            "dtterralith:mangrove_scruffy_leaves",
-            "dtterralith:mangrove_sparse_leaves"
-        ],
-        "betterend:dragon_tree_leaves": [
-            "lighterend:dragon_tree_leaves"
-        ],
-        "betterend:shadow_berry_leaves": [
-            "lighterend:shadow_berry_leaves"
-        ],
-        "betterend:tenanea_leaves": [
-            "lighterend:tenanea_leaves"
-        ]
-    },
-    "compileOnly": [
-      "minecraft:block/snow"
-    ]
+    "minecraft:birch_leaves": [
+      "twilightforest:mangrove_leaves",
+      "dtterralith:birch_conifer_leaves",
+      "dtterralith:birch_poplar_leaves",
+      "dtterralith:birch_scruffy_conifer_leaves",
+      "dtterralith:birch_scruffy_leaves",
+      "dtterralith:birch_short_conifer_leaves",
+      "dtterralith:birch_sparse_leaves",
+      "dtterralith:birch_twilight_leaves",
+      "dtterralith:birch_windswept_leaves"
+    ],
+    "minecraft:spruce_leaves": [
+      "twilightforest:canopy_leaves",
+      "dtterralith:spruce_bush_leaves",
+      "dtterralith:spruce_moonlight_leaves",
+      "dtterralith:spruce_poplar_leaves",
+      "dtterralith:spruce_round_leaves",
+      "dtterralith:spruce_short_conifer_leaves",
+      "dtterralith:spruce_sparse_leaves",
+      "dtterralith:spruce_tall_conifer_leaves",
+      "dtterralith:spruce_twiglet_leaves"
+    ],
+    "minecraft:acacia_leaves": [
+      "twilightforest:beanstalk_leaves",
+      "dtterralith:acacia_amethyst_leaves",
+      "dtterralith:acacia_bush_leaves",
+      "dtterralith:acacia_conifer_leaves",
+      "dtterralith:acacia_deciduous_leaves",
+      "dtterralith:acacia_kapok_leaves",
+      "dtterralith:acacia_poplar_leaves",
+      "dtterralith:acacia_sparse_leaves",
+      "dtterralith:acacia_twiglet_leaves",
+      "dtterralith:acacia_windswept_leaves"
+    ],
+    "minecraft:azalea_leaves": [
+      "dtterralith:azalea_bush_leaves",
+      "dtterralith:azalea_canopy_leaves",
+      "dtterralith:azalea_ebony_leaves",
+      "dtterralith:azalea_mahogany_leaves",
+      "dtterralith:azalea_mangrove_leaves",
+      "dtterralith:azalea_oasis_leaves"
+    ],
+    "minecraft:cherry_leaves": ["dtterralith:cherry_bush_leaves"],
+    "minecraft:dark_oak_leaves": [
+      "dtterralith:dark_oak_ancient_leaves",
+      "dtterralith:dark_oak_ancient_mirage_leaves",
+      "dtterralith:dark_oak_blue_conifer_leaves",
+      "dtterralith:dark_oak_canopy_leaves",
+      "dtterralith:dark_oak_canopy_mirage_leaves",
+      "dtterralith:dark_oak_jacaranda_leaves",
+      "dtterralith:dark_oak_maple_leaves",
+      "dtterralith:dark_oak_orange_conifer_leaves",
+      "dtterralith:dark_oak_red_azalea_leaves",
+      "dtterralith:dark_oak_red_conifer_leaves",
+      "dtterralith:dark_oak_red_maple_leaves",
+      "dtterralith:dark_oak_sakura_bush_leaves",
+      "dtterralith:dark_oak_sakura_leaves",
+      "dtterralith:dark_oak_wide_leaves",
+      "dtterralith:tall_dark_oak_leaves",
+      "dtbop:dark_poplar_leaves"
+    ],
+    "minecraft:flowering_azalea_leaves": [
+      "dtterralith:flowering_azalea_canopy_leaves",
+      "dtterralith:flowering_azalea_mahogany_leaves",
+      "dtterralith:flowering_azalea_mangrove_leaves",
+      "dtterralith:flowering_azalea_oasis_leaves"
+    ],
+    "minecraft:jungle_leaves": [
+      "dynamictrees:jungle_undergrowth_leaves",
+      "dtterralith:jungle_jacaranda_leaves",
+      "dtterralith:jungle_sakura_leaves",
+      "dtterralith:jungle_sparse_leaves",
+      "dtterralith:jungle_windswept_leaves"
+    ],
+    "minecraft:mangrove_leaves": [
+      "dtterralith:mangrove_scruffy_leaves",
+      "dtterralith:mangrove_sparse_leaves"
+    ],
+    "minecraft:pale_oak_leaves": ["dtvanillabackport:pale_oak_leaves"],
+    "betterend:dragon_tree_leaves": ["lighterend:dragon_tree_leaves"],
+    "betterend:shadow_berry_leaves": ["lighterend:shadow_berry_leaves"],
+    "betterend:tenanea_leaves": ["lighterend:tenanea_leaves"]
+  },
+  "compileOnly": ["minecraft:block/snow"]
 }
