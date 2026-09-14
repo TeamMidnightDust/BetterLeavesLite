@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "northstar:block/argyre_leaves1"
+            },
+            {
+                "model": "northstar:block/argyre_leaves1",
+                "y": 90
+            },
+            {
+                "model": "northstar:block/argyre_leaves1",
+                "y": 180
+            },
+            {
+                "model": "northstar:block/argyre_leaves1",
+                "y": 270
+            },
+            {
+                "model": "northstar:block/argyre_leaves2"
+            },
+            {
+                "model": "northstar:block/argyre_leaves2",
+                "y": 90
+            },
+            {
+                "model": "northstar:block/argyre_leaves2",
+                "y": 180
+            },
+            {
+                "model": "northstar:block/argyre_leaves2",
+                "y": 270
+            },
+            {
+                "model": "northstar:block/argyre_leaves3"
+            },
+            {
+                "model": "northstar:block/argyre_leaves3",
+                "y": 90
+            },
+            {
+                "model": "northstar:block/argyre_leaves3",
+                "y": 180
+            },
+            {
+                "model": "northstar:block/argyre_leaves3",
+                "y": 270
+            },
+            {
+                "model": "northstar:block/argyre_leaves4"
+            },
+            {
+                "model": "northstar:block/argyre_leaves4",
+                "y": 90
+            },
+            {
+                "model": "northstar:block/argyre_leaves4",
+                "y": 180
+            },
+            {
+                "model": "northstar:block/argyre_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}
