@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "quark:block/yellow_blossom_leaves1"
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves1",
+                "y": 90
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves1",
+                "y": 180
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves1",
+                "y": 270
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves2"
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves2",
+                "y": 90
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves2",
+                "y": 180
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves2",
+                "y": 270
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves3"
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves3",
+                "y": 90
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves3",
+                "y": 180
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves3",
+                "y": 270
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves4"
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves4",
+                "y": 90
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves4",
+                "y": 180
+            },
+            {
+                "model": "quark:block/yellow_blossom_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

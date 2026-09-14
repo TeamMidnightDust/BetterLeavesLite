@@ -99,7 +99,10 @@
     "ecologics": "dtecologics",
     "biomeswevegone": "dtbwg",
     "regions_unexplored": "dtru",
-    "ars_nouveau": "darsnouveau"
+    "ars_nouveau": "darsnouveau",
+    "betterend": "dtbetterend",
+    "betternether": "dtbetternether",
+    "quark": "dtquark"
   },
   "generateItemModels": [
     "biomesoplenty:rainbow_birch_leaves",
