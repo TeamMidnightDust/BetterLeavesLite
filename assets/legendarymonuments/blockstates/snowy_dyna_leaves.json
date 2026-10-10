@@ -1,0 +1,66 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves1"
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves1",
+                "y": 90
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves1",
+                "y": 180
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves1",
+                "y": 270
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves2"
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves2",
+                "y": 90
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves2",
+                "y": 180
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves2",
+                "y": 270
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves3"
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves3",
+                "y": 90
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves3",
+                "y": 180
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves3",
+                "y": 270
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves4"
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves4",
+                "y": 90
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves4",
+                "y": 180
+            },
+            {
+                "model": "legendarymonuments:block/snowy_dyna_leaves4",
+                "y": 270
+            }
+        ]
+    }
+}

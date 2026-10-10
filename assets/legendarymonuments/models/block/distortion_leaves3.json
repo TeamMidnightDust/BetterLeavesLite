@@ -1,0 +1,6 @@
+{
+    "parent": "betterleaves:block/leaves3",
+    "textures": {
+        "all": "legendarymonuments:block/distortion_leaves"
+    }
+}
